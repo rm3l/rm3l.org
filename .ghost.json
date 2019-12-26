@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://cms.rm3l.org",
+    "contentApiKey": "8a279ebe0aeb43cfddaad58f07"
   },
   "production": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://cms.rm3l.org",
+    "contentApiKey": "8a279ebe0aeb43cfddaad58f07"
   }
 }
