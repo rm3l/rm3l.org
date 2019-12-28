@@ -5412,7 +5412,7 @@ gatsby-page-utils@^0.0.30:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-advanced-sitemap@1.4.5:
+gatsby-plugin-advanced-sitemap@^1.4.5:
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-advanced-sitemap/-/gatsby-plugin-advanced-sitemap-1.4.5.tgz#70ee69ec7ab5d992d5299cb679eefa6e14a1dc23"
   dependencies:
