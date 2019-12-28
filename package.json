@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-ghost",
-  "description": "A starter template to build lightning fast websites with Ghost and Gatsby",
+  "name": "rm3l-org",
+  "description": "Armel Soro's Personal Blog : Thoughts, stories and ideas on Technology",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "Ghost Foundation",
-  "homepage": "https://docs.ghost.org/api/gatsby/",
+  "author": "Armel Soro",
+  "homepage": "https://rm3l.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tryghost/gatsby-starter-ghost.git"
+    "url": "git+https://github.com/rm3l/rm3l.org.git"
   },
   "resolutions": {
     "sharp": "0.22.1"
@@ -16,7 +16,7 @@
     "node": ">= 8.9.0"
   },
   "bugs": {
-    "url": "https://github.com/tryghost/gatsby-starter-ghost/issues"
+    "url": "https://github.com/rm3l/rm3l.org/issues"
   },
   "keywords": [
     "gatsby",
