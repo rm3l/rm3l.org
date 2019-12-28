@@ -198,6 +198,12 @@ module.exports = {
               siteSpeedSampleRate: 10,
             },
           },
+          {
+            resolve: `gatsby-plugin-disqus`,
+            options: {
+              shortname: `rm3l`
+            }
+          },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
