@@ -6,6 +6,10 @@ import Helmet from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
+import { Disqus } from 'gatsby-plugin-disqus'
+
+const config = require(`../utils/siteConfig`)
+
 /**
 * Single post view (/:slug)
 *
@@ -14,6 +18,12 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+
+    let disqusConfig = {
+        url: `${config.siteUrl + location.pathname}`,
+        identifier: post.id,
+        title: post.title,
+    }
 
     return (
         <>
@@ -40,6 +50,7 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
+                            <Disqus config={disqusConfig} />
                         </section>
                     </article>
                 </div>
