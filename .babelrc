@@ -1,0 +1,28 @@
+{
+    "presets": [
+      [
+        "babel-preset-gatsby"
+      ]
+    ],
+    "plugins": [
+      [
+        "prismjs",
+        {
+          "languages": [
+            "javascript",
+            "css",
+            "markup",
+            "json",
+            "handlebars",
+            "yaml",
+            "java",
+            "sql",
+            "dart",
+            "xml"
+          ],
+          "theme": "okaidia",
+          "css": true
+        }
+      ]
+    ]
+  }
