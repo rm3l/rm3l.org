@@ -10,6 +10,13 @@ import config from '../../utils/siteConfig'
 // Styles
 import '../../styles/app.css'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(fab, fas)
+
 /**
 * Main layout component
 *
@@ -20,8 +27,21 @@ import '../../styles/app.css'
 */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
-    const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
-    const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
+
+    const socialLinkItems = []
+    Object.entries(config.socialLinks).map(([network, profileLinkData]) => {
+        socialLinkItems.push(
+            <a href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                    color={profileLinkData.color}
+                    size="lg"
+                    icon={[
+                        profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : 'fas',
+                        network]} />
+                {' '}
+            </a>)
+    }
+    )
 
     return (
         <>
@@ -47,12 +67,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                    { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                    {socialLinkItems}
                                 </div>
                             </div>
-                            { isHome ?
+                            {isHome ?
                                 <div className="site-banner">
                                     <h1 className="site-banner-title">{site.title}</h1>
                                     <p className="site-banner-desc">{site.description}</p>
