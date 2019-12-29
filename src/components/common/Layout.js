@@ -15,6 +15,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+
 library.add(fab, fas)
 
 /**
@@ -31,7 +34,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const socialLinkItems = []
     Object.entries(config.socialLinks).map(([network, profileLinkData]) => {
         socialLinkItems.push(
-            <a href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
+            <Tippy content={<span>{profileLinkData.displayName}</span>}>
+                <a href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                     color={profileLinkData.color}
                     size="lg"
@@ -39,7 +43,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : 'fas',
                         network]} />
                 {' '}
-            </a>)
+            </a>
+            </Tippy>)
     }
     )
 
