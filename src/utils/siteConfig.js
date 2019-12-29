@@ -13,4 +13,43 @@ module.exports = {
     siteIcon: `favicon.png`, // Logo in /static dir used for SEO, RSS, and App manifest
     backgroundColor: `#e9e9e9`, // Used for Offline Manifest
     themeColor: `#15171A`, // Used for Offline Manifest
+
+    socialLinks: {
+        linkedin: {
+            fontAwesomeFamily: 'fab',
+            color: '#0077B5',
+            url: 'https://www.linkedin.com/in/armelsoro',
+            displayName: 'LinkedIn://armelsoro'
+        },
+        gitlab: {
+            fontAwesomeFamily: 'fab',
+            color: '#fca326',
+            url: 'https://gitlab.com/rm3l',
+            displayName: 'GitLab://rm3l'
+        },
+        github: {
+            fontAwesomeFamily: 'fab',
+            color: '#f5f5f5',
+            url: 'https://github.com/rm3l',
+            displayName: 'GitHub://rm3l'
+        },
+        keybase: {
+            fontAwesomeFamily: 'fab',
+            color: '#FF6F24',
+            url: 'https://keybase.io/rm3l',
+            displayName: 'Keybase://rm3l'
+        },
+        twitter: {
+            fontAwesomeFamily: 'fab',
+            color: '#1da1f2',
+            url: 'https://twitter.com/rm3l',
+            displayName: 'Twitter://rm3l'
+        },
+        rss: {
+            fontAwesomeFamily: 'fas',
+            color: '#f26522',
+            url: 'https://feedly.com/i/subscription/feed/https://rm3l.org/rss/',
+            displayName: 'RSS://rm3l'
+        },
+    }
 }
