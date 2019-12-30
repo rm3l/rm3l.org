@@ -33,6 +33,12 @@ module.exports = {
             url: 'https://github.com/rm3l',
             displayName: 'GitHub://rm3l'
         },
+        'stack-overflow': {
+            fontAwesomeFamily: 'fab',
+            color: '#f48024',
+            url: 'https://stackoverflow.com/users/story/1877067',
+            displayName: 'StackOverflow://rm3l'
+        },
         keybase: {
             fontAwesomeFamily: 'fab',
             color: '#FF6F24',
