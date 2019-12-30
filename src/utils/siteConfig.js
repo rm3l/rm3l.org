@@ -51,6 +51,12 @@ module.exports = {
             url: 'https://twitter.com/rm3l',
             displayName: 'Twitter://rm3l'
         },
+        telegram: {
+            fontAwesomeFamily: 'fab',
+            color: '#0088cc',
+            url: 'https://t.me/rm3l_s',
+            displayName: 'Telegram://rm3l_s'
+        },
         rss: {
             fontAwesomeFamily: 'fas',
             color: '#f26522',
