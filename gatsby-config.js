@@ -182,37 +182,72 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-              // Here goes your tracking ID
-              trackingId: 'UA-103780308-1',
-              // Puts tracking script in the head instead of the body
-              head: true,
-              // IP anonymization for GDPR compliance
-              anonymize: true,
-              // Disable analytics for users with `Do Not Track` enabled
-              respectDNT: true,
-              // Avoids sending pageview hits from custom paths
-            //   exclude: ['/preview/**'],
-              // Specifies what percentage of users should be tracked
-              sampleRate: 100,
-              // Determines how often site speed tracking beacons will be sent
-              siteSpeedSampleRate: 10,
+                // Here goes your tracking ID
+                trackingId: 'UA-103780308-1',
+                // Puts tracking script in the head instead of the body
+                head: true,
+                // IP anonymization for GDPR compliance
+                anonymize: true,
+                // Disable analytics for users with `Do Not Track` enabled
+                respectDNT: true,
+                // Avoids sending pageview hits from custom paths
+                //   exclude: ['/preview/**'],
+                // Specifies what percentage of users should be tracked
+                sampleRate: 100,
+                // Determines how often site speed tracking beacons will be sent
+                siteSpeedSampleRate: 10,
             },
-          },
-          {
+        },
+        {
             resolve: `gatsby-plugin-disqus`,
             options: {
-              shortname: `rm3l`
+                shortname: `rm3l`
             }
-          },
-          {
+        },
+        {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-              // Setting a color is optional.
-              color: `tomato`,
-              // Disable the loading spinner.
-              showSpinner: false,
+                // Setting a color is optional.
+                color: `tomato`,
+                // Disable the loading spinner.
+                showSpinner: false,
             },
-          },
+        },
+        {
+            resolve: `gatsby-plugin-lunr`,
+            options: {
+                languages: [
+                    {
+                        // ISO 639-1 language codes. See https://lunrjs.com/guides/language_support.html for details
+                        name: 'en',
+                    },
+                ],
+                // Fields to index. If store === true value will be stored in index file.
+                // Attributes for custom indexing logic. See https://lunrjs.com/docs/lunr.Builder.html for details
+                fields: [
+                    { name: 'title', store: true, attributes: { boost: 20 } },
+                    { name: 'excerpt', store: true, attributes: { boost: 5 } },
+                    { name: 'content' },
+                    { name: 'url', store: true },
+                ],
+                // How to resolve each field's value for a supported node type
+                resolvers: {
+                    // For any node of type GhostPost, list how to resolve the fields' values
+                    GhostPost: {
+                        title: node => node.title,
+                        excerpt: node => node.excerpt,
+                        content: node => node.plaintext, //node.html?
+                        url: node => node.slug
+                    },
+                },
+                //custom index file name, default is search_index.json
+                filename: 'search_index.json',
+                //custom options on fetch api call for search_ındex.json
+                fetchOptions: {
+                    credentials: 'same-origin'
+                },
+            },
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,

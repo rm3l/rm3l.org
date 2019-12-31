@@ -18,6 +18,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 
+import Search from '../Search'
+
 library.add(fab, fas)
 
 /**
@@ -73,6 +75,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                                 <div className="site-mast-right">
                                     {socialLinkItems}
+                                    <Search classNames={'link_bold'} lng={'en'}/>
                                 </div>
                             </div>
                             {isHome ?
