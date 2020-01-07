@@ -22,6 +22,9 @@ try {
     }
 }
 
+const queries = require("./src/utils/algolia")
+require("dotenv").config()
+
 /**
 * This is the place where you can tell Gatsby which plugins to use
 * and set them up the way you want.
@@ -32,6 +35,9 @@ try {
 module.exports = {
     siteMetadata: {
         siteUrl: config.siteUrl,
+        title: config.siteTitleMeta,
+        description: config.siteDescriptionMeta,
+        author: config.siteAuthor,
     },
     plugins: [
         /**
@@ -197,22 +203,32 @@ module.exports = {
               // Determines how often site speed tracking beacons will be sent
               siteSpeedSampleRate: 10,
             },
-          },
-          {
+        },
+        {
             resolve: `gatsby-plugin-disqus`,
             options: {
-              shortname: `rm3l`
+                shortname: `rm3l`
             }
-          },
-          {
+        },
+        {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-              // Setting a color is optional.
-              color: `tomato`,
-              // Disable the loading spinner.
-              showSpinner: false,
+                // Setting a color is optional.
+                color: `tomato`,
+                // Disable the loading spinner.
+                showSpinner: false,
             },
-          },
+        },
+        {
+            resolve: `gatsby-plugin-algolia`,
+            options: {
+                appId: process.env.GATSBY_ALGOLIA_APP_ID,
+                apiKey: process.env.ALGOLIA_ADMIN_KEY,
+                queries,
+                chunkSize: 10000, // default: 1000
+            },
+        },
+        `gatsby-plugin-styled-components`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
