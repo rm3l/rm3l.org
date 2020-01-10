@@ -10,12 +10,6 @@ import config from '../../utils/siteConfig'
 // Styles
 import '../../styles/app.css'
 
-import Search from "../search/"
-const searchIndices = [
-//   { name: `Pages`, title: `Pages`, hitComp: `PageHit` },
-  { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` },
-]
-
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -79,7 +73,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                                 <div className="site-mast-right">
                                     {socialLinkItems}
-                                    <Search collapse indices={searchIndices} />
                                 </div>
                             </div>
                             {isHome ?
