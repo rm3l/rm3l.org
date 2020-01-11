@@ -33,6 +33,9 @@ const PostCard = ({ post }) => {
                 <div className="post-card-footer-right">
                     <div>{readingTime}</div>
                 </div>
+                <div>
+                    {new Date(post.published_at).toDateString().substring("Mon ".length)}
+                </div>
             </footer>
         </Link>
     )
