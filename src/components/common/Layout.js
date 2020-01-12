@@ -88,7 +88,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <Link className="site-nav-item" to="/portfolio" key="99">Portfolio</Link>
                                 </div>
                                 <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
+                                    {/* About page disabled until a 'about.js' file is added to src/pages/ */}
+                                    {/* <Link className="site-nav-button" to="/about">About</Link> */}
                                 </div>
                             </nav>
                         </div>
