@@ -213,6 +213,7 @@ module.exports = {
                 showSpinner: false,
             },
         },
+        `gatsby-plugin-sass`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,

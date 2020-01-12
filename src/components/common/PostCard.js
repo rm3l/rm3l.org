@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
                     <div>{readingTime}</div>
                 </div>
                 <div>
-                    {new Date(post.published_at).toDateString().substring("Mon ".length)}
+                    {new Date(post.published_at).toDateString().substring(`Mon `.length)}
                 </div>
             </footer>
         </Link>
@@ -45,6 +45,7 @@ PostCard.propTypes = {
     post: PropTypes.shape({
         slug: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
+        published_at: PropTypes.string,
         feature_image: PropTypes.string,
         featured: PropTypes.bool,
         tags: PropTypes.arrayOf(
