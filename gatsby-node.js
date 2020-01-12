@@ -200,3 +200,20 @@ exports.createPages = async ({ graphql, actions }) => {
         },
     })
 }
+
+//isotope.js makes use of 'window', which makes 'gatsby build' fail
+//solution: https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === `build-html`) {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /isotope-layout/,
+                        use: loaders.null(),
+                    },
+                ],
+            },
+        })
+    }
+}
