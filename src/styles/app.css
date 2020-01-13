@@ -1013,3 +1013,7 @@ h6 {
 .site-foot-nav-right a:last-child {
     padding-right: 0;
 }
+
+/* Portfolio */
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }

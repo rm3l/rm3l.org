@@ -40,9 +40,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         color={profileLinkData.color}
                         size="lg"
                         icon={[
-                            profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : 'fas',
+                            profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : `fas`,
                             network]} />
-                    {' '}
+                    {` `}
                 </a>
             </Tippy>)
     }
@@ -107,7 +107,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2018 - {new Date().getFullYear()} &mdash;
+                                © 2018 - {new Date().getFullYear()} &mdash;
                                 Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
                                 &nbsp; and <a className="site-foot-nav-item" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a>
                             </div>
