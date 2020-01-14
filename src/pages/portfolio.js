@@ -14,14 +14,18 @@ class PortfolioPage extends React.Component {
         this.onFilterChange = this.onFilterChange.bind(this)
     }
 
-  // Click Function
   onFilterChange = (newFilter) => {
       if (this.iso === undefined) {
           this.iso = new Isotope(`#grid-container`, {
               itemSelector: `.grid-item`,
-              layoutMode: `fitRows`,
+              layoutMode: `masonry`,
               percentPosition: true,
-              fitRows: {
+              //   fitRows: {
+              //       gutter: `.gutter-sizer`,
+              //   },
+              masonry: {
+                  // use outer width of grid-sizer for columnWidth
+                  columnWidth: `.grid-sizer`,
                   gutter: `.gutter-sizer`,
               },
           })
@@ -34,6 +38,7 @@ class PortfolioPage extends React.Component {
   }
 
   render() {
+      const portfolioHomePage = this.props.data.ghostPage
       const pages = this.props.data.allGhostPage.edges
 
       const portfolioTagNames = new Set()
@@ -50,12 +55,15 @@ class PortfolioPage extends React.Component {
       })
       const portfolioTags = []
       Array.from(portfolioTagNames).sort().forEach((portfolioTag) => {
-          portfolioTags.push(<span><Button sx={{
+          portfolioTags.push(<span><Button mr={10} fontFamily={`monospace`} sx={{
               fontSize: 1,
               textTransform: `uppercase`,
+              ':hover': {
+                  backgroundColor: `tomato`,
+              },
           }} data-filter={portfolioTag} onClick={() => {
               this.onFilterChange(portfolioTag)
-          }}>{(portfolioTag === `*`) ? `ALL` : portfolioTag}</Button>{` `}</span>)
+          }}>{(portfolioTag === `*`) ? `ALL` : portfolioTag}</Button></span>)
       })
 
       return (
@@ -63,8 +71,9 @@ class PortfolioPage extends React.Component {
               <Layout>
                   <div className="container">
                       <article className="content" style={{ textAlign: `center` }}>
-                          <h1 className="content-title">Projects</h1>
+                          <h1 className="content-title">{portfolioHomePage.title}</h1>
                           <section className="content-body">
+                              <div dangerouslySetInnerHTML={{ __html: portfolioHomePage.html }}/>
                               <div className="button-group filter-button-group grid-filters">
                                   <div className="tabs is-centered is-toggle">
                                       <ul id="portfolio-filters">
@@ -105,6 +114,7 @@ class PortfolioPage extends React.Component {
 PortfolioPage.propTypes = {
     data: PropTypes.shape({
         allGhostPage: PropTypes.object.isRequired,
+        ghostPage: PropTypes.object.isRequired,
     }).isRequired,
     location: PropTypes.shape({
         pathname: PropTypes.string.isRequired,
@@ -114,17 +124,43 @@ PortfolioPage.propTypes = {
 
 export default PortfolioPage
 
-export const pageQuery = graphql`
+export const pageRootQuery = graphql`
   query PortfolioPageQuery {
     allGhostPage(
-        sort: { order: DESC, fields: [published_at] },
-        filter: {tags: {elemMatch: {name: {in: ["work"]}}}}
+        sort: {
+            order: DESC,
+            fields: [ published_at ]
+        },
+        filter: {
+            tags: {
+                elemMatch: {
+                    name: {
+                        in: [ "work" ]
+                    }
+                }
+            }
+        }
     ) {
         edges {
             node {
                 ...GhostPageFields
             }
         }
+    }
+
+    ghostPage(
+        tags: {
+            elemMatch: {
+                name: {
+                    in: [ "page-portfolio-home" ]
+                }
+            }
+        }
+    ) {
+        id
+        uuid
+        title
+        html
     }
   }
 `

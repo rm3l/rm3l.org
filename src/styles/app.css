@@ -1015,5 +1015,7 @@ h6 {
 }
 
 /* Portfolio */
-.grid-item { width: 25%; }
-.grid-item--width2 { width: 50%; }
+.grid-sizer,
+.grid-item { width: 22%; margin-bottom: 10px; }
+.gutter-sizer { width: 4%; }
+.grid-item--width2 { width: 48%; }
