@@ -62,7 +62,7 @@ class PortfolioPage extends React.Component {
       })
       const portfolioTags = []
       Array.from(portfolioTagNames).sort().forEach((portfolioTag) => {
-          portfolioTags.push(<span><Button mr={10} fontFamily={`monospace`} sx={{
+          portfolioTags.push(<span><Button mr={10} mb={10} fontFamily={`monospace`} sx={{
               fontSize: 1,
               textTransform: `uppercase`,
               ':hover': {
