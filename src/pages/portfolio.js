@@ -7,6 +7,7 @@ import { Layout, PortfolioProjectCard } from '../components/common'
 import { Button } from 'rebass'
 
 import styles from '../styles/app.css'
+import Masonry from "react-masonry-component"
 
 class PortfolioPage extends React.Component {
     constructor(props) {
@@ -41,7 +42,7 @@ class PortfolioPage extends React.Component {
 
   componentDidMount() {
       //Pick the right filter right from the URL, if the hash is available, e.g.:  /portfolio#android
-      this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `ALL`)
+      // this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `ALL`)
   }
 
   render() {
@@ -72,7 +73,7 @@ class PortfolioPage extends React.Component {
                   backgroundColor: `tomato`,
               },
           }} data-filter={portfolioTag} onClick={() => {
-              this.onFilterChange(portfolioTag)
+              // this.onFilterChange(portfolioTag)
           }}>{portfolioTag}</Button></span>)
       })
 
@@ -92,26 +93,21 @@ class PortfolioPage extends React.Component {
                                   </div>
                               </div>
 
-                              <div className="grid" id="grid-container">
-                                  <div className="grid-sizer"></div>
-                                  <div className="gutter-sizer"></div>
-                                  <div className={styles[`card-container`]}>
-                                      {pages.map(({ node }) => (
-                                          <PortfolioProjectCard key={node.id} page={node}/>
-                                          /* <div className="grid-item {page.tags}">
-                                                <Link to={page.slug}>
-                                                    <figure className="image">
-                                                        <Img fluid={page.feature_image} />
-                                                        <figcaption>
-                                                            <h4 className="title is-4">{page.title}</h4>
-                                                            <p className="grid-item-blurb">{page.excerpt}</p>
-                                                        </figcaption>
-                                                    </figure>
-                                                </Link>
-                                            </div> */
-                                      ))}
-                                  </div>
-                              </div>
+                              <Masonry className="showcase">
+                                  {pages.map(({ node }) => (
+                                      <PortfolioProjectCard key={node.id} page={node}/>
+                                  ))}
+                              </Masonry>
+
+                              {/*<div className="grid" id="grid-container">*/}
+                              {/*    <div className="grid-sizer"></div>*/}
+                              {/*    <div className="gutter-sizer"></div>*/}
+                              {/*    <div className={styles[`card-container`]}>*/}
+                              {/*        {pages.map(({ node }) => (*/}
+                              {/*            <PortfolioProjectCard key={node.id} page={node}/>*/}
+                              {/*        ))}*/}
+                              {/*    </div>*/}
+                              {/*</div>*/}
                           </section>
                       </article>
                   </div>
