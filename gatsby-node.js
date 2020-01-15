@@ -212,6 +212,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
                         test: /isotope-layout/,
                         use: loaders.null(),
                     },
+                    {
+                        test: /hasher/,
+                        use: loaders.null(),
+                    },
                 ],
             },
         })

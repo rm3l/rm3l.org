@@ -11,7 +11,6 @@ import styles from '../styles/app.css'
 class PortfolioPage extends React.Component {
     constructor(props) {
         super(props)
-        hasher.init()
         this.onFilterChange = this.onFilterChange.bind(this)
     }
 
@@ -27,22 +26,22 @@ class PortfolioPage extends React.Component {
               },
           })
       }
-      if (newFilter === `*`) {
+      if (newFilter === `ALL`) {
           this.iso.arrange({ filter: `*` })
       } else {
           this.iso.arrange({ filter: `.${newFilter}` })
-
-          //Update URL hash without keeping it in the history, just so reloading the page uses the right filter
-          hasher.prependHash = ``
-          hasher.changed.active = false
-          hasher.replaceHash(`${newFilter}`)
-          hasher.changed.active = true
       }
+
+      //Update URL hash without keeping it in the history, just so reloading the page uses the right filter
+      hasher.prependHash = ``
+      hasher.changed.active = false
+      hasher.replaceHash(newFilter)
+      hasher.changed.active = true
   }
 
   componentDidMount() {
       //Pick the right filter right from the URL, if the hash is available, e.g.:  /portfolio#android
-      this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `*`)
+      this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `ALL`)
   }
 
   render() {
@@ -50,7 +49,7 @@ class PortfolioPage extends React.Component {
       const pages = this.props.data.allGhostPage.edges
 
       const portfolioTagNames = new Set()
-      portfolioTagNames.add(`*`)
+      portfolioTagNames.add(`ALL`)
       pages.forEach((node) => {
           const page = node.node
           if (page.tags) {
@@ -74,7 +73,7 @@ class PortfolioPage extends React.Component {
               },
           }} data-filter={portfolioTag} onClick={() => {
               this.onFilterChange(portfolioTag)
-          }}>{(portfolioTag === `*`) ? `ALL` : portfolioTag}</Button></span>)
+          }}>{portfolioTag}</Button></span>)
       })
 
       return (
