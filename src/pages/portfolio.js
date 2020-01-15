@@ -1,6 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import hasher from 'hasher'
+import { graphql } from 'gatsby'
 import Isotope from "isotope-layout/js/isotope"
 import PropTypes from 'prop-types'
 import { Layout, PortfolioProjectCard } from '../components/common'
@@ -11,6 +11,7 @@ import styles from '../styles/app.css'
 class PortfolioPage extends React.Component {
     constructor(props) {
         super(props)
+        hasher.init()
         this.onFilterChange = this.onFilterChange.bind(this)
     }
 
@@ -19,14 +20,10 @@ class PortfolioPage extends React.Component {
           this.iso = new Isotope(`#grid-container`, {
               itemSelector: `.grid-item`,
               layoutMode: `masonry`,
-              percentPosition: true,
-              //   fitRows: {
-              //       gutter: `.gutter-sizer`,
-              //   },
               masonry: {
-                  // use outer width of grid-sizer for columnWidth
-                  columnWidth: `.grid-sizer`,
-                  gutter: `.gutter-sizer`,
+                  columnWidth: 100,
+                  fitWidth: true,
+                  isFitWidth: true,
               },
           })
       }
@@ -34,7 +31,18 @@ class PortfolioPage extends React.Component {
           this.iso.arrange({ filter: `*` })
       } else {
           this.iso.arrange({ filter: `.${newFilter}` })
+
+          //Update URL hash without keeping it in the history, just so reloading the page uses the right filter
+          hasher.prependHash = ``
+          hasher.changed.active = false
+          hasher.replaceHash(`${newFilter}`)
+          hasher.changed.active = true
       }
+  }
+
+  componentDidMount() {
+      //Pick the right filter right from the URL, if the hash is available, e.g.:  /portfolio#android
+      this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `*`)
   }
 
   render() {
@@ -59,6 +67,9 @@ class PortfolioPage extends React.Component {
               fontSize: 1,
               textTransform: `uppercase`,
               ':hover': {
+                  backgroundColor: `tomato`,
+              },
+              ':focus': {
                   backgroundColor: `tomato`,
               },
           }} data-filter={portfolioTag} onClick={() => {
@@ -118,6 +129,7 @@ PortfolioPage.propTypes = {
     }).isRequired,
     location: PropTypes.shape({
         pathname: PropTypes.string.isRequired,
+        hash: PropTypes.string,
     }).isRequired,
     pageContext: PropTypes.object,
 }

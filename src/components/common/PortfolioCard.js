@@ -19,7 +19,11 @@ const PortfolioProjectCard = ({ page }) => {
                 borderRadius: 5,
                 boxShadow: `0 0 16px rgba(0, 0, 0, .25)`,
             }}>
-            {/* <Image src={page.feature_image} /> */}
+            <Image src={page.feature_image ? page.feature_image : null}
+                sx={{
+                    width: [`60%`, `35%`],
+                }}
+            />
             <Heading as="h3">
                 {page.title}
             </Heading>

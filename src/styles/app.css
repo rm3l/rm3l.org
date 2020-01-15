@@ -1015,7 +1015,17 @@ h6 {
 }
 
 /* Portfolio */
-.grid-sizer,
+/* center container with CSS */
+.grid {
+    margin: 0 auto;
+  }
+/* .grid-sizer,
 .grid-item { width: 22%; margin-bottom: 10px; }
 .gutter-sizer { width: 4%; }
-.grid-item--width2 { width: 48%; }
+.grid-item--width2 { width: 48%; } */
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
