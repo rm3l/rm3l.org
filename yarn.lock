@@ -1961,10 +1961,6 @@
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.3.tgz#856c99cdc1551d22c22b18b5402719affec9839a"
 
-"@types/isotope-layout@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@types/isotope-layout/-/isotope-layout-3.0.8.tgz#ae8acc9d457482da8c77653ed213adc90a658476"
-
 "@types/json-schema@^7.0.3":
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
@@ -5460,7 +5456,7 @@ find-versions@^3.0.0:
     array-uniq "^2.1.0"
     semver-regex "^2.0.0"
 
-fizzy-ui-utils@^2.0.0, fizzy-ui-utils@^2.0.4:
+fizzy-ui-utils@^2.0.0:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
   dependencies:
@@ -6107,7 +6103,7 @@ get-proxy@^2.0.0:
   dependencies:
     npm-conf "^1.1.0"
 
-get-size@^2.0.0, get-size@^2.0.2:
+get-size@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
 
@@ -6530,12 +6526,6 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
-
-hasher@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/hasher/-/hasher-1.2.0.tgz#8b5341c3496124b0724ac8555fbb8ca363ebbb73"
-  dependencies:
-    signals ">0.7 <2.0"
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
@@ -7390,16 +7380,6 @@ isomorphic-fetch@^2.1.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-isotope-layout@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.6.tgz#d5636ec74d68e7e88fa5166fe6396858db00f432"
-  dependencies:
-    desandro-matches-selector "^2.0.0"
-    fizzy-ui-utils "^2.0.4"
-    get-size "^2.0.0"
-    masonry-layout "^4.1.0"
-    outlayer "^2.1.0"
-
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -7892,7 +7872,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-masonry-layout@^4.1.0, masonry-layout@^4.2.0:
+masonry-layout@^4.2.0:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/masonry-layout/-/masonry-layout-4.2.2.tgz#d57b44af13e601bfcdc423f1dd8348b5524de348"
   dependencies:
@@ -10660,10 +10640,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-"signals@>0.7 <2.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/signals/-/signals-1.0.0.tgz#65f0c1599352b35372ecaae5a250e6107376ed69"
-
 signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/signedsource/-/signedsource-1.0.0.tgz#1ddace4981798f93bd833973803d80d52e93ad6a"
@@ -10711,10 +10687,6 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
-
-slick-carousel@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
 
 snake-case@^2.1.0:
   version "2.1.0"

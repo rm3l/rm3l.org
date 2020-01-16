@@ -1,48 +1,36 @@
 import React from 'react'
-import hasher from 'hasher'
 import { graphql } from 'gatsby'
-import Isotope from "isotope-layout/js/isotope"
 import PropTypes from 'prop-types'
-import { Layout, PortfolioProjectCard } from '../components/common'
 import { Button } from 'rebass'
-
-import styles from '../styles/app.css'
+import { Layout, PortfolioProjectCard } from '../components/common'
 import Masonry from "react-masonry-component"
 
 class PortfolioPage extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            projectFilter: `ALL`,
+        }
         this.onFilterChange = this.onFilterChange.bind(this)
     }
 
   onFilterChange = (newFilter) => {
-      if (this.iso === undefined) {
-          this.iso = new Isotope(`#grid-container`, {
-              itemSelector: `.grid-item`,
-              layoutMode: `masonry`,
-              masonry: {
-                  columnWidth: 100,
-                  fitWidth: true,
-                  isFitWidth: true,
-              },
-          })
-      }
-      if (newFilter === `ALL`) {
-          this.iso.arrange({ filter: `*` })
-      } else {
-          this.iso.arrange({ filter: `.${newFilter}` })
-      }
+      this.setState({
+          projectFilter: newFilter,
+      })
 
       //Update URL hash without keeping it in the history, just so reloading the page uses the right filter
-      hasher.prependHash = ``
-      hasher.changed.active = false
-      hasher.replaceHash(newFilter)
-      hasher.changed.active = true
+      window.history.replaceState(null, null, `#${newFilter}`)
+  }
+
+  // eslint-disable-next-line no-unused-vars
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+      return this.props.location.hash === nextProps.location.hash
   }
 
   componentDidMount() {
       //Pick the right filter right from the URL, if the hash is available, e.g.:  /portfolio#android
-      // this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `ALL`)
+      this.onFilterChange(this.props.location.hash ? this.props.location.hash.slice(`#`.length) : `ALL`)
   }
 
   render() {
@@ -63,18 +51,28 @@ class PortfolioPage extends React.Component {
       })
       const portfolioTags = []
       Array.from(portfolioTagNames).sort().forEach((portfolioTag) => {
-          portfolioTags.push(<span><Button mr={10} mb={10} fontFamily={`monospace`} sx={{
+          let filterButtonBgColor = null
+          if (this.state.projectFilter) {
+              if (this.state.projectFilter === portfolioTag) {
+                  filterButtonBgColor = `tomato`
+              }
+          } else {
+              if (portfolioTag === `ALL`) {
+                  filterButtonBgColor = `tomato`
+              }
+          }
+          portfolioTags.push(<Button bg={filterButtonBgColor} mr={10} mb={10} fontFamily={`monospace`} sx={{
               fontSize: 1,
               textTransform: `uppercase`,
               ':hover': {
-                  backgroundColor: `tomato`,
+                  backgroundColor: `lightgray`,
               },
               ':focus': {
                   backgroundColor: `tomato`,
               },
           }} data-filter={portfolioTag} onClick={() => {
-              // this.onFilterChange(portfolioTag)
-          }}>{portfolioTag}</Button></span>)
+              this.onFilterChange(portfolioTag)
+          }}>{portfolioTag}</Button>)
       })
 
       return (
@@ -94,20 +92,23 @@ class PortfolioPage extends React.Component {
                               </div>
 
                               <Masonry className="showcase">
-                                  {pages.map(({ node }) => (
-                                      <PortfolioProjectCard key={node.id} page={node}/>
-                                  ))}
+                                  {pages
+                                      .filter(({ node }) => {
+                                          if (this.state.projectFilter) {
+                                              if (this.state.projectFilter === `ALL`) {
+                                                  return true
+                                              }
+                                              const uniqueTags = new Set()
+                                              node.tags.forEach(tag => uniqueTags.add((tag.name.startsWith(`portfolio-`) ?
+                                                  tag.name.slice(`portfolio-`.length) : tag.name)))
+                                              return uniqueTags.has(this.state.projectFilter)
+                                          }
+                                          return true
+                                      })
+                                      .map(({ node }) => (
+                                          <PortfolioProjectCard key={node.id} page={node}/>
+                                      ))}
                               </Masonry>
-
-                              {/*<div className="grid" id="grid-container">*/}
-                              {/*    <div className="grid-sizer"></div>*/}
-                              {/*    <div className="gutter-sizer"></div>*/}
-                              {/*    <div className={styles[`card-container`]}>*/}
-                              {/*        {pages.map(({ node }) => (*/}
-                              {/*            <PortfolioProjectCard key={node.id} page={node}/>*/}
-                              {/*        ))}*/}
-                              {/*    </div>*/}
-                              {/*</div>*/}
                           </section>
                       </article>
                   </div>
