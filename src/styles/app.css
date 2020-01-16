@@ -1015,20 +1015,6 @@ h6 {
 }
 
 /* Portfolio */
-/*!* center container with CSS *!*/
-/*.grid {*/
-/*    margin: 0 auto;*/
-/*  }*/
-/*!* .grid-sizer,*/
-/*.grid-item { width: 22%; margin-bottom: 10px; }*/
-/*.gutter-sizer { width: 4%; }*/
-/*.grid-item--width2 { width: 48%; } *!*/
-/*!* clear fix *!*/
-/*.grid:after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    clear: both;*/
-/*}*/
 .showcase.is-loading {
     visibility: hidden;
 }
@@ -1091,6 +1077,11 @@ h6 {
     margin-right: auto;
     width: 50%;
     padding: 3%;
+    transition: all 1s;
+}
+
+.card__image:hover img {
+    transform: scale(1.1);
 }
 
 .card__image:before, .card__image:after {
@@ -1107,27 +1098,6 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
-}
-
-/*.card__image:after {*/
-/*    width: 80px;*/
-/*    height: 80px;*/
-/*    background: url("https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-magnifying-glass.svg");*/
-/*    background-position: 50% 50%;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: contain;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    margin-left: -40px;*/
-/*    margin-top: -40px;*/
-/*}*/
-
-.card__image:hover:before {
-    opacity: 1;
-}
-
-.card__image:hover:after {
-    opacity: .5;
 }
 
 .card__caption {
