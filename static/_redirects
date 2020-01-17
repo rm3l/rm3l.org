@@ -1,11 +1,3 @@
-# Netlify redirects file, edit with your domain
-# https://www.netlify.com/docs/redirects/
-
-#https://gatsby-starter-ghost.netlify.com/*      https://gatsby.ghost.org/:splat    301!
-#http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat    301!
-
-# TODO These rules will change if you change the site’s custom domains or HTTPS settings
-
 # Redirect domain aliases to primary domain
 https://blog.rm3l.org/* https://rm3l.org/:splat 301!
 

@@ -15,8 +15,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Tippy from '@tippy.js/react';
-import 'tippy.js/dist/tippy.css';
+import Tippy from '@tippy.js/react'
+import 'tippy.js/dist/tippy.css'
 
 library.add(fab, fas)
 
@@ -40,9 +40,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         color={profileLinkData.color}
                         size="lg"
                         icon={[
-                            profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : 'fas',
+                            profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : `fas`,
                             network]} />
-                    {' '}
+                    {` `}
                 </a>
             </Tippy>)
     }
@@ -85,9 +85,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
+                                    <Link className="site-nav-item" to="/portfolio" key="99">Portfolio</Link>
                                 </div>
                                 <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
+                                    {/* About page disabled until a 'about.js' file is added to src/pages/ */}
+                                    {/* <Link className="site-nav-button" to="/about">About</Link> */}
                                 </div>
                             </nav>
                         </div>
@@ -105,12 +107,13 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2018 - {new Date().getFullYear()} &mdash;
+                                © 2018 - {new Date().getFullYear()} &mdash;
                                 Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
                                 &nbsp; and <a className="site-foot-nav-item" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a>
                             </div>
                             <div className="site-foot-nav-right">
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
+                                <Link className="site-foot-nav-item" to="/portfolio" key="99">Portfolio</Link>
                             </div>
                         </div>
                     </footer>

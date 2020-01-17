@@ -182,41 +182,41 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-              // Here goes your tracking ID
-              trackingId: 'UA-103780308-1',
-              // Puts tracking script in the head instead of the body
-              head: true,
-              // IP anonymization for GDPR compliance
-              anonymize: true,
-              // Disable analytics for users with `Do Not Track` enabled
-              respectDNT: true,
-              // Avoids sending pageview hits from custom paths
-            //   exclude: ['/preview/**'],
-              // Specifies what percentage of users should be tracked
-              sampleRate: 100,
-              // Determines how often site speed tracking beacons will be sent
-              siteSpeedSampleRate: 10,
+                // Here goes your tracking ID
+                trackingId: `UA-103780308-1`,
+                // Puts tracking script in the head instead of the body
+                head: true,
+                // IP anonymization for GDPR compliance
+                anonymize: true,
+                // Disable analytics for users with `Do Not Track` enabled
+                respectDNT: true,
+                // Avoids sending pageview hits from custom paths
+                //   exclude: ['/preview/**'],
+                // Specifies what percentage of users should be tracked
+                sampleRate: 100,
+                // Determines how often site speed tracking beacons will be sent
+                siteSpeedSampleRate: 10,
             },
-          },
-          {
+        },
+        {
             resolve: `gatsby-plugin-disqus`,
             options: {
-              shortname: `rm3l`
-            }
-          },
-          {
+                shortname: `rm3l`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-              // Setting a color is optional.
-              color: `tomato`,
-              // Disable the loading spinner.
-              showSpinner: false,
+                // Setting a color is optional.
+                color: `tomato`,
+                // Disable the loading spinner.
+                showSpinner: false,
             },
-          },
+        },
+        `gatsby-plugin-sass`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
-        `gatsby-plugin-advanced-sitemap`,
     ],
 }
