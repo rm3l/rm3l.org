@@ -1062,7 +1062,7 @@ h6 {
 }
 
 .card {
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 20px 10px #ccc;
 }
 
 .card__image {
@@ -1105,6 +1105,18 @@ h6 {
     padding: 20px;
 }
 
+.card__caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: #111;
+}
+
+.card__caption a:hover {
+    border-bottom: dotted 1px #9055a2;
+}
+
 .card__title {
     margin-bottom: 10px;
 }
@@ -1123,7 +1135,17 @@ h6 {
 
 .card__description {
     color: #777;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
+}
+
+.card__links_and_tags {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card__publication_date {
+    font-size: 13px;
 }
 
