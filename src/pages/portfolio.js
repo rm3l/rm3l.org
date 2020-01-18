@@ -61,7 +61,7 @@ class PortfolioPage extends React.Component {
                   filterButtonBgColor = `tomato`
               }
           }
-          portfolioTags.push(<Button bg={filterButtonBgColor} mr={10} mb={10} fontFamily={`monospace`} sx={{
+          portfolioTags.push(<Button color={`black`} bg={filterButtonBgColor} mr={10} mb={10} fontFamily={`monospace`} sx={{
               fontSize: 1,
               textTransform: `uppercase`,
               ':hover': {
