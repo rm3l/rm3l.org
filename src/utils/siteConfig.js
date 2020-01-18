@@ -16,52 +16,52 @@ module.exports = {
 
     socialLinks: {
         linkedin: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#0077B5',
-            url: 'https://www.linkedin.com/in/armelsoro',
-            displayName: 'LinkedIn://armelsoro'
+            url: `https://www.linkedin.com/in/armelsoro`,
+            displayName: `LinkedIn://armelsoro`,
         },
         gitlab: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#fca326',
-            url: 'https://gitlab.com/rm3l',
-            displayName: 'GitLab://rm3l'
+            url: `https://gitlab.com/rm3l`,
+            displayName: `GitLab://rm3l`,
         },
         github: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#f5f5f5',
-            url: 'https://github.com/rm3l',
-            displayName: 'GitHub://rm3l'
+            url: `https://github.com/rm3l`,
+            displayName: `GitHub://rm3l`,
         },
         'stack-overflow': {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#f48024',
-            url: 'https://stackoverflow.com/users/story/1877067',
-            displayName: 'StackOverflow://rm3l'
+            url: `https://stackoverflow.com/users/story/1877067`,
+            displayName: `StackOverflow://rm3l`,
         },
         keybase: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#FF6F24',
-            url: 'https://keybase.io/rm3l',
-            displayName: 'Keybase://rm3l'
+            url: `https://keybase.io/rm3l`,
+            displayName: `Keybase://rm3l`,
         },
         twitter: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#1da1f2',
-            url: 'https://twitter.com/rm3l',
-            displayName: 'Twitter://rm3l'
+            url: `https://twitter.com/rm3l`,
+            displayName: `Twitter://rm3l`,
         },
         telegram: {
-            fontAwesomeFamily: 'fab',
+            fontAwesomeFamily: `fab`,
             // color: '#0088cc',
-            url: 'https://t.me/rm3l_s',
-            displayName: 'Telegram://rm3l_s'
+            url: `https://t.me/rm3l_s`,
+            displayName: `Telegram://rm3l_s`,
         },
         rss: {
-            fontAwesomeFamily: 'fas',
+            fontAwesomeFamily: `fas`,
             // color: '#f26522',
-            url: 'https://feedly.com/i/subscription/feed/https://rm3l.org/rss/',
-            displayName: 'RSS Feed'
+            url: `https://feedly.com/i/subscription/feed/https://rm3l.org/rss/`,
+            displayName: `RSS Feed`,
         },
-    }
+    },
 }
