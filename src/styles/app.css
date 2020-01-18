@@ -1062,7 +1062,16 @@ h6 {
 }
 
 .card {
+    box-shadow: 0 0 9px 2px #ccc;
+}
+
+.card:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 20px 10px #ccc;
+}
+
+.card:before, .card:after {
+    transition: opacity 0.2s ease-in-out;
 }
 
 .card__image {
