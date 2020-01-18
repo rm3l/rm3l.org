@@ -1,3 +1,5 @@
+require(`dotenv`).config()
+
 const path = require(`path`)
 
 const config = require(`./src/utils/siteConfig`)
@@ -9,6 +11,10 @@ try {
     ghostConfig = require(`./.ghost`)
 } catch (e) {
     ghostConfig = {
+        development: {
+            apiUrl: process.env.GHOST_API_URL,
+            contentApiKey: process.env.GHOST_CONTENT_API_KEY,
+        },
         production: {
             apiUrl: process.env.GHOST_API_URL,
             contentApiKey: process.env.GHOST_CONTENT_API_KEY,
@@ -18,6 +24,7 @@ try {
     const { apiUrl, contentApiKey } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
 
     if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
+        // noinspection ThrowInsideFinallyBlockJS
         throw new Error(`GHOST_API_URL and GHOST_CONTENT_API_KEY are required to build. Check the README.`) // eslint-disable-line
     }
 }
