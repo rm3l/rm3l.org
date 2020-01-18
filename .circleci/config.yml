@@ -22,12 +22,13 @@ jobs:
       # Installs NPM dependencies quickly
       - run:
           name: Install dependencies
-          command: yarn
+          command: yarn install
 
       - save_cache:
           paths:
             # all NPM modules
             - ~/.npm
+            - node_modules
             # Cypress binary (or yarn dependencies)
             - ~/.cache
           key: dependencies-{{ checksum "package.json" }}
