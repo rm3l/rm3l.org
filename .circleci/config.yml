@@ -38,6 +38,10 @@ jobs:
           command: |
             if [[ -v CYPRESS_baseUrl ]]; then
               echo Testing external url $CYPRESS_baseUrl
+              if [[ "$NETLIFY" == "true" ]]; then
+                echo "Waiting 70s for Netlify site to be ready, hopefully"
+                sleep 70
+              fi
               yarn cy:run
             else
               echo Running local server and testing it
