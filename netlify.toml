@@ -1,5 +1,5 @@
 [build]
-  command = "node ./tools/CI/create-env.js && gatsby build && chmod a+x ./tools/CI/trigger-circle.sh && ./tools/CI/trigger-circle.sh"
+  command = "node ./tools/CI/create-env.js && gatsby build"
   publish = "public/"
 
 [template]
