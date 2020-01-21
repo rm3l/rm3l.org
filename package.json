@@ -34,8 +34,11 @@
     "cy:open": "cypress open"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^5.0.2",
+    "axe-core": "^3.4.1",
     "babel-eslint": "10.0.3",
     "cypress": "^3.8.2",
+    "cypress-axe": "^0.5.3",
     "eslint": "6.6.0",
     "eslint-plugin-ghost": "0.6.0",
     "eslint-plugin-react": "7.16.0",
