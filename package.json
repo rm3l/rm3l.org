@@ -29,6 +29,7 @@
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
     "test": "start-test dev 8000 cy:run",
+    "test:open": "start-test dev 8000 cy:open",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },
