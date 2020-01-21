@@ -35,7 +35,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     Object.entries(config.socialLinks).map(([network, profileLinkData]) => {
         socialLinkItems.push(
             <Tippy content={<span>{profileLinkData.displayName}</span>}>
-                <a href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
+                <a aria-label={profileLinkData.displayName} href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon
                         color={profileLinkData.color}
                         size="lg"
@@ -84,8 +84,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
-                                    <Link className="site-nav-item" to="/portfolio" key="99">Portfolio</Link>
+                                    <Navigation aria-label="Home" data={site.navigation} navClass="site-nav-item" />
+                                    <Link aria-label="Portfolio" className="site-nav-item" to="/portfolio" key="99_Nav_Portolio_Up">Portfolio</Link>
                                 </div>
                                 <div className="site-nav-right">
                                     {/* About page disabled until a 'about.js' file is added to src/pages/ */}
@@ -112,8 +112,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 &nbsp; and <a className="site-foot-nav-item" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a>
                             </div>
                             <div className="site-foot-nav-right">
-                                <Navigation data={site.navigation} navClass="site-foot-nav-item" />
-                                <Link className="site-foot-nav-item" to="/portfolio" key="99">Portfolio</Link>
+                                <Navigation aria-label="Home" data={site.navigation} navClass="site-foot-nav-item" />
+                                <Link aria-label="Portfolio" className="site-foot-nav-item" to="/portfolio" key="99_Nav_Portolio_Bottom">Portfolio</Link>
                             </div>
                         </div>
                     </footer>

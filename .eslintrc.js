@@ -7,11 +7,12 @@ module.exports = {
             'experimentalObjectRestSpread': true
         }
     },
-    plugins: ['ghost', 'react'],
+    plugins: ['ghost', 'react', 'jsx-a11y'],
     extends: [
         'plugin:ghost/node',
         'plugin:ghost/ember',
-        'plugin:react/recommended'
+        'plugin:react/recommended',
+        'plugin:jsx-a11y/recommended',
     ],
     "settings": {
         "react": {

@@ -1,0 +1,5 @@
+{
+  "integrationFolder": "cypress/e2e",
+  "baseUrl": "http://localhost:8000",
+  "reporter": "junit"
+}
