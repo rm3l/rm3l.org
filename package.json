@@ -41,6 +41,7 @@
     "cypress-axe": "^0.5.3",
     "eslint": "6.6.0",
     "eslint-plugin-ghost": "0.6.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "7.16.0",
     "start-server-and-test": "^1.10.6"
   },
