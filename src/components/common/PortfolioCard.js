@@ -11,7 +11,8 @@ const PortfolioProjectCard = ({ page }) => {
         <div className={className}>
             <figure className="card">
                 <Link href={page.meta_title} className="card__image">
-                    <Image src={page.feature_image ? page.feature_image : null}
+                    <Image alt={page.title}
+                        src={page.feature_image ? page.feature_image : `https://upload.wikimedia.org/wikipedia/commons/9/93/No-logo.svg`}
                         sx={{
                             width: [`60%`, `35%`],
                         }}
