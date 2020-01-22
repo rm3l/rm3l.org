@@ -14,6 +14,8 @@ module.exports = {
     backgroundColor: `#e9e9e9`, // Used for Offline Manifest
     themeColor: `#15171A`, // Used for Offline Manifest
 
+    rssFeedTitle: `Armel Soro's Blog RSS Feed`,
+
     socialLinks: {
         linkedin: {
             fontAwesomeFamily: `fab`,
