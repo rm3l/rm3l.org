@@ -85,9 +85,7 @@ class PortfolioPage extends React.Component {
                               <div dangerouslySetInnerHTML={{ __html: portfolioHomePage.html }}/>
                               <div className="button-group filter-button-group grid-filters">
                                   <div className="tabs is-centered is-toggle">
-                                      <ul id="portfolio-filters">
-                                          {portfolioTags}
-                                      </ul>
+                                      {portfolioTags}
                                   </div>
                               </div>
 
