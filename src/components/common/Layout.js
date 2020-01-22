@@ -81,7 +81,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <p className="site-banner-desc">{site.description}</p>
                                 </div> :
                                 null}
-                            <nav className="site-nav">
+                            <nav className="site-nav" aria-label="Navigation" >
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation aria-label="Home" data={site.navigation} navClass="site-nav-item" />
