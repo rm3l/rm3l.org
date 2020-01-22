@@ -134,51 +134,19 @@ module.exports = {
                             }
                         }
                     }
-                    allGhostPage {
-                        edges {
-                            node {
-                                id
-                                slug
-                                updated_at
-                                created_at
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostTag {
-                        edges {
-                            node {
-                                id
-                                slug
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostAuthor {
-                        edges {
-                            node {
-                                id
-                                slug
-                                profile_image
-                            }
-                        }
-                    }
                 }`,
                 mapping: {
                     allGhostPost: {
                         sitemap: `posts`,
                     },
-                    allGhostTag: {
-                        sitemap: `tags`,
-                    },
-                    allGhostAuthor: {
-                        sitemap: `authors`,
-                    },
-                    allGhostPage: {
-                        sitemap: `pages`,
-                    },
                 },
                 exclude: [
+                    /\/author\/*/,
+                    /\/tag\/*/,
+                    /\/pages\/*/,
+                    /\/projects-*/,
+                    `/projects`,
+                    /(\/)?portfolio-\S*/,
                     `/dev-404-page`,
                     `/404`,
                     `/404.html`,
