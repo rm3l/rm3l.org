@@ -6,6 +6,9 @@ jobs:
     docker:
       # find Docker image at https://github.com/cypress-io/cypress-docker-images
       - image: cypress/base:12.14.0
+        environment:
+          ## this enables colors in the output
+          TERM: xterm
 
     working_directory: ~/repo
 
@@ -15,34 +18,40 @@ jobs:
       # Download and cache dependencies for the app and for tests
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - dependencies-
+            - dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+            - dependencies-{{ .Branch }}
+            - dependencies
 
       # Installs NPM dependencies quickly
       - run:
           name: Install dependencies
-          command: yarn install
+          command: yarn install --frozen-lockfile
 
       - save_cache:
+          key: dependencies-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             # all NPM modules
             - ~/.npm
             - node_modules
             # Cypress binary (or yarn dependencies)
-            - ~/.cache
-          key: dependencies-{{ checksum "package.json" }}
+            - ~/.cache  ## cache both yarn and Cypress!
 
       - run:
           name: Run server and E2E tests locally or against external URL
           command: |
+            echo "CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY" >> .env
+            echo "GHOST_API_URL=$GHOST_API_URL" >> .env
+            echo "GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY" >> .env
             if [[ -v CYPRESS_baseUrl ]]; then
               echo Testing external url $CYPRESS_baseUrl
-              yarn cy:run
+              yarn ci:cy:run
             else
               echo Running local server and testing it
-              yarn test
+              yarn ci:test
             fi
+
+      - store_test_results:
+          path: ~/repo/cypress/results
 
       - store_artifacts:
           path: ~/repo/cypress/screenshots

@@ -30,8 +30,10 @@
     "lint": "eslint . --ext .js --cache",
     "test": "start-test dev 8000 cy:run",
     "test:open": "start-test dev 8000 cy:open",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open"
+    "cy:run": "env-cmd cypress run --record",
+    "cy:open": "cypress open",
+    "ci:cy:run": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json --record",
+    "ci:test": "start-test dev 8000 ci:cy:run"
   },
   "devDependencies": {
     "@testing-library/cypress": "^5.0.2",
@@ -39,10 +41,14 @@
     "babel-eslint": "10.0.3",
     "cypress": "^3.8.2",
     "cypress-axe": "^0.5.3",
+    "cypress-multi-reporters": "^1.2.3",
+    "env-cmd": "^10.0.1",
     "eslint": "6.6.0",
     "eslint-plugin-ghost": "0.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "7.16.0",
+    "mocha": "^7.0.0",
+    "mocha-junit-reporter": "^1.23.3",
     "start-server-and-test": "^1.10.6"
   },
   "dependencies": {
