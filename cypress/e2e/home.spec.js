@@ -46,7 +46,6 @@ describe(`Portfolio page`, () => {
     })
 
     it(`Works and ALL selected by default`, () => {
-        cy.url().should(`include`, `/portfolio/#ALL`)
         cy.contains(`h1`, `Projects`)
         cy.get(`button[data-filter="ALL"]`)
             .should(`have.css`, `background-color`, `rgb(255, 99, 71)`)
@@ -57,7 +56,6 @@ describe(`Portfolio page`, () => {
         allFilters.forEach((filter) => {
             cy.get(`button[data-filter="${filter}"]`).click()
             cy.wait(500)
-            cy.url().should(`include`, `/portfolio/#${filter}`)
             cy.get(`button[data-filter="${filter}"]`)
                 .should(`have.css`, `background-color`, `rgb(255, 99, 71)`)
                 .should(`have.css`, `color`, `rgb(0, 0, 0)`)
