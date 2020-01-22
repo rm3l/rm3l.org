@@ -18,9 +18,9 @@ const PortfolioProjectCard = ({ page }) => {
                     />
                 </Link>
                 <figcaption className="card__caption">
-                    <Heading as="h4" className="card__title">
+                    <Text className="card__title">
                         {page.title}
-                    </Heading>
+                    </Text>
                     <Text className="card__description">
                         {page.excerpt}
                     </Text>
