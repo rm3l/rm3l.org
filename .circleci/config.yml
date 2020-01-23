@@ -38,15 +38,15 @@ jobs:
 
       - run:
           name: Run server and E2E tests locally or against external URL
-          command: |
-            echo CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY >> .env
-            echo GHOST_API_URL=$GHOST_API_URL >> .env
-            echo GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY >> .env
+          command: |-
+            echo "CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY" >> .env
+            echo "GHOST_API_URL=$GHOST_API_URL" >> .env
+            echo "GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY" >> .env
             if [[ -v CYPRESS_baseUrl ]]; then
-              echo Testing external url $CYPRESS_baseUrl
+              echo "Testing external url $CYPRESS_baseUrl"
               yarn ci:cy:run
             else
-              echo Running local server and testing it
+              echo "Running local server and testing it"
               yarn ci:test
             fi
 
