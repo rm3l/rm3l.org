@@ -18,12 +18,6 @@ describe(`from root URL`, () => {
         cy.url().should(`include`, `/page/2`)
     })
 
-    it(`Navigating to an unknown page returns the 404 Page`, () => {
-        cy.visit(`/a-fake-unknown-page_` + new Date().getMilliseconds())
-        cy.wait(500)
-        cy.contains(`h1`, `404`)
-    })
-
     it(`Checks if Portfolio links are focusable and have the correct attributes`, () => {
         cy.findAllByText(`Portfolio`).first().focus()
         cy.focused()
