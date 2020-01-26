@@ -80,7 +80,7 @@
     "gatsby-plugin-offline": "3.0.21",
     "gatsby-plugin-react-helmet": "3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-plugin-sharp": "2.3.1",
+    "gatsby-plugin-sharp": "2.4.0",
     "gatsby-source-filesystem": "2.1.37",
     "gatsby-source-ghost": "4.0.3",
     "gatsby-transformer-sharp": "2.3.5",
