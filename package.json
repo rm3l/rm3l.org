@@ -41,7 +41,7 @@
     "@testing-library/cypress": "^5.0.2",
     "axe-core": "^3.4.1",
     "babel-eslint": "10.0.3",
-    "cypress": "^3.8.2",
+    "cypress": "^3.8.3",
     "cypress-axe": "^0.5.3",
     "cypress-multi-reporters": "^1.2.3",
     "env-cmd": "^10.0.1",
