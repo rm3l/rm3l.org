@@ -44,10 +44,10 @@ jobs:
             echo "GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY" >> .env
             if [[ -v CYPRESS_baseUrl ]]; then
               echo "Testing external url $CYPRESS_baseUrl"
-              yarn ci:cy:run
+              yarn ci:cy:run || yarn ci:cy:run:no-record
             else
               echo "Running local server and testing it"
-              yarn ci:test
+              yarn ci:test || yarn ci:test:no-record
             fi
 
       - store_test_results:
