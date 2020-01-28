@@ -37,7 +37,8 @@
     "cy:open": "cypress open",
     "ci:cy:run": "ci:cy:run:no-record --record",
     "ci:cy:run:no-record": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json",
-    "ci:test": "start-test dev 8000 ci:cy:run"
+    "ci:test": "start-test dev 8000 ci:cy:run",
+    "ci:test:no-record": "start-test dev 8000 ci:cy:run:no-record"
   },
   "devDependencies": {
     "@testing-library/cypress": "^5.0.2",
