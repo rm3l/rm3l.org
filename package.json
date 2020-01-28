@@ -32,10 +32,10 @@
     "lint": "eslint . --ext .js --cache",
     "test": "start-test dev 8000 cy:run",
     "test:open": "start-test dev 8000 cy:open",
-    "cy:run": "cy:run:no-record --record",
+    "cy:run": "env-cmd cypress run --record",
     "cy:run:no-record": "env-cmd cypress run",
     "cy:open": "cypress open",
-    "ci:cy:run": "ci:cy:run:no-record --record",
+    "ci:cy:run": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json --record",
     "ci:cy:run:no-record": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json",
     "ci:test": "start-test dev 8000 ci:cy:run",
     "ci:test:no-record": "start-test dev 8000 ci:cy:run:no-record"
