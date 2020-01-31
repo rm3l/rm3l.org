@@ -99,10 +99,6 @@ or :
     yarn test:open
    ```
 
-## 🚨 Forking this repo
-
-Many people have contacted me asking me if they can use this code for their own websites. The answer to that question is _usually_ "yes", with attribution. There are some cases, such as using this code for a business or something that is greater than a personal project, that I may be less comfortable saying yes to. If in doubt, please don't hesitate to ask me.
-
 ## Deploying with Netlify
 
 This contains 3 config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
