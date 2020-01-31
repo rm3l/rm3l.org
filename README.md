@@ -24,7 +24,7 @@
   </span>
 </p>
 
-![demo](https://raw.githubusercontent.com/rm3l/rm3l.org/master/src/images/home_screenshot.png)
+![demo](https://raw.githubusercontent.com/rm3l/rm3l.org/master/src/images/home_screenshot.png){:height="50%" width="50%"}
 
 
 ## 🛠 Tech Stack
