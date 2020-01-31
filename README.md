@@ -9,16 +9,15 @@
   hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, and leveraging a headless <a href="https://ghost.org/" target="_blank">Ghost</a> CMS running in a <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> cluster
 </p>
 <p align="center">
-  <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
-    <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg&circle-token=27e77b8fe75dbc64897ec72ba5d260629aed57c6" alt="Netlify Status" />
-  </a>
-
-  &nbsp;
-
-  <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
-  </a>
-
+  <span>
+    <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
+        <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg&circle-token=27e77b8fe75dbc64897ec72ba5d260629aed57c6" alt="Netlify Status" />
+    </a>
+    &nbsp;
+    <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
+        <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
+    </a>
+  </span>
 </p>
 
 ![demo](https://raw.githubusercontent.com/rm3l/rm3l.org/master/src/images/home_screenshot.png)
@@ -29,7 +28,10 @@
 * Backend
   * [Ghost](https://ghost.org/) provides the headless Content Management System (CMS). It runs in my own self-hosted [Kubernetes](https://kubernetes.io/) cluster.
 * Frontend
-  * [Gatsby](https://www.gatsbyjs.org/) pulls all data from the Ghost blog GraphQL API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/), then customize to include additional pages such as a Portfolio.
+  * [Gatsby](https://www.gatsbyjs.org/) pulls data from the Ghost blog [GraphQL](https://graphql.org/) API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/) starter, then customized to include additional pages such as a Portfolio.
+* End-to-end tests with [Cypress](https://www.cypress.io/)
+* Continuously tested (CI) on [CircleCI](https://circleci.com/gh/rm3l/rm3l.org)
+* Continuously deployed (CD) on [Netlify](https://www.netlify.com/), with support for Deploy previews of Pull Requests
 
 
 ## 🛠 Installation & Set Up
@@ -81,7 +83,7 @@ Gatsby `build` uses the `production` config in `.ghost.json`.
 ## 🚨 Testing
 
 This repository contains few Cypress end-to-end tests that not only make sure the website renders as expected,
-but also test accessibility (a11y).
+but also test accessibility (also known as [a11y](https://a11yproject.com/)).
 To do so, the `test` commands spin up the Gatsby development server and run all the Cypress test specs against the former.
 You can run the tests using the following command:
 
@@ -97,12 +99,11 @@ or :
     yarn test:open
    ```
 
-
 ## 🚨 Forking this repo
 
 Many people have contacted me asking me if they can use this code for their own websites. The answer to that question is _usually_ "yes", with attribution. There are some cases, such as using this code for a business or something that is greater than a personal project, that I may be less comfortable saying yes to. If in doubt, please don't hesitate to ask me.
 
-# Deploying with Netlify
+## Deploying with Netlify
 
 This contains 3 config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
 
