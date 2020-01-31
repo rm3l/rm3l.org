@@ -1,110 +1,148 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status)](https://app.netlify.com/sites/rm3l-org/deploys)
+<!-- <div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/master/src/images/logo.png" width="100" />
+</div> -->
+<h1 align="center">
+  rm3l.org
+</h1>
+<p align="center">
+  The static website behind <a href="https://rm3l.org" target="_blank">rm3l.org</a>,
+  hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, and leveraging a headless <a href="https://ghost.org/" target="_blank">Ghost</a> CMS running in a <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> cluster
+</p>
+<p align="center">
+  <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
+    <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg&circle-token=27e77b8fe75dbc64897ec72ba5d260629aed57c6" alt="Netlify Status" />
+  </a>
 
-# Gatsby Starter Ghost
+  &nbsp;
 
-A starter template to build lightning fast websites with [Ghost](https://ghost.org) & [Gatsby](https://gatsbyjs.org)
+  <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
+  </a>
 
-**Demo:** https://gatsby.ghost.org
+</p>
 
-&nbsp;
-
-![gatsby-starter-ghost](https://user-images.githubusercontent.com/120485/50913567-8ab8e380-142c-11e9-9e78-de02ded12fc6.jpg)
-
-&nbsp;
+![demo](https://raw.githubusercontent.com/rm3l/rm3l.org/master/src/images/home_screenshot.png)
 
 
-# Installing
+## 🛠 Tech Stack
 
-```bash
-# With Gatsby CLI
-gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
-```
+* Backend
+  * [Ghost](https://ghost.org/) provides the headless Content Management System (CMS). It runs in my own self-hosted [Kubernetes](https://kubernetes.io/) cluster.
+* Frontend
+  * [Gatsby](https://www.gatsbyjs.org/) pulls all data from the Ghost blog GraphQL API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/), then customize to include additional pages such as a Portfolio.
 
-```bash
-# From Source
-git clone https://github.com/TryGhost/gatsby-starter-ghost.git
-cd gatsby-starter-ghost
-```
 
-Then install dependencies
+## 🛠 Installation & Set Up
 
-```bash
-yarn
-```
+1. Install the Gatsby CLI
 
-&nbsp;
+   ```sh
+   npm install -g gatsby-cli
+   ```
 
-# Running
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-Start the development server. You now have a Gatsby site pulling content from headless Ghost.
+   ```sh
+   nvm install
+   ```
 
-```bash
-gatsby develop
-```
+3. Install dependencies
 
-By default, the starter will populate content from a default Ghost install located at https://gatsby.ghost.io.
+   ```sh
+   yarn
+   ```
 
-To use your own install, you will need to edit the `.ghost.json` config file with your credentials. Change the `apiUrl` value to the URL of your Ghost site. For Ghost(Pro) customers, this is the Ghost URL ending in `.ghost.io`, and for people using the self-hosted version of Ghost, it's the same URL used to access your site.
+4. Start the development server
 
-Next, update the `contentApiKey` value to a key associated with the Ghost site. A key can be provided by creating an integration within Ghost Admin. Navigate to Integrations and click "Add new integration". Name the integration appropriately and click create.
+   ```sh
+   gatsby develop
+   ```
 
-To use this starter without issues, your Ghost installation needs to be at least on version `2.10.0`.
+Gatsby `develop` uses the `development` config in `.ghost.json`.
 
-The default Ghost version that is used for this starter is `3.x`. If your Ghost installation is on a lower version, you will need to pass in a `version` property in your `.ghost.json` settings:
+## 🚀 Building and Running for Production
 
-**Ghost >=2.10.0 <3.0.0**
-```json
-{
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0",
-    "version": "v2"
-}
-```
+1. Generate a full static production build
 
-**Ghost <=3.0.0**
-```json
-{
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
-}
-```
+   ```sh
+    # Run a production build, locally
+    gatsby build
+   ```
 
-&nbsp;
+2. Preview the site as it will appear once deployed
+
+   ```sh
+   # Serve a production build, locally
+   gatsby serve
+   ```
+
+Gatsby `build` uses the `production` config in `.ghost.json`.
+
+## 🚨 Testing
+
+This repository contains few Cypress end-to-end tests that not only make sure the website renders as expected,
+but also test accessibility (a11y).
+To do so, the `test` commands spin up the Gatsby development server and run all the Cypress test specs against the former.
+You can run the tests using the following command:
+
+   ```sh
+    # Runs the tests right away, with no user interaction
+    yarn test
+   ```
+
+or :
+
+   ```sh
+    # Interactive test launcher: opens up a Cypress browser for interactively running the tests
+    yarn test:open
+   ```
+
+
+## 🚨 Forking this repo
+
+Many people have contacted me asking me if they can use this code for their own websites. The answer to that question is _usually_ "yes", with attribution. There are some cases, such as using this code for a business or something that is greater than a personal project, that I may be less comfortable saying yes to. If in doubt, please don't hesitate to ask me.
 
 # Deploying with Netlify
 
-The starter contains three config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
+This contains 3 config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
 
 To deploy to your Netlify account, hit the button below.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TryGhost/gatsby-starter-ghost)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rm3l/rm3l.org)
 
-Content API Keys are generally not considered to be sensitive information, they exist so that they can be changed in the event of abuse; so most people commit it directly to their `.ghost.json` config file. If you prefer to keep this information out of your repository you can remove this config and set [Netlify ENV variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables) for production builds instead.
+You need however to leverage your own Ghost Content API Keys which allow Gatsby to communicate with your Ghost headless blog.
+For this, I currently set [Netlify ENV variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables) for production builds instead.
 
-Once deployed, you can set up a [Ghost + Netlify Integration](https://docs.ghost.org/integrations/netlify/) to use deploy hooks from Ghost to trigger Netlify rebuilds. That way, any time data changes in Ghost, your site will rebuild on Netlify.
+Once deployed, I also set up a [Ghost + Netlify Integration](https://docs.ghost.org/integrations/netlify/) to use deploy hooks from Ghost to trigger Netlify rebuilds. That way, any time data changes (e.g., new post published) in the headless Ghost CMS, my website will rebuild on Netlify.
 
-&nbsp;
+## Developed by
 
-# Optimising
+* Armel Soro
+  * [keybase.io/rm3l](https://keybase.io/rm3l)
+  * [rm3l.org](https://rm3l.org) - &lt;armel@rm3l.org&gt; - [@rm3l](https://twitter.com/rm3l)
+  * [paypal.me/rm3l](https://paypal.me/rm3l)
+  * [coinbase.com/rm3l](https://www.coinbase.com/rm3l)
 
-You can disable the default Ghost Handlebars Theme front-end by enabling the `Make this site private` flag within your Ghost settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the source of truth for SEO.
+## License
 
-&nbsp;
+    The MIT License (MIT)
 
-# Extra options
+    Copyright (c) 2020 Armel Soro
 
-```bash
-# Run a production build, locally
-gatsby build
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-# Serve a production build, locally
-gatsby serve
-```
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-Gatsby `develop` uses the `development` config in `.ghost.json` - while Gatsby `build` uses the `production` config.
-
-&nbsp;
-
-# Copyright & License
-
-Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
