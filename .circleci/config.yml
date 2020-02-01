@@ -17,10 +17,9 @@ jobs:
 
       # Download and cache dependencies for the app and for tests
       - restore_cache:
+          name: Restore Yarn Package Cache
           keys:
-            - dependencies-{{ .Branch }}-{{ checksum "package.json" }}
-            - dependencies-{{ .Branch }}
-            - dependencies
+            - yarn-packages-{{ checksum "yarn.lock" }}
 
       # Installs NPM dependencies quickly
       - run:
@@ -28,12 +27,9 @@ jobs:
           command: yarn install --frozen-lockfile
 
       - save_cache:
-          key: dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            # all NPM modules
-            - ~/.npm
-            - node_modules
-            # Cypress binary (or yarn dependencies)
             - ~/.cache  ## cache both yarn and Cypress!
 
       - run:
