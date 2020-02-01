@@ -43,7 +43,7 @@
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/rm3l/rm3l.org my-blog && cd my-blog
+   git clone https://github.com/rm3l/rm3l.org my-jamstack-site && cd my-jamstack-site
    ```
 
 2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
