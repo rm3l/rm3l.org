@@ -40,25 +40,35 @@
 
 ## 🛠 Installation & Set Up
 
-1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/rm3l/rm3l.org my-blog && cd my-blog
+   ```
+
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
    ```sh
    nvm install
    ```
 
-2. Install the Gatsby CLI
+3. Install the Gatsby CLI
 
    ```sh
    npm install -g gatsby-cli
    ```
 
-3. Install dependencies
+4. Install YARN package manager
+
+Follow the instructions here: https://legacy.yarnpkg.com/en/docs/install
+
+5. Install the project dependencies
 
    ```sh
    yarn
    ```
 
-4. Set up environment variables and customize the project
+6. Set up environment variables and customize the project
 
 Copy the `.env.template` as a `.env` file in the repo and customize it accordingly:
 
@@ -75,11 +85,11 @@ Copy the `.env.template` as a `.env` file in the repo and customize it according
 
 On build servers (CircleCI and Netlify), those are just defined as project-wide environment variables.
 
-5. Change the site configuration
+7. Change the site configuration
 
 Edit the [src/utils/siteConfig.js](src/utils/siteConfig.js) file accordingly.
 
-6. Start the development server
+8. Start the development server
 
    ```sh
    gatsby develop
