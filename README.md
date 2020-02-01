@@ -11,7 +11,7 @@
 <p align="center">
   <span>
     <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
-        <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg&circle-token=27e77b8fe75dbc64897ec72ba5d260629aed57c6" alt="Netlify Status" />
+        <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg" alt="Netlify Status" />
     </a>
     &nbsp;
     <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
@@ -19,7 +19,7 @@
     </a>
     &nbsp;
     <a href="https://dependabot.com" target="_blank">
-        <img src="https://api.dependabot.com/badges/status?host=github&repo=rm3l/rm3l.org&identifier=226579562" alt="Dependabot Status" />
+        <img src="https://api.dependabot.com/badges/status?host=github&repo=rm3l/rm3l.org" alt="Dependabot Status" />
     </a>
   </span>
 </p>
