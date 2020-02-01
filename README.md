@@ -29,10 +29,10 @@
 ## 🛠 Tech Stack
 
 * Backend
-  * [Ghost](https://ghost.org/) provides the headless Content Management System (CMS). It runs in my own self-hosted [Kubernetes](https://kubernetes.io/) cluster.
+  * [Ghost](https://ghost.org/) provides the headless Content Management System (CMS). It runs in my own self-hosted [Kubernetes](https://kubernetes.io/) cluster
 * Frontend
-  * [Gatsby](https://www.gatsbyjs.org/) pulls data from the Ghost blog [GraphQL](https://graphql.org/) API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/) starter, then customized to include additional pages such as a Portfolio.
-* End-to-end tests with [Cypress](https://www.cypress.io/)
+  * [Gatsby](https://www.gatsbyjs.org/) pulls data from the Ghost blog [GraphQL](https://graphql.org/) API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/) starter, then customized to include additional pages such as a [Portfolio](src/pages/portfolio.js) [React](https://reactjs.org/) component
+* End-to-end tests with [Cypress](https://www.cypress.io/) and [start-server-and-test](https://github.com/bahmutov/start-server-and-test#readme)
 * Continuously tested (CI) on [CircleCI](https://circleci.com/gh/rm3l/rm3l.org)
 * Continuously deployed (CD) on [Netlify](https://www.netlify.com/), with support for Deploy previews of Pull Requests
 * [Dependabot](https://dependabot.com) to keep dependencies secure and up-to-date
@@ -40,16 +40,16 @@
 
 ## 🛠 Installation & Set Up
 
-1. Install the Gatsby CLI
-
-   ```sh
-   npm install -g gatsby-cli
-   ```
-
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
    ```sh
    nvm install
+   ```
+
+2. Install the Gatsby CLI
+
+   ```sh
+   npm install -g gatsby-cli
    ```
 
 3. Install dependencies
@@ -58,7 +58,28 @@
    yarn
    ```
 
-4. Start the development server
+4. Set up environment variables and customize the project
+
+Copy the `.env.template` as a `.env` file in the repo and customize it accordingly:
+
+   ```bash
+   GHOST_API_URL=https://my.healdless.ghost.entrypoint
+   GHOST_CONTENT_API_KEY=my-ghost-blog-content-key
+   CYPRESS_PROJECT_ID=my-cypress-project-id
+   CYPRESS_RECORD_KEY=my-cypress-record-key
+   ```
+- `GHOST_API_URL` : the URL to the headless Ghost blog
+- `GHOST_CONTENT_API_KEY` : the Ghost Content API Key, which allows to pull data from a Ghost CMS
+- `CYPRESS_PROJECT_ID` : the Cypress project Identifier
+- `CYPRESS_RECORD_KEY` : the Cypress project record key, to use in a Cypress online dashboard
+
+On build servers (CircleCI and Netlify), those are just defined as project-wide environment variables.
+
+5. Change the site configuration
+
+Edit the [src/utils/siteConfig.js](src/utils/siteConfig.js) file accordingly.
+
+6. Start the development server
 
    ```sh
    gatsby develop

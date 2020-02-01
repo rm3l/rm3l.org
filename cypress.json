@@ -2,6 +2,5 @@
   "integrationFolder": "cypress/e2e",
   "baseUrl": "http://localhost:8000",
   "reporter": "junit",
-  "projectId": "f6u6m1",
   "chromeWebSecurity": false
 }
