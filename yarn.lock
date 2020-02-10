@@ -1442,13 +1442,7 @@
     gatsby-link "^2.0.7"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.19":
-  version "1.1.19"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.19.tgz#ea623cee798780ea013ef0242321cf7fab34afe5"
-  dependencies:
-    lodash-es "^4.17.11"
-
-"@tryghost/helpers@^1.1.22":
+"@tryghost/helpers@1.1.22", "@tryghost/helpers@^1.1.22":
   version "1.1.22"
   resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.22.tgz#92b6309237065a50c551f9d17546fa57df993627"
   dependencies:
