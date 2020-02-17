@@ -86,7 +86,7 @@
     "gatsby-plugin-sharp": "2.4.0",
     "gatsby-source-filesystem": "2.1.46",
     "gatsby-source-ghost": "4.0.3",
-    "gatsby-transformer-sharp": "2.3.5",
+    "gatsby-transformer-sharp": "2.3.14",
     "lodash": "4.17.15",
     "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
