@@ -54,7 +54,7 @@
     "eslint-plugin-react": "7.18.3",
     "mocha": "^7.0.1",
     "mocha-junit-reporter": "^1.23.3",
-    "start-server-and-test": "^1.10.6"
+    "start-server-and-test": "^1.10.8"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
