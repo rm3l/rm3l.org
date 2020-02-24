@@ -3731,9 +3731,9 @@ cypress-axe@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-0.5.3.tgz#420a0d12b9a514f3ca57dd828bd96ce17117f0d2"
 
-cypress-multi-reporters@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/cypress-multi-reporters/-/cypress-multi-reporters-1.2.3.tgz#4ba39373631c6521d21931d73f6b0bafa1ccbf83"
+cypress-multi-reporters@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/cypress-multi-reporters/-/cypress-multi-reporters-1.2.4.tgz#bf6c95f39f9d2ce210d83e096f452a306bcd49fc"
   dependencies:
     debug "^4.1.1"
     lodash "^4.17.11"
