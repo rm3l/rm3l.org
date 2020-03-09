@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^5.0.2",
-    "axe-core": "^3.4.1",
+    "axe-core": "^3.5.1",
     "babel-eslint": "10.1.0",
     "cypress": "^3.8.3",
     "cypress-axe": "^0.5.3",
