@@ -47,7 +47,7 @@
     "cypress": "^3.8.3",
     "cypress-axe": "^0.5.3",
     "cypress-multi-reporters": "^1.2.4",
-    "env-cmd": "^10.0.1",
+    "env-cmd": "^10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-ghost": "1.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
