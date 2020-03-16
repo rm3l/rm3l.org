@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Box, Link, Image, Heading, Text } from 'rebass'
+import { Box, Link, Image, Text } from 'rebass'
 
 const PortfolioProjectCard = ({ page }) => {
     const uniqueTags = new Set()
