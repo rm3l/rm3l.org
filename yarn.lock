@@ -1426,11 +1426,11 @@
     prop-types "^15.6.2"
     tippy.js "^5.1.1"
 
-"@tryghost/content-api@1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.3.4.tgz#d2869656d1a0d9a2ba2423963494547130ca20d2"
+"@tryghost/content-api@1.3.7":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.3.7.tgz#b3f82fad19dc436eea5e62c4a046646f79c307a6"
   dependencies:
-    axios "0.19.0"
+    axios "0.19.1"
     ghost-ignition "^3.0.0"
 
 "@tryghost/helpers-gatsby@1.0.25":
@@ -2143,7 +2143,13 @@ axe-core@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.4.1.tgz#e42623918bb85b5ef674633852cb9029db0309c5"
 
-axios@0.19.0, axios@^0.19.0:
+axios@0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.1.tgz#8a6a04eed23dfe72747e1dd43c604b8f1677b5aa"
+  dependencies:
+    follow-redirects "1.5.10"
+
+axios@^0.19.0:
   version "0.19.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
   dependencies:
@@ -2453,7 +2459,7 @@ bluebird@3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
 
-bluebird@^3.5.5, bluebird@^3.7.2:
+bluebird@3.7.2, bluebird@^3.5.5, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
 
@@ -5605,12 +5611,12 @@ gatsby-source-filesystem@2.1.48:
     valid-url "^1.0.9"
     xstate "^4.7.2"
 
-gatsby-source-ghost@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-4.0.3.tgz#ae0459e0663c20aa6308529a1eb09e7ee721a336"
+gatsby-source-ghost@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-4.0.4.tgz#eb50e4770f6ceb63981d340d32c11e072e88f119"
   dependencies:
-    "@tryghost/content-api" "1.3.4"
-    bluebird "3.7.1"
+    "@tryghost/content-api" "1.3.7"
+    bluebird "3.7.2"
     cheerio "1.0.0-rc.3"
     gatsby-node-helpers "^0.3.0"
     qs "6.9.1"
