@@ -41,10 +41,10 @@
     "ci:test:no-record": "start-test dev 8000 ci:cy:run:no-record"
   },
   "devDependencies": {
-    "@testing-library/cypress": "^5.0.2",
+    "@testing-library/cypress": "^6.0.0",
     "axe-core": "^3.4.1",
     "babel-eslint": "10.1.0",
-    "cypress": "^3.8.3",
+    "cypress": "^4.2.0",
     "cypress-axe": "^0.5.3",
     "cypress-multi-reporters": "^1.2.4",
     "env-cmd": "^10.1.0",
