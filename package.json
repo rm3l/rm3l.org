@@ -66,7 +66,7 @@
     "@tryghost/helpers": "1.1.23",
     "@tryghost/helpers-gatsby": "1.0.25",
     "babel-plugin-prismjs": "^2.0.1",
-    "babel-preset-gatsby": "^0.2.26",
+    "babel-preset-gatsby": "^0.3.1",
     "cheerio": "1.0.0-rc.3",
     "dotenv": "^8.2.0",
     "gatsby": "2.20.2",
