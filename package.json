@@ -90,7 +90,7 @@
     "lodash": "4.17.15",
     "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
-    "react": "16.13.0",
+    "react": "16.13.1",
     "react-dom": "16.12.0",
     "react-helmet": "5.2.1",
     "react-masonry-component": "^6.2.1",
