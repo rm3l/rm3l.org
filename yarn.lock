@@ -5657,9 +5657,9 @@ gatsby-plugin-manifest@2.3.3:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-plugin-nprogress@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.2.0.tgz#4c8a1e054a0cd2196fa922463be9b3e6bc8a4df9"
+gatsby-plugin-nprogress@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.2.1.tgz#85dccf379290eaf22f1972f8c8990fffbc0768e3"
   dependencies:
     "@babel/runtime" "^7.8.7"
     nprogress "^0.2.0"
