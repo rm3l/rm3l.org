@@ -52,7 +52,7 @@
     "eslint-plugin-ghost": "1.2.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "7.19.0",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "mocha-junit-reporter": "^1.23.3",
     "start-server-and-test": "^1.10.10"
   },
