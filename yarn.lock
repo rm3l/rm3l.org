@@ -3385,6 +3385,11 @@ caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30001035:
   version "1.0.30001036"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001036.tgz#930ea5272010d8bf190d859159d757c0b398caf0"
 
+caniuse-lite@^1.0.30001020:
+  version "1.0.30001061"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001061.tgz#80ca87ef14eb543a7458e7fd2b5e2face3458c9f"
+  integrity sha512-SMICCeiNvMZnyXpuoO+ot7FHpMVPlrsR+HmfByj6nY4xYDHXLqMTbgH7ecEkDNXWkH1vaip+ZS0D7VTXwM1KYQ==
+
 caniuse-lite@^1.0.30001043:
   version "1.0.30001050"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001050.tgz#11218af4b6b85dc1089536f31e10e3181e849e71"
@@ -4319,9 +4324,10 @@ cypress-multi-reporters@^1.2.4:
     debug "^4.1.1"
     lodash "^4.17.11"
 
-cypress@*, cypress@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-4.4.0.tgz#566ac224e11601634c31e5648e5c15199dde7954"
+cypress@*, cypress@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-4.5.0.tgz#01940d085f6429cec3c87d290daa47bb976a7c7b"
+  integrity sha512-2A4g5FW5d2fHzq8HKUGAMVTnW6P8nlWYQALiCoGN4bqBLvgwhYM/oG9oKc2CS6LnvgHFiKivKzpm9sfk3uU3zQ==
   dependencies:
     "@cypress/listr-verbose-renderer" "0.4.1"
     "@cypress/request" "2.88.5"
