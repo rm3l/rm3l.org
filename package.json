@@ -66,7 +66,7 @@
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "@tryghost/helpers": "1.1.27",
-    "@tryghost/helpers-gatsby": "1.0.25",
+    "@tryghost/helpers-gatsby": "1.0.31",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.4.0",
     "cheerio": "1.0.0-rc.3",
