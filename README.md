@@ -17,10 +17,11 @@
     <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
         <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
     </a>
-    &nbsp;
+    <!--&nbsp;
+    Following the integration of Dependabot into Github, badge is not fixed yet. Commenting for now, until this is fixed
     <a href="https://dependabot.com" target="_blank">
         <img src="https://api.dependabot.com/badges/status?host=github&repo=rm3l/rm3l.org" alt="Dependabot Status" />
-    </a>
+    </a>-->
   </span>
 </p>
 
