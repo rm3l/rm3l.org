@@ -84,7 +84,7 @@
     "gatsby-plugin-nprogress": "^2.3.4",
     "gatsby-plugin-offline": "3.2.13",
     "gatsby-plugin-react-helmet": "3.3.6",
-    "gatsby-plugin-sass": "^2.3.7",
+    "gatsby-plugin-sass": "^2.3.9",
     "gatsby-plugin-sharp": "2.6.10",
     "gatsby-source-filesystem": "2.3.14",
     "gatsby-source-ghost": "4.0.5",
