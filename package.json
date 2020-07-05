@@ -39,8 +39,7 @@
     "ci:cy:run:no-record": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json",
     "ci:test": "start-test dev 8000 ci:cy:run",
     "ci:test:no-record": "start-test dev 8000 ci:cy:run:no-record",
-    "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.0",

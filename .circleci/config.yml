@@ -26,6 +26,10 @@ jobs:
           name: Install dependencies
           command: yarn install --frozen-lockfile
 
+      - snyk_protect:
+          name: Check security vulnerabilities
+          command: yarn snyk-protect
+
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
