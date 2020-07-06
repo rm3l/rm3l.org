@@ -27,6 +27,8 @@
 
 ![demo](https://raw.githubusercontent.com/rm3l/rm3l.org/master/src/images/home_screenshot.png)
 
+Read more about this migration journey in [this blog post](https://rm3l.org/migrating-to-the-jamstack-with-gatsby-and-ghost-running-in-kubernetes/).
+
 ## 🛠 Tech Stack
 
 * Backend
