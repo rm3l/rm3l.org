@@ -85,7 +85,7 @@
     "gatsby-plugin-react-helmet": "3.3.9",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "2.6.18",
-    "gatsby-source-filesystem": "2.3.18",
+    "gatsby-source-filesystem": "2.3.19",
     "gatsby-source-ghost": "4.0.5",
     "gatsby-transformer-sharp": "2.5.10",
     "lodash": "4.17.19",
