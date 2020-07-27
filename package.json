@@ -97,7 +97,7 @@
     "react-masonry-component": "^6.2.1",
     "react-masonry-responsive": "^2.1.2",
     "rebass": "^4.0.7",
-    "snyk": "^1.361.3"
+    "snyk": "^1.367.0"
   },
   "snyk": true
 }
