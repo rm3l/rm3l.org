@@ -64,6 +64,9 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
+    "@theme-ui/preset-tailwind": "^0.3.0",
+    "@theme-ui/preset-tosh": "^0.3.0",
+    "@theme-ui/presets": "^0.3.0",
     "@tippy.js/react": "^3.1.1",
     "@tryghost/helpers": "1.1.27",
     "@tryghost/helpers-gatsby": "1.0.31",
@@ -86,8 +89,10 @@
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "2.6.28",
+    "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "2.3.23",
     "gatsby-source-ghost": "4.0.5",
+    "gatsby-theme-medium": "^0.0.1",
     "gatsby-transformer-sharp": "2.5.13",
     "lodash": "4.17.20",
     "node-sass": "^4.14.1",
@@ -98,7 +103,8 @@
     "react-masonry-component": "^6.2.1",
     "react-masonry-responsive": "^2.1.2",
     "rebass": "^4.0.7",
-    "snyk": "^1.381.2"
+    "snyk": "^1.381.2",
+    "theme-ui": "^0.3.1"
   },
   "snyk": true
 }

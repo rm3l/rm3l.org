@@ -228,6 +228,7 @@ module.exports = {
                 showSpinner: false,
             },
         },
+        `gatsby-theme-medium`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
