@@ -1,21 +1,46 @@
 /* eslint-disable jsx-quotes */
-import React from 'react'
-import { graphql } from 'gatsby'
-import PropTypes from 'prop-types'
-import { Box, Flex } from 'rebass'
+import React, { useState } from 'react'
+import axios from 'axios'
+import { Box, Flex, Text } from 'rebass'
 import { Label, Input, Textarea } from '@rebass/forms'
 import { Layout } from '../components/common'
 
-export default function ContactPage({ data }) {
+const ContactPage = () => {
+    const [serverState, setServerState] = useState({
+        submitting: false,
+        status: null,
+    })
+    const handleServerResponse = (ok, msg, form) => {
+        setServerState({
+            submitting: false,
+            status: { ok, msg },
+        })
+        if (ok) {
+            form.reset()
+        }
+    }
+    const handleOnSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        setServerState({ submitting: true })
+        axios({
+            method: `post`,
+            url: `https://getform.io/f/0a0c2baf-7222-4ef8-a852-d5bafe84642b`,
+            data: new FormData(form),
+        })
+            .then(() => {
+                handleServerResponse(true, `Thanks for reaching out! I will get back to you as soon as possible.`, form)
+            })
+            .catch((r) => {
+                handleServerResponse(false, r.response.data.error, form)
+            })
+    }
     return (
         <Layout>
             <div className="container">
                 <article className="content" style={{ textAlign: `center` }}>
                     <h1 className="content-title">Contact me</h1>
-                    {/* <form name="contact" method="post" action="/contact_success" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <input aria-label="hidden-bot-field" type="hidden" name="bot-field" />
-                        <input aria-label="hidden-form-name" type="hidden" name="form-name" value="contact" /> */}
-                    <form name="contact" method="post" action={ data.site.siteMetadata.contactFormEndpoint }>
+                    <form onSubmit={handleOnSubmit}>
                         <Box>
                             <Flex mx={-2} mb={3}>
                                 <Box width={1 / 2} px={2}>
@@ -33,6 +58,7 @@ export default function ContactPage({ data }) {
                                         name="email"
                                         type="email"
                                         placeholder="jane@doe.com"
+                                        required="required"
                                     />
                                 </Box>
                             </Flex>
@@ -43,6 +69,7 @@ export default function ContactPage({ data }) {
                             <Textarea
                                 id="message"
                                 name="message"
+                                required="required"
                             />
                         </Box>
 
@@ -51,35 +78,24 @@ export default function ContactPage({ data }) {
                         <Box fontSize={4} >
                             <Input color={`black`}
                                 bg={`lightgray`}
-                                fontFamily={`monospace`}
                                 type='submit'
                                 value='Send Message'
+                                disabled={serverState.submitting}
                             />
                         </Box>
                     </form>
+                    <p/>
+                    {serverState.status && (
+                        <Text
+                            fontSize={[3, 4]}
+                            color={!serverState.status.ok ? `red` : `blue`}>
+                            {serverState.status.msg}
+                        </Text>
+                    )}
                 </article>
             </div>
         </Layout>
     )
 }
 
-ContactPage.propTypes = {
-    data: PropTypes.shape({
-        site: PropTypes.shape({
-            siteMetadata: PropTypes.shape({
-                contactFormEndpoint: PropTypes.string.isRequired,
-            }),
-        }),
-    }).isRequired,
-    pageContext: PropTypes.object,
-}
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        contactFormEndpoint
-      }
-    }
-  }
-`
+export default ContactPage
