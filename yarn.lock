@@ -8337,7 +8337,7 @@ gatsby-remark-copy-linked-files@^2.1.4:
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-images@^3.1.7:
+gatsby-remark-images@^3.1.7, gatsby-remark-images@^3.3.28:
   version "3.3.28"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.3.28.tgz#d5039f115d52c553c393374f9547fd5f604f2d67"
   integrity sha512-xHgrv9VJXJDJ2XrS9QIYZKBff92DN6I1Sm0hWxVgSwxpoEUr8ObWhKpYLOku03sUilDiLNUyOg8rWg0+/P+HuA==
