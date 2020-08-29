@@ -41,6 +41,7 @@ module.exports = {
         title: config.siteTitleMeta,
         siteUrl: config.siteUrl,
         description: config.siteDescriptionMeta,
+        contactFormEndpoint: process.env.CONTACT_FORM_ENDPOINT,
     },
     plugins: [
         /**
