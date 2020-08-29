@@ -29,11 +29,4 @@ describe(`Accessibility checks`, () => {
         cy.wait(500)
         cy.checkA11y()
     })
-
-    it(`Navigates to Contact Success Page and checks for accessibility violations`, () => {
-        cy.visit(`/contact_success`)
-        cy.injectAxe()
-        cy.wait(500)
-        cy.checkA11y()
-    })
 })
