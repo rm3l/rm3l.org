@@ -80,11 +80,13 @@ Copy the `.env.template` as a `.env` file in the repo and customize it according
    GHOST_CONTENT_API_KEY=my-ghost-blog-content-key
    CYPRESS_PROJECT_ID=my-cypress-project-id
    CYPRESS_RECORD_KEY=my-cypress-record-key
+   CONTACT_FORM_ENDPOINT=my-contact-form-endpoint
    ```
 - `GHOST_API_URL` : the URL to the headless Ghost blog
 - `GHOST_CONTENT_API_KEY` : the Ghost Content API Key, which allows to pull data from a Ghost CMS
 - `CYPRESS_PROJECT_ID` : the Cypress project Identifier
 - `CYPRESS_RECORD_KEY` : the Cypress project record key, to use in a Cypress online dashboard
+- `CONTACT_FORM_ENDPOINT` : the endpoint to call in the contact form
 
 On build servers (CircleCI and Netlify), those are just defined as project-wide environment variables.
 

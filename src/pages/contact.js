@@ -1,11 +1,13 @@
 /* eslint-disable jsx-quotes */
 import React, { useState } from 'react'
 import axios from 'axios'
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { Box, Flex, Text } from 'rebass'
 import { Label, Input, Textarea } from '@rebass/forms'
 import { Layout } from '../components/common'
 
-const ContactPage = () => {
+const ContactPage = ({ data }) => {
     const [serverState, setServerState] = useState({
         submitting: false,
         status: null,
@@ -25,7 +27,7 @@ const ContactPage = () => {
         setServerState({ submitting: true })
         axios({
             method: `post`,
-            url: `https://getform.io/f/0a0c2baf-7222-4ef8-a852-d5bafe84642b`,
+            url: data.site.siteMetadata.contactFormEndpoint,
             data: new FormData(form),
         })
             .then(() => {
@@ -87,6 +89,7 @@ const ContactPage = () => {
                     <p/>
                     {serverState.status && (
                         <Text
+                            className="info-msg"
                             fontSize={[3, 4]}
                             color={!serverState.status.ok ? `red` : `blue`}>
                             {serverState.status.msg}
@@ -99,3 +102,24 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+ContactPage.propTypes = {
+    data: PropTypes.shape({
+        site: PropTypes.shape({
+            siteMetadata: PropTypes.shape({
+                contactFormEndpoint: PropTypes.string.isRequired,
+            }),
+        }),
+    }).isRequired,
+    pageContext: PropTypes.object,
+}
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        contactFormEndpoint
+      }
+    }
+  }
+`
