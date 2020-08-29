@@ -11,9 +11,8 @@ const ContactPage = () => (
                 <article className="content" style={{ textAlign: `center` }}>
                     <h1 className="content-title">Contact me</h1>
                     <form name="contact" method="post" action="/contact_success" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <input type="hidden" name="bot-field" />
-                        <input type="hidden" name="form-name" value="contact" />
-
+                        <input aria-label="hidden-bot-field" type="hidden" name="bot-field" />
+                        <input aria-label="hidden-form-name" type="hidden" name="form-name" value="contact" />
 
                         <Box>
                             <Flex mx={-2} mb={3}>
@@ -31,17 +30,17 @@ const ContactPage = () => (
                                         id="email"
                                         name="email"
                                         type="email"
-                                        placeholder="jane@example.com"
+                                        placeholder="jane@doe.com"
                                     />
                                 </Box>
                             </Flex>
                         </Box>
 
                         <Box>
-                            <Label htmlFor='comment'>Message</Label>
+                            <Label htmlFor="message">Message</Label>
                             <Textarea
-                                id='message'
-                                name='message'
+                                id="message"
+                                name="message"
                             />
                         </Box>
 
