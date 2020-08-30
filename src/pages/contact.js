@@ -35,7 +35,11 @@ const ContactPage = ({ data }) => {
                 handleServerResponse(true, `Thanks for reaching out! I will get back to you as soon as possible.`, form)
             })
             .catch((r) => {
-                handleServerResponse(false, r.response.data.error, form)
+                let errorMessage = r.response.data.error
+                if (errorMessage === `reCAPTCHA failed`) {
+                    errorMessage += `. Please make sure you are a human by clicking on the "I'm not a robot" checkbox !`
+                }
+                handleServerResponse(false, errorMessage, form)
             })
     }
     return (
@@ -48,6 +52,9 @@ const ContactPage = ({ data }) => {
                     <article className="content" style={{ textAlign: `center` }}>
                         <h1 className="content-title">Contact me</h1>
                         <form onSubmit={handleOnSubmit}>
+                            <Input type="text" name="_gotcha" sx={{
+                                display: `none`,
+                            }} />
                             <Box>
                                 <Flex mx={-2} mb={3}>
                                     <Box width={1 / 2} px={2}>
@@ -62,7 +69,7 @@ const ContactPage = ({ data }) => {
                                         <Label className="form-required" htmlFor="email">Email</Label>
                                         <Input
                                             id="email"
-                                            name="email"
+                                            name="_replyto"
                                             type="email"
                                             placeholder="jane@doe.com"
                                             required="required"
