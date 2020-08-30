@@ -22,7 +22,7 @@ describe(`Portfolio page`, () => {
             allFilters.filter(filterToHandle => filterToHandle !== filter)
                 .forEach((filterToHandle) => {
                     cy.get(`button[data-filter="${filterToHandle}"]`)
-                        .should(`have.css`, `background-color`, `rgb(239, 239, 239)`)
+                        .should(`not.have.css`, `background-color`, `rgb(255, 99, 71)`)
                         .should(`have.css`, `color`, `rgb(0, 0, 0)`)
                 })
         })

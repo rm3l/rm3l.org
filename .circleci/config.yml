@@ -42,6 +42,8 @@ jobs:
             echo "CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY" >> .env
             echo "GHOST_API_URL=$GHOST_API_URL" >> .env
             echo "GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY" >> .env
+            echo "CONTACT_FORM_ENDPOINT=$CONTACT_FORM_ENDPOINT" >> .env
+            echo "RECAPTCHA_SITE_KEY=$RECAPTCHA_SITE_KEY" >> .env
             if [[ -v CYPRESS_baseUrl ]]; then
               echo "Testing external url $CYPRESS_baseUrl"
               yarn ci:cy:run || yarn ci:cy:run:no-record
