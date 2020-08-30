@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import { Box, Flex, Text } from 'rebass'
 import { Label, Input, Textarea } from '@rebass/forms'
 import { Layout } from '../components/common'
+import Helmet from 'react-helmet'
 
 const ContactPage = ({ data }) => {
     const [serverState, setServerState] = useState({
@@ -38,66 +39,77 @@ const ContactPage = ({ data }) => {
             })
     }
     return (
-        <Layout>
-            <div className="container">
-                <article className="content" style={{ textAlign: `center` }}>
-                    <h1 className="content-title">Contact me</h1>
-                    <form onSubmit={handleOnSubmit}>
-                        <Box>
-                            <Flex mx={-2} mb={3}>
-                                <Box width={1 / 2} px={2}>
-                                    <Label htmlFor="name">Name</Label>
-                                    <Input
-                                        id="name"
-                                        name="name"
-                                        placeholder="Jane Doe"
-                                    />
-                                </Box>
-                                <Box width={1 / 2} px={2}>
-                                    <Label htmlFor="email">Email</Label>
-                                    <Input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        placeholder="jane@doe.com"
-                                        required="required"
-                                    />
-                                </Box>
-                            </Flex>
-                        </Box>
+        <React.Fragment>
+            <Helmet>
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            </Helmet>
+            <Layout>
+                <div className="container">
+                    <article className="content" style={{ textAlign: `center` }}>
+                        <h1 className="content-title">Contact me</h1>
+                        <form onSubmit={handleOnSubmit}>
+                            <Box>
+                                <Flex mx={-2} mb={3}>
+                                    <Box width={1 / 2} px={2}>
+                                        <Label htmlFor="name">Name</Label>
+                                        <Input
+                                            id="name"
+                                            name="name"
+                                            placeholder="Jane Doe"
+                                        />
+                                    </Box>
+                                    <Box width={1 / 2} px={2}>
+                                        <Label className="form-required" htmlFor="email">Email</Label>
+                                        <Input
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            placeholder="jane@doe.com"
+                                            required="required"
+                                        />
+                                    </Box>
+                                </Flex>
+                            </Box>
 
-                        <Box>
-                            <Label htmlFor="message">Message</Label>
-                            <Textarea
-                                id="message"
-                                name="message"
-                                required="required"
-                            />
-                        </Box>
+                            <Box>
+                                <Label className="form-required" htmlFor="message">Message</Label>
+                                <Textarea
+                                    id="message"
+                                    name="message"
+                                    required="required"
+                                />
+                            </Box>
 
+                            <p/>
+
+                            {data.site.siteMetadata.reCaptchaSiteKey !== undefined && (
+                                <div className="g-recaptcha" data-sitekey={data.site.siteMetadata.reCaptchaSiteKey}></div>
+                            )}
+
+                            <p/>
+
+                            <Box fontSize={4} >
+                                <Input color={`black`}
+                                    bg={`lightgray`}
+                                    type='submit'
+                                    value='Send Message'
+                                    disabled={serverState.submitting}
+                                />
+                            </Box>
+                        </form>
                         <p/>
-
-                        <Box fontSize={4} >
-                            <Input color={`black`}
-                                bg={`lightgray`}
-                                type='submit'
-                                value='Send Message'
-                                disabled={serverState.submitting}
-                            />
-                        </Box>
-                    </form>
-                    <p/>
-                    {serverState.status && (
-                        <Text
-                            className="info-msg"
-                            fontSize={[3, 4]}
-                            color={!serverState.status.ok ? `red` : `blue`}>
-                            {serverState.status.msg}
-                        </Text>
-                    )}
-                </article>
-            </div>
-        </Layout>
+                        {serverState.status && (
+                            <Text
+                                className="info-msg"
+                                fontSize={[3, 4]}
+                                color={!serverState.status.ok ? `red` : `blue`}>
+                                {serverState.status.msg}
+                            </Text>
+                        )}
+                    </article>
+                </div>
+            </Layout>
+        </React.Fragment>
     )
 }
 
@@ -107,7 +119,8 @@ ContactPage.propTypes = {
     data: PropTypes.shape({
         site: PropTypes.shape({
             siteMetadata: PropTypes.shape({
-                contactFormEndpoint: PropTypes.string.isRequired,
+                contactFormEndpoint: PropTypes.string,
+                reCaptchaSiteKey: PropTypes.string,
             }),
         }),
     }).isRequired,
@@ -119,6 +132,7 @@ export const query = graphql`
     site {
       siteMetadata {
         contactFormEndpoint
+        reCaptchaSiteKey
       }
     }
   }

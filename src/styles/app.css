@@ -1305,3 +1305,12 @@ h6 {
     font-size: 13px;
 }
 
+.grecaptcha-badge {
+    display: none;
+ }
+
+ label.form-required:after
+ {
+     color: red;
+     content: " *";
+ }

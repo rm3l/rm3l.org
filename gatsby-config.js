@@ -42,6 +42,7 @@ module.exports = {
         siteUrl: config.siteUrl,
         description: config.siteDescriptionMeta,
         contactFormEndpoint: process.env.CONTACT_FORM_ENDPOINT,
+        reCaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY,
     },
     plugins: [
         /**
@@ -229,6 +230,13 @@ module.exports = {
                 showSpinner: false,
             },
         },
+        // {
+        //     resolve: `gatsby-plugin-recaptcha`,
+        //     options: {
+        //        async: true,
+        //        defer: true,
+        //     },
+        //  },
         `gatsby-theme-medium`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-catch-links`,
