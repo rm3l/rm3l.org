@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /// <reference types="cypress" />
 describe(`from root URL`, () => {
     beforeEach(() => {

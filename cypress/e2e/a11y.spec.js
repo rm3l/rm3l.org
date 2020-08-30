@@ -1,7 +1,7 @@
+/* eslint-disable no-undef */
 /// <reference types="Cypress" />
 
 describe(`Accessibility checks`, () => {
-
     it(`Has no detectable a11y violations on load`, () => {
         cy.visit(`/`)
         cy.injectAxe()
