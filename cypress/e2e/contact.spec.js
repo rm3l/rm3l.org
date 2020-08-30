@@ -32,15 +32,15 @@ describe(`Contact form`, () => {
     })
 
     it(`Does not submit if "I'm not a robot" reCaptcha checkbox not checked`, () => {
+        cy.get(`form`).find(`input[name="name"]`).type(`E2E tester`)
+        cy.get(`form`).find(`input[type="email"]`).type(`e2e_tester@example.com`)
+        cy.get(`form`).find(`textarea[name="message"]`).type(`Lorem Ipsum Dolor Sit Amet`)
+
         cy.server()
         cy.route(
             `POST`,
             `https://formspree.io/**`,
         ).as(`contact_form`)
-
-        cy.get(`form`).find(`input[name="name"]`).type(`E2E tester`)
-        cy.get(`form`).find(`input[type="email"]`).type(`e2e_tester@example.com`)
-        cy.get(`form`).find(`textarea[name="message"]`).type(`Lorem Ipsum Dolor Sit Amet`)
         cy.get(`form`).find(`input[type="submit"]`).click()
 
         cy.wait(`@contact_form`)
