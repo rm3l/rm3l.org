@@ -87,6 +87,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation aria-label="Home" data={site.navigation} navClass="site-nav-item" />
                                     <Link aria-label="Portfolio" className="site-nav-item" to="/portfolio" key="99_Nav_Portolio_Up">Portfolio</Link>
+                                    <Link aria-label="Contact" className="site-nav-item" to="/contact" key="100_Nav_Contact_Up">Contact</Link>
                                 </div>
                                 <div className="site-nav-right">
                                     {/* About page disabled until a 'about.js' file is added to src/pages/ */}
@@ -115,6 +116,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-foot-nav-right">
                                 <Navigation aria-label="Home" data={site.navigation} navClass="site-foot-nav-item" />
                                 <Link aria-label="Portfolio" className="site-foot-nav-item" to="/portfolio" key="99_Nav_Portolio_Bottom">Portfolio</Link>
+                                <Link aria-label="Contact" className="site-foot-nav-item" to="/contact" key="100_Nav_Contact_Bottom">Contact</Link>
                             </div>
                         </div>
                     </footer>
