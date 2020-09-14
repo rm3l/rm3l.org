@@ -90,7 +90,7 @@
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-plugin-sharp": "2.6.33",
+    "gatsby-plugin-sharp": "2.6.35",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-remark-images": "^3.3.28",
     "gatsby-source-filesystem": "2.3.28",
