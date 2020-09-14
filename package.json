@@ -92,7 +92,7 @@
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "2.6.33",
     "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-remark-images": "^3.3.28",
+    "gatsby-remark-images": "^3.3.29",
     "gatsby-source-filesystem": "2.3.28",
     "gatsby-source-ghost": "4.0.5",
     "gatsby-theme-medium": "^0.0.1",
