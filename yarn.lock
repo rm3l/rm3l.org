@@ -1230,6 +1230,13 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@draftbox-co/gatsby-plugin-fusejs@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@draftbox-co/gatsby-plugin-fusejs/-/gatsby-plugin-fusejs-1.0.4.tgz#281b7ccab85f584c2b474dd08b939cf84bafd279"
+  integrity sha512-Oyx0rpMrRUehRCUxB/SlbVnMIA1AufX0oY1LSksoeYj1s7thnCZCO4P9sf+ale7AZajjv8PCS06XMLhn6eA80Q==
+  dependencies:
+    fuse.js "^6.3.1"
+
 "@ember-data/rfc395-data@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@ember-data/rfc395-data/-/rfc395-data-0.0.4.tgz#ecb86efdf5d7733a76ff14ea651a1b0ed1f8a843"
@@ -7678,6 +7685,11 @@ function-bind@^1.1.1:
 functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
+
+fuse.js@^6.3.1, fuse.js@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.1.tgz#76f1b4ab9cd021b854a68381b35628033d27507e"
+  integrity sha512-+hAS7KYgLXontDh/vqffs7wIBw0ceb9Sx8ywZQhOsiQGcSO5zInGhttWOUYQYlvV/yYMJOacQ129Xs3mP3+oZQ==
 
 gatsby-awesome-pagination@0.3.6:
   version "0.3.6"

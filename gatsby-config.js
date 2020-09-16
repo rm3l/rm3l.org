@@ -243,5 +243,18 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
+        {
+            // This provides a lightweight local fuzzy search index via FuseJS
+            resolve: `@draftbox-co/gatsby-plugin-fusejs`,
+            options: {
+              fields: [`title`, `slug`],
+              resolvers: {
+                GhostPost: {
+                  title: node => node.title,
+                  slug: node => node.slug
+                },
+              },
+            },
+          },
     ],
 }
