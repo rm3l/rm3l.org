@@ -3305,10 +3305,10 @@
     prop-types "^15.6.2"
     tippy.js "^5.1.1"
 
-"@tryghost/content-api@1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.4.1.tgz#6b5c66e07be3dd87b21086e08d664c205b0cdb33"
-  integrity sha512-aWkktQ5Q4lqIcNX6LDj7DmfiT1O/6AWEIsSmJmMMnaQrKO0ltoTkP/95ZDwBZq82c9arESsX1RJuMAbC2Wwv8w==
+"@tryghost/content-api@1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.4.4.tgz#ae52a86e694edbe50a7460693f4b7fff619d6174"
+  integrity sha512-5q/M/fcE9OwPHKM+DQUrrjQD7CaNShBxtI/3/aBrcbQPX/aIL2FjbFA5pi3KJ/oe2f0IFlUPGeM1IGuXWsIV4Q==
   dependencies:
     axios "0.19.2"
 
@@ -8753,12 +8753,12 @@ gatsby-source-filesystem@2.3.30, gatsby-source-filesystem@^2.1.7:
     valid-url "^1.0.9"
     xstate "^4.11.0"
 
-gatsby-source-ghost@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-4.0.5.tgz#b7a6da702ee33f6411182e45d750177e81eea7e0"
-  integrity sha512-UDYTx6W45UY9fZ7EFRvgGYgg8EWx5zIN6nWxIMt2hOcsM9SGc/UjD37AgITl809cDJ1fYG6sDUsI0Kib/VdSzg==
+gatsby-source-ghost@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-4.2.0.tgz#c8f58d6cb9f9a8b5ba43ae9e53533f19876652d7"
+  integrity sha512-2hUpbLW5wRJpemEpK6zRFJz/Qv270Box418B2Zb1C7V2cK/txFpS9vgyFmTBECR4RjUm8WripIJgvHs6lxOZvg==
   dependencies:
-    "@tryghost/content-api" "1.4.1"
+    "@tryghost/content-api" "1.4.4"
     bluebird "3.7.2"
     cheerio "1.0.0-rc.3"
     gatsby-node-helpers "0.3.0"
