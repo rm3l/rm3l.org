@@ -2483,20 +2483,27 @@
   dependencies:
     axios "0.19.2"
 
-"@tryghost/helpers-gatsby@1.0.35":
-  version "1.0.35"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.35.tgz#3c2f06a66112e65fc1aa5dcfb34c8b69a977d0a4"
-  integrity sha512-TF18VRqgGXOhYmFx+gVnzr15FHsiRR8dUqzGy/21Nq9w3KDgAH1nmjGhTcjYAmBDP8H+5eP99NUHhZysbeSPuw==
+"@tryghost/helpers-gatsby@1.0.37":
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.37.tgz#801c70c2823e35ac85252d4975fddc7796a138b4"
+  integrity sha512-KGNXRCE9PrPEuoBbTS4+mas022deT5REx4qEZUiq/tVobssU9/+NY/S5jC0/+Ydhr+sJofqvetOmd/LVEgAjVw==
   dependencies:
     "@reach/router" "^1.2.1"
-    "@tryghost/helpers" "^1.1.31"
+    "@tryghost/helpers" "^1.1.33"
     gatsby-link "^2.0.7"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.31", "@tryghost/helpers@^1.1.31":
+"@tryghost/helpers@1.1.31":
   version "1.1.31"
   resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.31.tgz#2a1ae5e2eb6b9175445e14949657ad17a5bcb5ac"
   integrity sha512-PzW+H6sdHbVGa0lAw0zM6nRMlm+tSby0EqqIgN8+/NsolBTp4kZgu+kTs94kUzEwM8t3P5Ee3Le40pJH5kRpZw==
+  dependencies:
+    lodash-es "^4.17.11"
+
+"@tryghost/helpers@^1.1.33":
+  version "1.1.33"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.33.tgz#e835ea1def3383ce315b53a96f2a2645b55ce937"
+  integrity sha512-m9RrmUcz/RGihWVFievx5UBvoQ5mqm+XRhpX6QwUJjfz4umSxpbHpVabcZ7PdfNntd4jyqL47bOAO9tEwou7PA==
   dependencies:
     lodash-es "^4.17.11"
 
