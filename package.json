@@ -58,7 +58,7 @@
     "start-server-and-test": "^1.11.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
