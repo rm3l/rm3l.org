@@ -51,7 +51,7 @@
     "env-cmd": "^10.1.0",
     "eslint": "7.12.0",
     "eslint-plugin-ghost": "2.0.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "7.21.5",
     "mocha": "^8.2.0",
     "mocha-junit-reporter": "^2.0.0",
