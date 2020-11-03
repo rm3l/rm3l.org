@@ -70,7 +70,7 @@
     "@tippy.js/react": "^3.1.1",
     "@tryghost/helpers": "1.1.33",
     "@tryghost/helpers-gatsby": "1.0.37",
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.5.14",
     "cheerio": "1.0.0-rc.3",
