@@ -69,7 +69,7 @@
     "@theme-ui/presets": "^0.3.0",
     "@tippy.js/react": "^3.1.1",
     "@tryghost/helpers": "1.1.34",
-    "@tryghost/helpers-gatsby": "1.0.37",
+    "@tryghost/helpers-gatsby": "1.0.39",
     "axios": "^0.21.0",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.5.14",
