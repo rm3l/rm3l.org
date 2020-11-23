@@ -5870,9 +5870,10 @@ cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
 
-cypress-axe@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-0.8.1.tgz#ddb37dca6570c0642dda2388daf678e83b3e8d3f"
+cypress-axe@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-0.11.0.tgz#6abda41ed52454747fcc9ebf12bb4859b1a66bc4"
+  integrity sha512-lROvWRvLE36NuCLh9abH4GxG/ybWVc/f5IYz7IoY7vlMNpEy2uLGceLZ6uhFdyOaZclxervxuQmiYD/QuHnwZg==
 
 cypress-multi-reporters@^1.4.0:
   version "1.4.0"
@@ -7995,7 +7996,7 @@ gatsby-cli@^2.14.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.3.23, gatsby-core-utils@^1.3.24, gatsby-core-utils@^1.4.0, gatsby-core-utils@^1.5.0:
+gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.3.24, gatsby-core-utils@^1.4.0, gatsby-core-utils@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.5.0.tgz#0834b561ab32b8b93db2ddb3ee695188f8d2eea9"
   integrity sha512-hCt44m7I9Kmra/iVJwrmHXK8WFK9I1JwXQZquIVZ/JaG8UgqroxW1wpsY7ColbHGMATOmp13Efqn02VNPnms5Q==
@@ -14943,7 +14944,7 @@ shallowequal@^1.0.1, shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
 
-sharp@0.25.4, sharp@^0.25.4, sharp@^0.26.3:
+sharp@0.25.4, sharp@^0.26.3:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.4.tgz#1a8e542144a07ab7e9316ab89de80182b827c363"
   integrity sha512-umSzJJ1oBwIOfwFFt/fJ7JgCva9FvrEU2cbbm7u/3hSDZhXvkME8WE5qpaJqLIe2Har5msF5UG4CzYlEg5o3BQ==
