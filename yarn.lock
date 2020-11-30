@@ -2989,7 +2989,7 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-system/-/preset-system-0.3.4.tgz#ab3bdf3714fb9fd9e6c3076654f040430065a6da"
   integrity sha512-g3l9v0F4qRSMteVh1YlCmb4tDHUH99lbi7xAdQbX368vTrplzDwzKLnX2JS16egVR2fsGObQrU00WN/2oKIhwA==
 
-"@theme-ui/preset-tailwind@^0.3.0", "@theme-ui/preset-tailwind@^0.3.4":
+"@theme-ui/preset-tailwind@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.3.4.tgz#0223a2e98f045adf243fd95deca8d01e2a7341d4"
   integrity sha512-LD18bxHizKw/zm5zPLL7S0AN5E4uYMfIIdAAGTxlbt6MVmbRH9GSqPGIEGLjqxqxF77v/iJtClLbfULKEw2d5A==
@@ -8240,10 +8240,10 @@ gatsby-plugin-sass@^2.6.0:
     "@babel/runtime" "^7.12.5"
     sass-loader "^7.3.1"
 
-gatsby-plugin-sharp@2.9.0, gatsby-plugin-sharp@^2.2.9:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.9.0.tgz#3114b82fa01089fdd323f6e8c9ce9b83819e1ac6"
-  integrity sha512-jD/RbubKS0vrk82R5ebY8BovKgmCy8oLjaARtoJPm/yyCqvI0iFPmqop7S1omNQqL9728JxKgEEnC4kMMaxyyg==
+gatsby-plugin-sharp@2.9.1, gatsby-plugin-sharp@^2.2.9:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.9.1.tgz#74556f75858a5d7271cb83418a9b116f0a3f0289"
+  integrity sha512-Z96HoUk0gsP/6Ats5FF0na1YDECqUFSBUuFJBs0sZpSnNVmvozK4el+lBIB67eAQlHrSe55PqW/lqrq3zSXqMg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
