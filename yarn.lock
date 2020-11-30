@@ -2993,10 +2993,10 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.3.0.tgz#e916023e5111df129b8e04603250ebe5d95f87e8"
   integrity sha512-Y9BA9ESkOizaN3TV9H+D1gMYgoBTWxo+YGFFfTxn3RRO8V35UUM5tHbhNUWuuu5L5h/syN9f3WENCZ/cGcuaDA==
 
-"@theme-ui/preset-tosh@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.3.0.tgz#c368edaa88703b8552fa731605bffd668ae5cf3b"
-  integrity sha512-YgrRHVhekvS13VGsKSYPa+ixJXmIQ/8hLIAVq6OmJQMHmPFgu/2pp45Plb1RPNlYsZwtXisO1T6nhet/jqiJvw==
+"@theme-ui/preset-tosh@^0.3.0", "@theme-ui/preset-tosh@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.3.4.tgz#7140671d9fc1e15208f39573decbfafd611c0f12"
+  integrity sha512-WYL9evbp6ym0xFN/C6sWiq/WWKz7DYZesHGHfK/6VqXI1y853kHiQ65KfwIj8iPjnu4BzUxOGQNW4oS+JriTZA==
 
 "@theme-ui/presets@^0.3.0":
   version "0.3.0"
@@ -7995,7 +7995,7 @@ gatsby-cli@^2.14.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.3.23, gatsby-core-utils@^1.3.24, gatsby-core-utils@^1.4.0, gatsby-core-utils@^1.5.0:
+gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.3.24, gatsby-core-utils@^1.4.0, gatsby-core-utils@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.5.0.tgz#0834b561ab32b8b93db2ddb3ee695188f8d2eea9"
   integrity sha512-hCt44m7I9Kmra/iVJwrmHXK8WFK9I1JwXQZquIVZ/JaG8UgqroxW1wpsY7ColbHGMATOmp13Efqn02VNPnms5Q==
@@ -14943,7 +14943,7 @@ shallowequal@^1.0.1, shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
 
-sharp@0.25.4, sharp@^0.25.4, sharp@^0.26.3:
+sharp@0.25.4, sharp@^0.26.3:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.4.tgz#1a8e542144a07ab7e9316ab89de80182b827c363"
   integrity sha512-umSzJJ1oBwIOfwFFt/fJ7JgCva9FvrEU2cbbm7u/3hSDZhXvkME8WE5qpaJqLIe2Har5msF5UG4CzYlEg5o3BQ==
