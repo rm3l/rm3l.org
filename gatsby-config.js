@@ -247,11 +247,13 @@ module.exports = {
             // This provides a lightweight local fuzzy search index via FuseJS
             resolve: `@draftbox-co/gatsby-plugin-fusejs`,
             options: {
-              fields: [`title`, `slug`],
+              fields: [`title`, `slug`, `excerpt`, `plaintext`],
               resolvers: {
                 GhostPost: {
                   title: node => node.title,
-                  slug: node => node.slug
+                  slug: node => node.slug,
+                  excerpt: node => node.excerpt,
+                  plaintext: node => node.plaintext,
                 },
               },
             },

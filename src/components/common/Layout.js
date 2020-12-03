@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
+import Fuse from "fuse.js"
 
 // Styles
 import '../../styles/app.css'
@@ -47,6 +48,14 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Tippy>)
     }
     )
+
+    const myIndex = Fuse.parseIndex(data.fuseIndex.index);
+    const docs = data.allGhostPost.edges;
+    const fuse = new Fuse(docs, {
+        //your fuse search options
+    }, myIndex);
+    const results = fuse.search('Kubernetes');
+    console.log(results);
 
     return (
         <>
@@ -157,6 +166,18 @@ const DefaultLayoutSettingsQuery = props => (
                     childImageSharp {
                         fixed(width: 30, height: 30) {
                             ...GatsbyImageSharpFixed
+                        }
+                    }
+                }
+                fuseIndex {
+                    index
+                }
+                allGhostPost(
+                    sort: { order: DESC, fields: [published_at] }
+                ) {
+                    edges {
+                        node {
+                        ...GhostPostFields
                         }
                     }
                 }
