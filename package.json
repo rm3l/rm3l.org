@@ -87,7 +87,7 @@
     "gatsby-plugin-manifest": "2.7.0",
     "gatsby-plugin-nprogress": "^2.6.0",
     "gatsby-plugin-offline": "3.6.0",
-    "gatsby-plugin-react-helmet": "3.3.14",
+    "gatsby-plugin-react-helmet": "3.7.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^2.6.0",
     "gatsby-plugin-sharp": "2.10.1",
