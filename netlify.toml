@@ -14,6 +14,8 @@
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
   # local Cypress plugin will test our site after it is built
   package = "netlify-plugin-cypress"
   [plugins.inputs]
