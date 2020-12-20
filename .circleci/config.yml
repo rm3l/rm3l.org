@@ -46,6 +46,7 @@ jobs:
             echo "RECAPTCHA_SITE_KEY=$RECAPTCHA_SITE_KEY" >> .env
             if [[ -v CYPRESS_baseUrl ]]; then
               echo "Testing external url $CYPRESS_baseUrl"
+              gatsby build
               yarn ci:cy:run || yarn ci:cy:run:no-record
             else
               echo "Running local server and testing it"
