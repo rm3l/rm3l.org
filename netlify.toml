@@ -2,8 +2,20 @@
   command = "node ./tools/CI/create-env.js && gatsby build"
   publish = "public/"
 
+[build.environment]
+  # cache Cypress binary in local "node_modules" folder
+  # so Netlify caches it
+  CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+  # set TERM variable for terminal output
+  TERM = "xterm"
+
 [template]
   incoming-hooks = ["Ghost"]
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+  # local Cypress plugin will test our site after it is built
+  package = "netlify-plugin-cypress"
+  [plugins.inputs]
+    record = true
+    group = "built site"
