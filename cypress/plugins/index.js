@@ -18,8 +18,10 @@ module.exports = (on, config) => {
     //Auto-open Dev Tools for easier debugging
     if ((browser.family === 'chromium' || browser.family === 'chrome') && browser.name !== 'electron') {
         launchOptions.args.push('--auto-open-devtools-for-tabs');
+        launchOptions.args.push('--incognito');
     } else if (browser.family === 'firefox') {
         launchOptions.args.push('-devtools');
+        launchOptions.args.push('-private');
     } else if (browser.name === 'electron') {
         launchOptions.preferences.devTools = true;
     }
