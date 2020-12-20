@@ -24,7 +24,9 @@ jobs:
       # Installs NPM dependencies quickly
       - run:
           name: Install dependencies
-          command: yarn install --frozen-lockfile
+          command: |-
+            npm install -g gatsby-cli
+            yarn install --frozen-lockfile
 
       - run:
           name: Check security vulnerabilities
