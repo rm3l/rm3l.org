@@ -3,6 +3,7 @@
   publish = "public/"
 
 [build.environment]
+  DEBUG = "netlify-plugin-cypress"
   # cache Cypress binary in local "node_modules" folder
   # so Netlify caches it
   CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
