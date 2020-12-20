@@ -1,12 +1,12 @@
 [build]
-  command = "node ./tools/CI/create-env.js && gatsby build"
+  command = "node ./tools/CI/create-env.js && npx cypress install && gatsby build"
   publish = "public/"
 
 [build.environment]
   DEBUG = "netlify-plugin-cypress"
   # cache Cypress binary in local "node_modules" folder
   # so Netlify caches it
-  CYPRESS_CACHE_FOLDER = "./.cache/CypressBinary"
+  CYPRESS_CACHE_FOLDER = "./node_modules/.cache/netlify-cypress/"
   # set TERM variable for terminal output
   TERM = "xterm"
 
