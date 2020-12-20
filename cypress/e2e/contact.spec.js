@@ -32,15 +32,16 @@ describe(`Contact form`, () => {
     })
 
     it(`Does not submit if "I'm not a robot" reCaptcha checkbox not checked`, () => {
-        cy.get(`form`).find(`input[name="name"]`).type(`E2E tester`)
-        cy.get(`form`).find(`input[type="email"]`).type(`e2e_tester@example.com`)
+
+        cy.intercept('POST', /^https:\/\/formspree\.io\/*/, {
+            statusCode: 400,
+            body: `{"error":"reCAPTCHA failed"}`
+        }).as(`contact_form`)
+
+        cy.get(`form`).find(`input[name="name"]`).type(`E2E auto-tester`)
+        cy.get(`form`).find(`input[type="email"]`).type(`e2e_auto_tester@example.com`)
         cy.get(`form`).find(`textarea[name="message"]`).type(`Lorem Ipsum Dolor Sit Amet`)
 
-        cy.server()
-        cy.route(
-            `POST`,
-            `https://formspree.io/**`,
-        ).as(`contact_form`)
         cy.get(`form`).find(`input[type="submit"]`).click()
 
         cy.wait(`@contact_form`)
@@ -49,8 +50,8 @@ describe(`Contact form`, () => {
         cy.get(`.info-msg`).should(`have.css`, `color`, `rgb(255, 0, 0)`)
 
         //Form not reset
-        cy.get(`form`).find(`input[name="name"]`).should(`have.value`, `E2E tester`)
-        cy.get(`form`).find(`input[type="email"]`).should(`have.value`, `e2e_tester@example.com`)
+        cy.get(`form`).find(`input[name="name"]`).should(`have.value`, `E2E auto-tester`)
+        cy.get(`form`).find(`input[type="email"]`).should(`have.value`, `e2e_auto_tester@example.com`)
         cy.get(`form`).find(`textarea[name="message"]`).should(`have.value`, `Lorem Ipsum Dolor Sit Amet`)
     })
 })
