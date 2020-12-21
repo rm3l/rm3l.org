@@ -29,6 +29,10 @@ describe(`from root URL`, () => {
         cy.get('.site-head').should('be.visible')
     })
 
+    it(`Checks social links`, () => {
+        cy.get('.site-mast-right').should('be.visible')
+    })
+
     it(`Navigates to page 2`, () => {
         cy.findByText(`Next`).click()
         cy.wait(500)
