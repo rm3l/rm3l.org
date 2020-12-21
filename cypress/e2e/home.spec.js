@@ -2,7 +2,8 @@
 /// <reference types="cypress" />
 describe(`from root URL`, () => {
     beforeEach(() => {
-        // actual url is "baseUrl" in "cypress.json"
+        cy.intercept(/.*\/publication_logo\.jpg$/).as('publication_logo')
+        cy.intercept(/.*\/publication_cover\.jpg$/).as('publication_cover')
         cy.visit(`/`)
         cy.wait(500)
     })
@@ -11,6 +12,21 @@ describe(`from root URL`, () => {
         cy.contains(`Armel Soro's blog`)
         // https://on.cypress.io/screenshot
         cy.screenshot(`site`, { capture: `runner` })
+    })
+
+    it(`Checks publication logo image is resolvable`, () => {
+        cy.wait('@publication_logo').its('response.statusCode').should('eq', 200)
+        cy.get(`[alt="Armel Soro's blog"]`)
+            .should('be.visible')
+            .and(($img) => {
+                // "naturalWidth" and "naturalHeight" are set when the image loads
+                expect($img[0].naturalWidth).to.be.greaterThan(0)
+            })
+    })
+
+    it(`Checks publication cover image is resolvable`, () => {
+        cy.wait('@publication_cover').its('response.statusCode').should('eq', 200)
+        cy.get('.site-head').should('be.visible')
     })
 
     it(`Navigates to page 2`, () => {
