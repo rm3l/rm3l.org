@@ -23,7 +23,8 @@
             "bash",
             "docker",
             "dockerfile",
-            "groovy"
+            "groovy",
+            "diff"
           ],
           "theme": "okaidia",
           "css": true
