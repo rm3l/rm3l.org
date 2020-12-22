@@ -108,7 +108,7 @@
     "react-masonry-responsive": "^2.1.2",
     "react-recaptcha": "^2.3.10",
     "rebass": "^4.0.7",
-    "snyk": "^1.437.2",
+    "snyk": "^1.437.3",
     "theme-ui": "^0.3.4"
   },
   "snyk": true
