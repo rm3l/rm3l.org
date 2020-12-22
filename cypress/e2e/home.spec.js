@@ -2,10 +2,7 @@
 /// <reference types="cypress" />
 describe(`from root URL`, () => {
     beforeEach(() => {
-        cy.intercept(/.*\/publication_logo\.jpg$/).as('publication_logo')
-        cy.intercept(/.*\/publication_cover\.jpg$/).as('publication_cover')
         cy.visit(`/`)
-        cy.wait(500)
     })
 
     it(`Home page works`, () => {
@@ -15,9 +12,8 @@ describe(`from root URL`, () => {
     })
 
     it(`Checks publication logo image is resolvable`, () => {
-        cy.wait(1500)
-        cy.get(`[alt="Armel Soro's blog"]`)
-            .should('be.visible')
+        cy.get(`img[alt="Armel Soro's blog"]`)
+            .should(`be.visible`)
             .and(($img) => {
                 // "naturalWidth" and "naturalHeight" are set when the image loads
                 expect($img[0].naturalWidth).to.be.greaterThan(0)
@@ -25,14 +21,22 @@ describe(`from root URL`, () => {
     })
 
     it(`Checks publication cover image is resolvable`, () => {
-        cy.wait(1500)
-        //TODO Extract background-image URL property and check it is resolvable
-        cy.wait('@publication_cover').its('response.statusCode').should('eq', 200)
-        cy.get('.site-head').should('be.visible')
+        cy.get(`.site-head`)
+            .should(`be.visible`)
+            .invoke(`css`, `background-image`)
+            .then((coverDivBgUrlCssProperty) => {
+                cy.log(`coverDivBgUrlCssProperty=[${coverDivBgUrlCssProperty}]`)
+                const coverDivBgUrl = /(?:\(['"]?)(.*?)(?:['"]?\))/.exec(coverDivBgUrlCssProperty)[1]
+                cy.log(`coverDivBgUrl=${coverDivBgUrl}`)
+                expect(coverDivBgUrl.length).to.be.greaterThan(0)
+                cy.request(coverDivBgUrl).then((resp) => {
+                    expect(resp.status).to.eq(200)
+                })
+            })
     })
 
     it(`Checks social links`, () => {
-        cy.get('.site-mast-right').should('be.visible')
+        cy.get(`.site-mast-right`).should(`be.visible`)
     })
 
     it(`Navigates to page 2`, () => {
