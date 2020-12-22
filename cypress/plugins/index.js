@@ -11,21 +11,22 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-  on('before:browser:launch', (browser = {}, launchOptions) => {
+// eslint-disable-next-line no-unused-vars
+module.exports = (on, _config) => {
+    // `on` is used to hook into various events Cypress emits
+    // `config` is the resolved Cypress config
+    on(`before:browser:launch`, (browser = {}, launchOptions) => {
     //Auto-open Dev Tools for easier debugging
-    if ((browser.family === 'chromium' || browser.family === 'chrome') && browser.name !== 'electron') {
-        launchOptions.args.push('--auto-open-devtools-for-tabs');
-        launchOptions.args.push('--incognito');
-    } else if (browser.family === 'firefox') {
-        launchOptions.args.push('-devtools');
-        launchOptions.args.push('-private');
-    } else if (browser.name === 'electron') {
-        launchOptions.preferences.devTools = true;
-    }
+        if ((browser.family === `chromium` || browser.family === `chrome`) && browser.name !== `electron`) {
+            launchOptions.args.push(`--auto-open-devtools-for-tabs`)
+            launchOptions.args.push(`--incognito`)
+        } else if (browser.family === `firefox`) {
+            launchOptions.args.push(`-devtools`)
+            launchOptions.args.push(`-private`)
+        } else if (browser.name === `electron`) {
+            launchOptions.preferences.devTools = true
+        }
 
-    return launchOptions;
-  });
+        return launchOptions
+    })
 }
