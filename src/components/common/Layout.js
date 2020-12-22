@@ -62,14 +62,17 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${config.sitePublicationCoverUrl || site.cover_image})` } }}>
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
                                     <Link to="/">
-                                        {site.logo ?
-                                            <img className="site-logo" src={site.logo} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                        {
+                                        config.sitePublicationLogoUrl ?
+                                            <img className="site-logo" src={config.sitePublicationLogoUrl} alt={site.title} />
+                                            : site.logo ?
+                                                <img className="site-logo" src={site.logo} alt={site.title} />
+                                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>

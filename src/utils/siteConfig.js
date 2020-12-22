@@ -66,4 +66,7 @@ module.exports = {
             displayName: `RSS Feed`,
         },
     },
+
+    sitePublicationLogoUrl: `https://rm3l-org.s3-us-west-1.amazonaws.com/assets/publication_logo.jpg`,
+    sitePublicationCoverUrl: `https://rm3l-org.s3-us-west-1.amazonaws.com/assets/publication_cover.jpg`,
 }
