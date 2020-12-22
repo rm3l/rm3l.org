@@ -17,7 +17,7 @@ describe(`Portfolio page`, () => {
             .each(($el) => {
                 cy.wrap($el)
                     .and(($img) => {
-                    // "naturalWidth" and "naturalHeight" are set when the image loads
+                        // "naturalWidth" and "naturalHeight" are set when the image loads
                         expect($img[0].naturalWidth).to.be.greaterThan(0)
                     })
                     .invoke(`attr`, `src`)

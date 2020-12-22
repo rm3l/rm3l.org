@@ -12,7 +12,7 @@ const PortfolioProjectCard = ({ page }) => {
             <figure className="card">
                 <Link href={page.meta_title} className="card__image">
                     <Image alt={page.title}
-                        src={page.feature_image ? page.feature_image : `https://upload.wikimedia.org/wikipedia/commons/9/93/No-logo.svg`}
+                        src={page.canonical_url ? page.canonical_url : page.feature_image ? page.feature_image : `https://upload.wikimedia.org/wikipedia/commons/9/93/No-logo.svg`}
                         sx={{
                             width: [`60%`, `35%`],
                         }}
@@ -58,6 +58,7 @@ PortfolioProjectCard.propTypes = {
         published_at: PropTypes.string.isRequired,
         meta_title: PropTypes.string.isRequired,
         meta_description: PropTypes.string.isRequired,
+        canonical_url: PropTypes.string.isRequired,
     }).isRequired,
 }
 
