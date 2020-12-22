@@ -15,7 +15,7 @@ describe(`from root URL`, () => {
     })
 
     it(`Checks publication logo image is resolvable`, () => {
-        cy.wait('@publication_logo').its('response.statusCode').should('eq', 200)
+        cy.wait(1500)
         cy.get(`[alt="Armel Soro's blog"]`)
             .should('be.visible')
             .and(($img) => {
@@ -25,6 +25,8 @@ describe(`from root URL`, () => {
     })
 
     it(`Checks publication cover image is resolvable`, () => {
+        cy.wait(1500)
+        //TODO Extract background-image URL property and check it is resolvable
         cy.wait('@publication_cover').its('response.statusCode').should('eq', 200)
         cy.get('.site-head').should('be.visible')
     })
