@@ -73,7 +73,7 @@
     "@tryghost/helpers-gatsby": "1.0.40",
     "axios": "^0.21.1",
     "babel-plugin-prismjs": "^2.0.1",
-    "babel-preset-gatsby": "^0.9.0",
+    "babel-preset-gatsby": "^0.9.1",
     "cheerio": "1.0.0-rc.5",
     "dotenv": "^8.2.0",
     "gatsby": "2.29.1",
