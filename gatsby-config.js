@@ -216,6 +216,26 @@ module.exports = {
             },
         },
         {
+            // Automatically download Google Analytics data and use this to create a model
+            // to predict which page a user is most likely to visit from a given page
+            resolve: `gatsby-plugin-guess-js`,
+            options: {
+                // Find the view id in the GA admin in a section labeled "views"
+                GAViewID: `156699292`,
+                // Add a JWT to get data from GA
+                jwt: {
+                    client_email: `GOOGLE_SERVICE_ACCOUNT_EMAIL`,
+                    private_key: `GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY`,
+                },
+                minimumThreshold: 0.03,
+                // The "period" for fetching analytic data.
+                period: {
+                    startDate: new Date(`2010-1-1`),
+                    endDate: new Date(),
+                },
+            },
+        },
+        {
             resolve: `gatsby-plugin-disqus`,
             options: {
                 shortname: `rm3l`,
