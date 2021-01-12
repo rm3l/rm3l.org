@@ -221,11 +221,11 @@ module.exports = {
             resolve: `gatsby-plugin-guess-js`,
             options: {
                 // Find the view id in the GA admin in a section labeled "views"
-                GAViewID: `156699292`,
+                GAViewID: process.env.GA_VIEW_ID,
                 // Add a JWT to get data from GA
                 jwt: {
-                    client_email: `GOOGLE_SERVICE_ACCOUNT_EMAIL`,
-                    private_key: `GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY`,
+                    client_email: process.env.GA_GOOGLE_SERVICE_ACCOUNT_EMAIL,
+                    private_key: process.env.GA_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
                 },
                 minimumThreshold: 0.03,
                 // The "period" for fetching analytic data.
