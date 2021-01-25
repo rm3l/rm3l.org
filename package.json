@@ -10,7 +10,7 @@
     "url": "git+https://github.com/rm3l/rm3l.org.git"
   },
   "resolutions": {
-    "sharp": "0.25.4"
+    "sharp": "0.27.0"
   },
   "engines": {
     "node": ">= 10.13.0"
