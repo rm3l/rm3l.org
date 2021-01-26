@@ -68,11 +68,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-mast-left">
                                     <Link to="/">
                                         {
-                                        config.sitePublicationLogoUrl ?
-                                            <img className="site-logo" src={config.sitePublicationLogoUrl} alt={site.title} />
-                                            : site.logo ?
-                                                <img className="site-logo" src={site.logo} alt={site.title} />
-                                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                            config.sitePublicationLogoUrl ?
+                                                <img className="site-logo" src={config.sitePublicationLogoUrl} alt={site.title} />
+                                                : site.logo ?
+                                                    <img className="site-logo" src={site.logo} alt={site.title} />
+                                                    : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>
