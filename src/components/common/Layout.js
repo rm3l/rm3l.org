@@ -54,7 +54,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <html lang={site.lang} />
                 <title>{site.title} : {site.description}</title>
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <script src={`https://www.google.com/recaptcha/api.js?r=${Date.now()}`} async></script>
                 <body className={bodyClass} />
             </Helmet>
 
