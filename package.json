@@ -79,7 +79,7 @@
     "gatsby": "2.32.3",
     "gatsby-awesome-pagination": "0.3.6",
     "gatsby-image": "2.11.0",
-    "gatsby-plugin-advanced-sitemap": "1.5.7",
+    "gatsby-plugin-advanced-sitemap": "1.6.0",
     "gatsby-plugin-catch-links": "2.10.0",
     "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-feed": "2.13.0",
