@@ -5493,10 +5493,10 @@ cypress-multi-reporters@^1.4.0:
     debug "^4.1.1"
     lodash "^4.17.15"
 
-cypress@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-6.3.0.tgz#e27bba01d7e493265700e1e85333dca0b0127ede"
-  integrity sha512-Ec6TAFOxdSB2HPINNJ1f7z75pENXcfCaQkz+A9j0eGSvusFJ2NNErq650DexCbNJAnCQkPqXB4XPH9kXnSQnUA==
+cypress@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-6.4.0.tgz#432c516bf4f1a0f042a6aa1f2c3a4278fa35a8b2"
+  integrity sha512-SrsPsZ4IBterudkoFYBvkQmXOVxclh1/+ytbzpV8AH/D2FA+s2Qy5ISsaRzOFsbQa4KZWoi3AKwREmF1HucYkg==
   dependencies:
     "@cypress/listr-verbose-renderer" "^0.4.1"
     "@cypress/request" "^2.88.5"
@@ -5512,6 +5512,7 @@ cypress@^6.3.0:
     cli-table3 "~0.6.0"
     commander "^5.1.0"
     common-tags "^1.8.0"
+    dayjs "^1.9.3"
     debug "^4.1.1"
     eventemitter2 "^6.4.2"
     execa "^4.0.2"
@@ -5526,7 +5527,7 @@ cypress@^6.3.0:
     lodash "^4.17.19"
     log-symbols "^4.0.0"
     minimist "^1.2.5"
-    moment "^2.27.0"
+    moment "^2.29.1"
     ospath "^1.2.2"
     pretty-bytes "^5.4.1"
     ramda "~0.26.1"
@@ -5579,6 +5580,11 @@ date-fns@^2.14.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.15.0.tgz#424de6b3778e4e69d3ff27046ec136af58ae5d5f"
   integrity sha512-ZCPzAMJZn3rNUvvQIMlXhDr4A+Ar07eLeGsGREoWU19a3Pqf5oYa+ccd+B3F6XVtQY6HANMFdOQ8A+ipFnvJdQ==
+
+dayjs@^1.9.3:
+  version "1.10.4"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha512-RI/Hh4kqRc1UKLOAf/T5zdMMX5DQIlDxwUe3wSyMMnEbGunnpENCdbUgM+dW7kXidZqCttBrmw7BhN4TMddkCw==
 
 debug@*, debug@4, debug@4.3.1, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1:
   version "4.3.1"
@@ -7704,10 +7710,10 @@ gatsby-cli@^2.18.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.9.0.tgz#ff349cc2013fd06a85099b3aee061b01f64ceabb"
-  integrity sha512-AWq9E+rBY+fWJrhdOx0rn/LlZ0eCjpqLYlDcUmLZ5NjwLARgkEXNf4JsvDETLtThcNlSOibEMQex8arsYatmkA==
+gatsby-core-utils@^1.10.0, gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.9.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.10.0.tgz#7df5bc7b7e810c71602d5ec18a925e8a7890fb45"
+  integrity sha512-uI5gJXmVHegn8E/vttoX0BaXRJPC73RzxuZDtl2U5WBEgeg+VVkKCmNVQE9Xk+Qstm2Wd6RU+QJ4LMx5ywYZhQ==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -7804,16 +7810,16 @@ gatsby-plugin-emotion@^4.1.2:
     "@babel/runtime" "^7.10.3"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
-gatsby-plugin-feed@2.12.0, gatsby-plugin-feed@^2.3.6:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.12.0.tgz#3013d0919b037f2aa56ae0661a98ab34d2b574c9"
-  integrity sha512-Ag53hbQfs3y5C4aV0EtC7udhB7eyjAvqcGY6NsbtEvjpEMWqgOXO5qIL+jyk9FZz5OacSQsMX2EodITb090RSA==
+gatsby-plugin-feed@2.13.0, gatsby-plugin-feed@^2.3.6:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.13.0.tgz#18228373d3674f428529d9b2cca9ff94e6b369b4"
+  integrity sha512-dQQ0RzSEqfkJxshpNhNm4BCizUWw+Y57qvweiaz2W8+v4wRcuTKGSEr1aKWd93lrkVgiWaJoqDUnidrK9RKQcQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@hapi/joi" "^15.1.1"
     common-tags "^1.8.0"
     fs-extra "^8.1.0"
-    gatsby-plugin-utils "^0.8.0"
+    gatsby-plugin-utils "^0.9.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
@@ -7824,10 +7830,10 @@ gatsby-plugin-force-trailing-slashes@1.0.5:
   dependencies:
     "@babel/runtime" "7.12.5"
 
-gatsby-plugin-google-analytics@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.10.0.tgz#e3a557779232fd919688b646e6ebd997c0575291"
-  integrity sha512-g3NjUrEPJJmjHrUxDaxgLV3rLfFXzHnGPKv4TEiqcntbuWH24rlWiZYi1btjGN+QqJMeOYGFzNILVMS8cFLxtw==
+gatsby-plugin-google-analytics@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.11.0.tgz#8d74bd3c100706f03bbccf7b130a758fce9994ad"
+  integrity sha512-aVFmzoozd0ifn5HJJY0W8R7DHkyTEvj/ueRyJJNlQMadQagIAYq+7efKon4gJzd4NZkLcoDb6moiAR066FwIIg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
@@ -7893,14 +7899,14 @@ gatsby-plugin-nprogress@^2.9.0:
     "@babel/runtime" "^7.12.5"
     nprogress "^0.2.0"
 
-gatsby-plugin-offline@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.9.0.tgz#2d5d830b03c812ed4f52ff178cfc77ee4c0aac3f"
-  integrity sha512-sLxU+QMYq7QLte+/gRNm0vTRgil6VvbkxtEjf/e/oXpAkuy+Pm9IeaWKRtNfWcThpr2CjQbdkZpELLr8PZrCDw==
+gatsby-plugin-offline@3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.10.0.tgz#b860ff5d630122b1603d7477f7962161622e0bc4"
+  integrity sha512-+Rsyw/N5MhpkuMc7G5BlD27KnhcuzBOrBw/bjSjE+VsnrKP4byQjGVB2bwH326Sdt3Ci15lMY1sQAi0IMEo9/w==
   dependencies:
     "@babel/runtime" "^7.12.5"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.9.0"
+    gatsby-core-utils "^1.10.0"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.20"
@@ -8001,6 +8007,13 @@ gatsby-plugin-utils@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.8.0.tgz#2ecd848e6e3362ee929e496bc11528267d2fb96e"
   integrity sha512-EQC1U7LQVHaI6jXMbx4ryvA8rV1yYrlyxwO2T4nuLUDOO1STUpKTYCH4ySOEtXi6f4P5v7NxgHkFoid6ayY9HA==
+  dependencies:
+    joi "^17.2.1"
+
+gatsby-plugin-utils@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.9.0.tgz#64b35a0faaabad5b5c99ee8951a9c08cd64be289"
+  integrity sha512-InM8PNHtx1kF87qQOlf4pVeNA8lSIsvSjImvN6dvpUjeQqOMRN1avY0W9Trh6LKTF/keWWj975Gk8Vcr+PYyDA==
   dependencies:
     joi "^17.2.1"
 
@@ -8131,17 +8144,17 @@ gatsby-remark-smartypants@^2.1.2:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-filesystem@2.10.0, gatsby-source-filesystem@^2.1.7:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.10.0.tgz#9ee2f770d3ae15062a111bb1faea76b7d6e2b059"
-  integrity sha512-kf1D25wBe+mXa+c4C0HgI+5bwgEoTUQupP1q7nk4Q1+RC2mHlWSm3X+lNPWVfxg8MKNWrLmrX1GrXorW8cEtEQ==
+gatsby-source-filesystem@2.11.0, gatsby-source-filesystem@^2.1.7:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.11.0.tgz#3fff5398796b17eb960e83d0eaa99e578b6e4ef1"
+  integrity sha512-SLKksyfRvdMHyF0kb3YCr4ME6RW4Pje9zo1RVAJ1sqaBFDch0YUZzTE51QO586JSkrN00UeE8lU++ODXlm425g==
   dependencies:
     "@babel/runtime" "^7.12.5"
     better-queue "^3.8.10"
     chokidar "^3.4.3"
     file-type "^16.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.9.0"
+    gatsby-core-utils "^1.10.0"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.4.6"
@@ -11767,7 +11780,7 @@ modularscale@^2.0.1:
   dependencies:
     lodash.isnumber "^3.0.0"
 
-moment@2.29.1, moment@^2.27.0:
+moment@2.29.1, moment@^2.27.0, moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -11913,10 +11926,10 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
 
-netlify-plugin-cypress@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-1.4.1.tgz#b57d6f093658ecfbcc0c94da6d1ab1c8340c55aa"
-  integrity sha512-sKMafNqG4oQIUKiNzcXFbIxwQggdlicq5ErdncB/I3Rphl6883XT1d4jxE2WmmkSKWsFwJ644T/HrF3i6Jj3iw==
+netlify-plugin-cypress@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-1.8.1.tgz#145849233fa22c2bc2402238f82de479880a18ec"
+  integrity sha512-2Qi/NDy6Q7RbEq0FTX+nmKTqzIURu3ikpTH2jijewQIHrJRR9Y+qt2kmMtxs4H3hdNqZexj1cfm8XelM01e/vg==
   dependencies:
     debug "4.1.1"
     got "10.7.0"
