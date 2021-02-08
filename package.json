@@ -55,7 +55,7 @@
     "eslint-plugin-react": "7.22.0",
     "mocha": "^8.2.1",
     "mocha-junit-reporter": "^2.0.0",
-    "netlify-plugin-cypress": "^1.4.1",
+    "netlify-plugin-cypress": "^1.8.1",
     "start-server-and-test": "^1.12.0"
   },
   "dependencies": {
