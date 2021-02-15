@@ -12030,10 +12030,10 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
 
-netlify-plugin-cypress@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-1.11.0.tgz#4e4ed04d03945dd164255da7d31dd2b3c1c84c57"
-  integrity sha512-Psdt/AQliaGu6tEBL1qUds3UWDRBTmcJl9esFurmvllTbHqQ/Oh2on9UtGpB9AfzheF+S6RAwlC3+7W0nK4m/w==
+netlify-plugin-cypress@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-1.11.1.tgz#cf76415538c11c8b99ec926f7ced99f04f2bc184"
+  integrity sha512-BC/AHndIPfafQihDMxLPdlk7jPZeevwYNzE2VHL0hKgcxlrdPCygjx9yYhFAqV20jJe2QYpRucTWrBTelnHd/A==
   dependencies:
     common-tags "1.8.0"
     debug "4.1.1"
