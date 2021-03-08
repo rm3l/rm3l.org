@@ -12240,16 +12240,17 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
 
-netlify-plugin-cypress@^1.11.1:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-1.11.1.tgz#cf76415538c11c8b99ec926f7ced99f04f2bc184"
-  integrity sha512-BC/AHndIPfafQihDMxLPdlk7jPZeevwYNzE2VHL0hKgcxlrdPCygjx9yYhFAqV20jJe2QYpRucTWrBTelnHd/A==
+netlify-plugin-cypress@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-cypress/-/netlify-plugin-cypress-2.1.0.tgz#3361329a102abe81bbc18cf6b803bf5a55b55d7b"
+  integrity sha512-DLD811EeDraZjQaLo9j3j+cTwrQchsLICWvjdkQf2bit0EiW4A9QekssSUPR8G+6B++7Ehxf0OTAzp1aK6sHZg==
   dependencies:
     common-tags "1.8.0"
     debug "4.1.1"
     got "10.7.0"
     local-web-server "^4.2.1"
     puppeteer "^7.0.1"
+    ramda "0.27.1"
 
 netmask@^1.0.6:
   version "1.0.6"
@@ -14204,7 +14205,7 @@ quick-lru@^5.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-ramda@^0.27.1, ramda@~0.27.1:
+ramda@0.27.1, ramda@^0.27.1, ramda@~0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
   integrity sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
