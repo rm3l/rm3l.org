@@ -35,10 +35,10 @@
     "cy:run": "env-cmd cypress run --record",
     "cy:run:no-record": "env-cmd cypress run",
     "cy:open": "cypress open",
-    "ci:cy:run": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json --record",
-    "ci:cy:run:no-record": "env-cmd cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json",
-    "ci:test": "start-test dev 8000 ci:cy:run",
-    "ci:test:no-record": "start-test dev 8000 ci:cy:run:no-record",
+    "ci:cy:run": "env-cmd --use-shell \"export CYPRESS_BASE_URL=http://localhost:9000 && cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json --record\"",
+    "ci:cy:run:no-record": "env-cmd --use-shell \"export CYPRESS_BASE_URL=http://localhost:9000 && cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress-recorder-config.json\"",
+    "ci:test": "start-test serve 9000 ci:cy:run",
+    "ci:test:no-record": "start-test serve 9000 ci:cy:run:no-record",
     "snyk-protect": "snyk protect"
   },
   "devDependencies": {
