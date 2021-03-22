@@ -2729,11 +2729,6 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-system/-/preset-system-0.6.0.tgz#7934a92e6d9eec4f8870fa0162c7fdfeb1910722"
   integrity sha512-6lfMuwwYsr5epqIQkH3MAv2jEf6WsajQH2H/nT7y0f3brwLFbXINXIcx5wo8I6xJaqmKoAaK+DvXlIJ3SoNb4w==
 
-"@theme-ui/preset-tailwind@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.3.5.tgz#7f6c855c24e2f70574d8f08c55be2444c7075439"
-  integrity sha512-UGNQKGXj47i0OhY1u8StXkEGvbPl1RRMLwqhJ6MNAvMdQX7Du6Eg+En5iuXy+yKAIC+KGxOTy7/5FzEf/1uBwg==
-
 "@theme-ui/preset-tailwind@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.6.0.tgz#f4ec85cb78d08a3741ee5288d8aa21d3c5bb4bb9"
