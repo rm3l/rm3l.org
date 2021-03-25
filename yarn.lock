@@ -23,7 +23,7 @@
   dependencies:
     "@babel/highlight" "^7.10.4"
 
-"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5":
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.5.5":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"
   integrity sha512-HV1Cm0Q3ZrpCR93tkWOYiuYIgLxZXZFVG2VgK+MBWjUqZTundupbfx2aXarXuw5Ko5aMcjtJgbSs4vUGBS5v6g==
@@ -3943,6 +3943,11 @@ babel-extract-comments@^1.0.0:
   resolved "https://registry.yarnpkg.com/babel-extract-comments/-/babel-extract-comments-1.0.0.tgz#0a2aedf81417ed391b85e18b4614e693a0351a21"
   dependencies:
     babylon "^6.18.0"
+
+babel-jsx-utils@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/babel-jsx-utils/-/babel-jsx-utils-1.1.0.tgz#304ce4fce0c86cbeee849551a45eb4ed1036381a"
+  integrity sha512-Mh1j/rw4xM9T3YICkw22aBQ78FhsHdsmlb9NEk4uVAFBOg+Ez9ZgXXHugoBPCZui3XLomk/7/JBBH4daJqTkQQ==
 
 babel-loader@^8.2.2:
   version "8.2.2"
@@ -8075,6 +8080,24 @@ gatsby-plugin-google-analytics@^3.1.0:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
 
+gatsby-plugin-image@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.1.2.tgz#85fc4f5356bf29c2098c4371e5396e14a0ff632e"
+  integrity sha512-ijuCa/++l+J3lUuEQyDPu1CoQ9dMdjlmgXQIZZvo+ZK25FlWVvZn/tyyg/cFekqv+Ir1Dr8LnHHlxEKdvYkIrw==
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/parser" "^7.12.5"
+    "@babel/traverse" "^7.12.5"
+    babel-jsx-utils "^1.1.0"
+    babel-plugin-remove-graphql-queries "^3.1.0"
+    camelcase "^5.3.1"
+    chokidar "^3.5.1"
+    common-tags "^1.8.0"
+    fs-extra "^8.1.0"
+    gatsby-core-utils "^2.1.0"
+    objectFitPolyfill "^2.3.0"
+    prop-types "^15.7.2"
+
 gatsby-plugin-manifest@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.1.0.tgz#9a40e2c7355663ea0863b199e7ba92af2f655e8d"
@@ -8193,32 +8216,6 @@ gatsby-plugin-sass@^4.1.0:
     resolve-url-loader "^3.1.2"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.1.1.tgz#886f99646fe37870ed549e0763db5a829b343792"
-  integrity sha512-j/4i0ZII1q2wC8bAD3nsi7FuLQv5m6rtdBy42xZfv3TkXIuPpAN4nbN+5BEfSy1yQuOLGe6jMbsUrtenMk1IwQ==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    async "^3.2.0"
-    bluebird "^3.7.2"
-    filenamify "^4.2.0"
-    fs-extra "^9.1.0"
-    gatsby-core-utils "^2.1.0"
-    gatsby-telemetry "^2.1.0"
-    got "^10.7.0"
-    imagemin "^7.0.1"
-    imagemin-mozjpeg "^9.0.0"
-    imagemin-pngquant "^9.0.1"
-    lodash "^4.17.21"
-    mini-svg-data-uri "^1.2.3"
-    potrace "^2.1.8"
-    probe-image-size "^6.0.0"
-    progress "^2.0.3"
-    semver "^7.3.4"
-    sharp "^0.27.0"
-    svgo "1.3.2"
-    uuid "3.4.0"
-
 gatsby-plugin-sharp@^2.2.9:
   version "2.14.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.14.3.tgz#80970bd9604cdbb0005a222fb61bcd0e093e1a23"
@@ -8236,6 +8233,32 @@ gatsby-plugin-sharp@^2.2.9:
     imagemin-mozjpeg "^9.0.0"
     imagemin-pngquant "^9.0.1"
     lodash "^4.17.20"
+    mini-svg-data-uri "^1.2.3"
+    potrace "^2.1.8"
+    probe-image-size "^6.0.0"
+    progress "^2.0.3"
+    semver "^7.3.4"
+    sharp "^0.27.0"
+    svgo "1.3.2"
+    uuid "3.4.0"
+
+gatsby-plugin-sharp@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.1.2.tgz#fd14aa7d729c3a8b8770321c91f33ad59f404185"
+  integrity sha512-YH4vd9u18Z0x/iiPqiyDpd8CQP7N7gN1LvvGydtch34sWijdQcCBP/kiZk+hn1iXCvVG4vxLt2DvkY4LaWGUpA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    async "^3.2.0"
+    bluebird "^3.7.2"
+    filenamify "^4.2.0"
+    fs-extra "^9.1.0"
+    gatsby-core-utils "^2.1.0"
+    gatsby-telemetry "^2.1.0"
+    got "^10.7.0"
+    imagemin "^7.0.1"
+    imagemin-mozjpeg "^9.0.0"
+    imagemin-pngquant "^9.0.1"
+    lodash "^4.17.21"
     mini-svg-data-uri "^1.2.3"
     potrace "^2.1.8"
     probe-image-size "^6.0.0"
@@ -8564,20 +8587,6 @@ gatsby-theme-medium@^0.0.1:
     typeface-playfair-display "^0.0.72"
     typography-theme-wordpress-2016 "^0.16.19"
 
-gatsby-transformer-sharp@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.1.0.tgz#958318785828302ef195a071bfb71071c94028be"
-  integrity sha512-wj7KFhbqkxT5Ff5R8RDpBz5DweR6frLyIX28n4ryGIqMkgkmEwkIfWcA4/JjocDm4dVwkXKmlwJA1jufkGEpCg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    bluebird "^3.7.2"
-    common-tags "^1.8.0"
-    fs-extra "^9.1.0"
-    potrace "^2.1.8"
-    probe-image-size "^6.0.0"
-    semver "^7.3.4"
-    sharp "^0.27.0"
-
 gatsby-transformer-sharp@^2.2.5:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.12.0.tgz#c33a92788e8b432f01960f4de2745c105cea4784"
@@ -8585,6 +8594,20 @@ gatsby-transformer-sharp@^2.2.5:
   dependencies:
     "@babel/runtime" "^7.12.5"
     bluebird "^3.7.2"
+    fs-extra "^9.1.0"
+    potrace "^2.1.8"
+    probe-image-size "^6.0.0"
+    semver "^7.3.4"
+    sharp "^0.27.0"
+
+gatsby-transformer-sharp@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.1.0.tgz#958318785828302ef195a071bfb71071c94028be"
+  integrity sha512-wj7KFhbqkxT5Ff5R8RDpBz5DweR6frLyIX28n4ryGIqMkgkmEwkIfWcA4/JjocDm4dVwkXKmlwJA1jufkGEpCg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    bluebird "^3.7.2"
+    common-tags "^1.8.0"
     fs-extra "^9.1.0"
     potrace "^2.1.8"
     probe-image-size "^6.0.0"
@@ -12717,6 +12740,11 @@ object.values@^1.1.0, object.values@^1.1.1:
     es-abstract "^1.17.0-next.1"
     function-bind "^1.1.1"
     has "^1.0.3"
+
+objectFitPolyfill@^2.3.0:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/objectFitPolyfill/-/objectFitPolyfill-2.3.5.tgz#be8c83064aabfa4e88780f776c2013c48ce1f745"
+  integrity sha512-8Quz071ZmGi0QWEG4xB3Bv5Lpw6K0Uca87FLoLMKMWjB6qIq9IyBegP3b/VLNxv2WYvIMGoeUQ+c6ibUkNa8TA==
 
 obuf@^1.0.0, obuf@^1.1.2:
   version "1.1.2"
