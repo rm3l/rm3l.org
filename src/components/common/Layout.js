@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
@@ -72,7 +72,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                                 <img className="site-logo" src={config.sitePublicationLogoUrl} alt={site.title} />
                                                 : site.logo ?
                                                     <img className="site-logo" src={site.logo} alt={site.title} />
-                                                    : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                                    : <GatsbyImage src={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>

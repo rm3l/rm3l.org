@@ -56,7 +56,7 @@ module.exports = {
             },
         },
         // Setup for optimised images.
-        // See https://www.gatsbyjs.org/packages/gatsby-image/
+        `gatsby-plugin-image`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
