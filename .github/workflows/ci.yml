@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+    tags: [ '*' ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build_and_test:
+    container:
+      # find Docker image at https://github.com/cypress-io/cypress-docker-images
+      image: cypress/base:12.14.0
+      env:
+        ## this enables colors in the output
+        TERM: xterm
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: |
+          npm install -g gatsby-cli
+          yarn install --frozen-lockfile
+
+      - name: Prepare test environment
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
+          GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
+          CONTACT_FORM_ENDPOINT: ${{ secrets.CONTACT_FORM_ENDPOINT }}
+          RECAPTCHA_SITE_KEY: ${{ secrets.RECAPTCHA_SITE_KEY }}
+        run: |
+          echo "CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY" >> .env
+          echo "GHOST_API_URL=$GHOST_API_URL" >> .env
+          echo "GHOST_CONTENT_API_KEY=$GHOST_CONTENT_API_KEY" >> .env
+          echo "CONTACT_FORM_ENDPOINT=$CONTACT_FORM_ENDPOINT" >> .env
+          echo "RECAPTCHA_SITE_KEY=$RECAPTCHA_SITE_KEY" >> .env
+
+      - name: Run server and E2E tests against external URL
+        if: ${{ startsWith(env.CYPRESS_baseUrl, 'https://') }}
+        run: |
+          echo "Testing external url $CYPRESS_baseUrl"
+          gatsby build
+          yarn ci:cy:run:no-record
+
+      - name: Run server and E2E tests against local server
+        if: ${{ !startsWith(env.CYPRESS_baseUrl, 'https://') }}
+        run: |
+          echo "Running local server and testing it"
+          yarn ci:test:no-record
+
+      - name: Archive Cypress test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress_results
+          path: cypress/results/*
+
+      - name: Archive Cypress screenshots
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress_screenshots
+          path: cypress/screenshots/*
+
+      - name: Archive Cypress videos
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress_videos
+          path: cypress/videos/*
+
