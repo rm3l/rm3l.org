@@ -4030,7 +4030,7 @@ babel-plugin-prismjs@^2.0.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-prismjs/-/babel-plugin-prismjs-2.0.1.tgz#b56095f423926662259de8f5ee50a7afbcf0fd92"
   integrity sha512-GqQGa3xX3Z2ft97oDbGvEFoxD8nKqb3ZVszrOc5H7icnEUA56BIjVYm86hfZZA82uuHLwTIfCXbEKzKG1BzKzg==
 
-babel-plugin-remove-graphql-queries@^3.1.0, babel-plugin-remove-graphql-queries@^3.2.0:
+babel-plugin-remove-graphql-queries@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.2.0.tgz#63e044ee1d299679a9b8180f6b111a3769b7a79d"
   integrity sha512-cjH42CKC9NjRLZbnPDUucNhnZ2Rq6gfUSLBP2UGfz9KYk/Fi+lzAVU3W+0KUV2DntyoLuV86YwC4mI2QsS3yag==
@@ -8154,10 +8154,10 @@ gatsby-plugin-mdx@^1.0.19:
     unist-util-remove "^1.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-plugin-nprogress@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.1.0.tgz#f318dacdf3bd36eef5b2dda490103d467729834f"
-  integrity sha512-CbYFaY5atPsZJJ/sDty1vn19ebxLJ+RPg3SEFFYM/KH6LZtMIMWxnARRb10NpeiBUOj8AfkmqOAv+eOSxZGs4w==
+gatsby-plugin-nprogress@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.2.0.tgz#c2e72f23ff9d1a45a1c542de0db245f939f26f81"
+  integrity sha512-f99nGdLeEDPj6YSjsNnCND4/J0200Eht3t/UVMYytY7rjG/0ZaxIfULJrr6ATPOk9IZkzacupQo0QbYsSyaRCg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     nprogress "^0.2.0"
@@ -8315,7 +8315,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^1.1.0, gatsby-plugin-utils@^1.2.0:
+gatsby-plugin-utils@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.2.0.tgz#4751d952c9c99f15d4a68497cd1841a90aec6c33"
   integrity sha512-9+kKeyQdXJtQ/9pthfP4LTiem7coOdBt+8wRTwa+DF331qfzunjekl0uWlZSZBnQpG1uS7GX4R/4tei72cVVmw==
@@ -8535,7 +8535,7 @@ gatsby-telemetry@^1.10.1:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^2.1.0, gatsby-telemetry@^2.2.0:
+gatsby-telemetry@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-2.2.0.tgz#c6ed229ea2f1c238200ec4a9e943ead7a366fe9b"
   integrity sha512-Zx/MP+By8QHgm2fikfq6egmcrwREsWAg2wfqTo0CRax5WUQQWl57zX3b0bIJ+k0sFCvU4XuxP0XrytvzxkVViQ==
