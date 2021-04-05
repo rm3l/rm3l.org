@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^7.0.4",
-    "axe-core": "^4.1.3",
+    "axe-core": "^4.1.4",
     "babel-eslint": "10.1.0",
     "cypress": "^6.8.0",
     "cypress-axe": "^0.12.2",
@@ -91,7 +91,7 @@
     "gatsby-plugin-image": "^1.1.2",
     "gatsby-plugin-manifest": "3.2.0",
     "gatsby-plugin-nprogress": "^3.1.0",
-    "gatsby-plugin-offline": "4.1.0",
+    "gatsby-plugin-offline": "4.2.0",
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^4.2.0",
