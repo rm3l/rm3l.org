@@ -7958,10 +7958,10 @@ gatsby-graphiql-explorer@^1.1.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-image@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.1.0.tgz#5b40682eba42696c04bfa776fa7d8477517d3959"
-  integrity sha512-wF/Ck0IagcUeVCtS7E9TYYPR5w95Dgiiu5soysI92Rvjw0KIBYA2nXWcC7JO7nV9ef4UBwJR4Dy4rjHIdOPI9w==
+gatsby-image@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.2.0.tgz#b9724a2f4559113e478877904df97b2aca022358"
+  integrity sha512-7tNow0zRTrSMBX8BoZFqC/akXCjYuLKElhJe3wVpDTgfgCfoJMNNIrbepOBYORcQqv9YB2WWDQjhwtCro/WRqQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     object-fit-images "^3.2.4"
@@ -8218,10 +8218,10 @@ gatsby-plugin-react-helmet@^3.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-react-helmet@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.1.0.tgz#a210eeb840411fe59d1da1184e2ffb25383cbc9d"
-  integrity sha512-vMTtpVnzrYRcBrDt4feui0CxviINtNFwulRbhJ0if63H31Ep0i4jcMzDitVqpHxcImkzQwchK3Qap3JWqr6L6Q==
+gatsby-plugin-react-helmet@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.2.0.tgz#406a8500576fe13674b317041a91b73189b5c58f"
+  integrity sha512-EF9GsIgDpO3qVTMDXzzm9h3G10tNiejp3MfIrSgSE66NGLY/GR8aEsENsOWrjHsHMOs7AaC1eOXbNQ0aJt3Otg==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
@@ -8232,10 +8232,10 @@ gatsby-plugin-recaptcha@^1.0.5:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-sass@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-4.1.0.tgz#458df0b2b8bcc04bdd040febed106883e2825690"
-  integrity sha512-lVm+DGSkAIM2APosbaBqi9OlS5YP1bXVmA2MXJqGdIrb/x9FkrN3psFjiTIuBob2YesAgeQV2OJtJefGGAf4bQ==
+gatsby-plugin-sass@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-4.2.0.tgz#15802a17e253dbd60530cba7079628255cdb5521"
+  integrity sha512-WnboqnpqZdkkQBYwbwnAAloJqBLuxR4FP2lp7jdrJPW4Drp0MQ2sf7XdtFjbNtmgpdXTeYFRBHazZpd25xsIgA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     resolve-url-loader "^3.1.2"
@@ -8310,10 +8310,10 @@ gatsby-plugin-twitter@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
-gatsby-plugin-twitter@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-3.1.0.tgz#ff8dffd4252932481bac7a7b100a550a9c2c0e56"
-  integrity sha512-kgDllGarLlVGoJhGaxFN+Zq3CE/wKSn+vLzuzC1FjmNqn8TprKgOh06BoFSjK2ygAUw+ueVFaizo5MwYYR/Saw==
+gatsby-plugin-twitter@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-3.2.0.tgz#02c51d738529699c50a449ef201ce79bd03317e9"
+  integrity sha512-ZsG5l+HmhY9+p1RgvEiuRGDgYgU98stRQZ4quA0+sOEzui5MZ33FW0fjPsisM0potMXJrJ5123RCFDtyazK/5A==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
