@@ -4614,12 +4614,7 @@ camelcase@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-2.1.1.tgz#7c1d16d679a1bbe59ca02cacecfb011e201f5a1f"
 
-camelcase@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.1.0.tgz#27dc176173725fb0adf8a48b647f4d7871944d78"
-  integrity sha512-WCMml9ivU60+8rEJgELlFp1gxFcEGxwYleE3bziHEDeqsqAWGHdimB7beBFGjLzVNgPGyDsfgXLQEYMpmIFnVQ==
-
-camelcase@^6.2.0:
+camelcase@^6.0.0, camelcase@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
@@ -8088,21 +8083,21 @@ gatsby-plugin-google-analytics@^3.2.0:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
 
-gatsby-plugin-image@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.1.2.tgz#85fc4f5356bf29c2098c4371e5396e14a0ff632e"
-  integrity sha512-ijuCa/++l+J3lUuEQyDPu1CoQ9dMdjlmgXQIZZvo+ZK25FlWVvZn/tyyg/cFekqv+Ir1Dr8LnHHlxEKdvYkIrw==
+gatsby-plugin-image@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.2.0.tgz#ad571ba270b5c1e8a679ac33eeccd01ac3370db3"
+  integrity sha512-tG39QNnmld4rpTLettTL6r8BFm1rRrcionBpgUJXi9l5W4UaUn/hKdM9jV8g5aNUzo4YrEcgZcf1v2dPfrz9Iw==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^3.1.0"
+    babel-plugin-remove-graphql-queries "^3.2.0"
     camelcase "^5.3.1"
     chokidar "^3.5.1"
     common-tags "^1.8.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^2.1.0"
+    gatsby-core-utils "^2.2.0"
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
