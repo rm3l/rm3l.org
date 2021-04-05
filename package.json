@@ -79,7 +79,7 @@
     "cheerio": "1.0.0-rc.5",
     "dotenv": "^8.2.0",
     "gatsby": "3.2.1",
-    "gatsby-awesome-pagination": "0.3.6",
+    "gatsby-awesome-pagination": "0.3.8",
     "gatsby-image": "3.2.0",
     "gatsby-plugin-advanced-sitemap": "^1.6.0",
     "gatsby-plugin-catch-links": "3.2.0",
