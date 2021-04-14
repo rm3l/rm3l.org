@@ -6,7 +6,7 @@
 </h1>
 <p align="center">
   The static website behind <a href="https://rm3l.org" target="_blank">rm3l.org</a>,
-  hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, and leveraging a headless <a href="https://ghost.org/" target="_blank">Ghost</a> CMS running in a <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> cluster
+  hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, and leveraging a headless <a href="https://ghost.org/" target="_blank">Ghost</a> Content Management System (CMS) running in a <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> cluster
 </p>
 <p align="center">
   <span>
