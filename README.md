@@ -38,7 +38,7 @@ Read more about this migration journey in [this blog post](https://rm3l.org/migr
 * End-to-end tests with [Cypress](https://www.cypress.io/) and [start-server-and-test](https://github.com/bahmutov/start-server-and-test#readme)
 * Continuously tested (CI) on [CircleCI](https://circleci.com/gh/rm3l/rm3l.org)
 * Continuously deployed (CD) on [Netlify](https://www.netlify.com/), with support for Deploy previews of Pull Requests
-* [Dependabot](https://dependabot.com) to keep dependencies secure and up-to-date
+* [Dependabot](https://dependabot.com) & [Snyk](https://snyk.io/) to keep dependencies secure and up-to-date
 
 
 ## 🛠 Installation & Set Up
