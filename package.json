@@ -44,7 +44,7 @@
     "snyk-protect": "snyk protect"
   },
   "devDependencies": {
-    "@testing-library/cypress": "^7.0.5",
+    "@testing-library/cypress": "^7.0.6",
     "axe-core": "^4.1.4",
     "babel-eslint": "10.1.0",
     "cypress": "^6.9.1",
@@ -95,7 +95,7 @@
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^4.2.0",
-    "gatsby-plugin-sharp": "^3.2.1",
+    "gatsby-plugin-sharp": "^3.3.0",
     "gatsby-plugin-theme-ui": "^0.3.5",
     "gatsby-plugin-twitter": "^3.2.0",
     "gatsby-remark-images": "^4.2.0",
