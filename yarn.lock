@@ -2773,10 +2773,10 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.7.2.tgz#6084aa10821e1cb2952ef1771eb23e1298edeff7"
   integrity sha512-9pvnbPQc9BX13PLF9Mo/+086BkSsiqOzf+ecZufbIw9NP1cHtaYZITiZ+lkjWMR26pMd90CEamlF/dijlJxEvQ==
 
-"@theme-ui/preset-tosh@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.6.0.tgz#e08b2e1067659f5028da61737c369cff9b947864"
-  integrity sha512-0V2m8YJoAMtLQVX9GGx5nxmTn936OZQVpOdfgUx8zf6Uwc2ocIhVzGHOpwTe26JSEaOP0pli9DC8abS/t41Tuw==
+"@theme-ui/preset-tosh@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.7.2.tgz#6084aa10821e1cb2952ef1771eb23e1298edeff7"
+  integrity sha512-9pvnbPQc9BX13PLF9Mo/+086BkSsiqOzf+ecZufbIw9NP1cHtaYZITiZ+lkjWMR26pMd90CEamlF/dijlJxEvQ==
 
 "@theme-ui/presets@^0.7.2":
   version "0.7.2"
