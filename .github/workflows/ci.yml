@@ -8,6 +8,11 @@ on:
     branches: [ master ]
 
   workflow_dispatch:
+    inputs:
+      CYPRESS_baseUrl:
+        description: 'External URL to use when running Cypress tests'
+        required: false
+        default: ''
 
 jobs:
   build_and_test:
@@ -55,14 +60,16 @@ jobs:
           echo "RECAPTCHA_SITE_KEY=$RECAPTCHA_SITE_KEY" >> .env
 
       - name: Run server and E2E tests against external URL
-        if: ${{ startsWith(env.CYPRESS_baseUrl, 'https://') }}
+        if: ${{ startsWith(github.event.inputs.CYPRESS_baseUrl, 'https://') }}
+        env:
+          CYPRESS_baseUrl: ${{ github.event.inputs.CYPRESS_baseUrl }}
         run: |
           echo "Testing external url $CYPRESS_baseUrl"
           gatsby build
           yarn ci:cy:run:no-record
 
       - name: Run server and E2E tests against local server
-        if: ${{ !startsWith(env.CYPRESS_baseUrl, 'https://') }}
+        if: ${{ !startsWith(github.event.inputs.CYPRESS_baseUrl, 'https://') }}
         run: |
           echo "Running local server and testing it"
           yarn ci:test:no-record
