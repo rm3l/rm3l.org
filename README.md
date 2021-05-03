@@ -10,15 +10,22 @@
 </p>
 <p align="center">
   <span>
+    <a href="https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml" target="_blank">
+        <img src="https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
+    </a>
+    &nbsp;
     <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
         <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg" alt="Netlify Status" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml" target="_blank">
+        <img src="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml/badge.svg" alt="Security Status" />
     </a>
     &nbsp;
     <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
         <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
     </a>
     <!--&nbsp;
-    Following the integration of Dependabot into Github, badge is not fixed yet. Commenting for now, until this is fixed
     <a href="https://dependabot.com" target="_blank">
         <img src="https://api.dependabot.com/badges/status?host=github&repo=rm3l/rm3l.org" alt="Dependabot Status" />
     </a>-->
