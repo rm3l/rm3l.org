@@ -14,10 +14,6 @@
         <img src="https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
     </a>
     &nbsp;
-    <a href="https://circleci.com/gh/rm3l/rm3l.org" target="_blank">
-        <img src="https://circleci.com/gh/rm3l/rm3l.org.svg?style=svg" alt="Netlify Status" />
-    </a>
-    &nbsp;
     <a href="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml" target="_blank">
         <img src="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml/badge.svg" alt="Security Status" />
     </a>
@@ -25,10 +21,6 @@
     <a href="https://app.netlify.com/sites/rm3l-org/deploys" target="_blank">
         <img src="https://api.netlify.com/api/v1/badges/da8ff8df-c248-4af5-bd6b-21bb60b4c0bb/deploy-status" alt="Netlify Status" />
     </a>
-    <!--&nbsp;
-    <a href="https://dependabot.com" target="_blank">
-        <img src="https://api.dependabot.com/badges/status?host=github&repo=rm3l/rm3l.org" alt="Dependabot Status" />
-    </a>-->
   </span>
 </p>
 
@@ -43,8 +35,10 @@ Read more about this migration journey in [this blog post](https://rm3l.org/migr
 * Frontend
   * [Gatsby](https://www.gatsbyjs.org/) pulls data from the Ghost blog [GraphQL](https://graphql.org/) API, and builds this static site. Initial version has been created using the [gatsby-starter-ghost](https://www.gatsbyjs.org/starters/TryGhost/gatsby-starter-ghost/) starter, then customized to include additional pages such as a [Portfolio](src/pages/portfolio.js) [React](https://reactjs.org/) component
 * End-to-end tests with [Cypress](https://www.cypress.io/) and [start-server-and-test](https://github.com/bahmutov/start-server-and-test#readme)
-* Continuously tested (CI) on [CircleCI](https://circleci.com/gh/rm3l/rm3l.org)
-* Continuously deployed (CD) on [Netlify](https://www.netlify.com/), with support for Deploy previews of Pull Requests
+* Continuously tested (CI) via [GitHub Actions](https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml)
+  * Specifically, once a deployment is successful in Netlify, a webhook triggers a [Kubeless function](https://kubeless.io/), which in turn requests a GitHub Workflow Run that tests the newly-deployed site
+* Continuously deployed (CD) on [Netlify](https://www.netlify.com/), but I am considering migrating to [Cloudflare Pages](https://pages.cloudflare.com/).
+  * Deploy previews of Pull Requests via [Cloudflare Pages](https://pages.cloudflare.com/)
 * [Dependabot](https://dependabot.com) & [Snyk](https://snyk.io/) to keep dependencies secure and up-to-date
 
 
