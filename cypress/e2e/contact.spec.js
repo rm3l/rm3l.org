@@ -9,8 +9,7 @@ describe(`Contact form`, () => {
         cy.contains(`Contact me`)
     })
 
-    it.skip(`Displays a contact form with a submit button`, () => {
-	//Flaky test skipped for now, but should get fixed with https://github.com/rm3l/rm3l.org/issues/632
+    it(`Displays a contact form with a submit button`, () => {
         cy.get(`form`).contains(`Name`)
         cy.get(`form`).find(`input[name="name"]`).should(`have.attr`, `placeholder`, `Jane Doe`)
         cy.get(`form`).contains(`Email`)
