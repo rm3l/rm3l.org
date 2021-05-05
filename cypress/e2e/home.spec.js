@@ -58,4 +58,16 @@ describe(`from root URL`, () => {
         cy.url().should(`include`, `/portfolio`)
         cy.contains(`h1`, `Projects`)
     })
+
+    it(`Checks if link to Status Dashboard is focusable and has the correct attributes`, () => {
+        cy.findAllByText(`Status Dashboard`)
+            .should(`have.length`, 2)
+            .each(($el) => {
+                cy.wrap($el)
+                    .should(`have.text`, `Status Dashboard`)
+                    .should(`have.attr`, `href`, `https://status.rm3l.org/`)
+                    .should(`have.attr`, `rel`, `noopener noreferrer`)
+                    .should(`have.attr`, `target`, `_blank`)
+            })
+    })
 })

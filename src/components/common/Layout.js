@@ -96,6 +96,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-nav-right">
                                     {/* About page disabled until a 'about.js' file is added to src/pages/ */}
                                     {/* <Link className="site-nav-button" to="/about">About</Link> */}
+                                    <a className="site-nav-item" href="https://status.rm3l.org/" target="_blank" rel="noopener noreferrer">Status Dashboard</a>
                                 </div>
                             </nav>
                         </div>
@@ -121,6 +122,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Navigation aria-label="Home" data={site.navigation} navClass="site-foot-nav-item" />
                                 <Link aria-label="Portfolio" className="site-foot-nav-item" to="/portfolio" key="99_Nav_Portolio_Bottom">Portfolio</Link>
                                 <Link aria-label="Contact" className="site-foot-nav-item" to="/contact" key="100_Nav_Contact_Bottom">Contact</Link>
+                                <a className="site-foot-nav-item" href="https://status.rm3l.org/" target="_blank" rel="noopener noreferrer">Status Dashboard</a>
                             </div>
                         </div>
                     </footer>
