@@ -80,7 +80,7 @@
     "dotenv": "^9.0.2",
     "gatsby": "3.5.0",
     "gatsby-awesome-pagination": "0.3.8",
-    "gatsby-image": "3.4.0",
+    "gatsby-image": "3.5.0",
     "gatsby-plugin-advanced-sitemap": "^1.6.0",
     "gatsby-plugin-catch-links": "3.5.0",
     "gatsby-plugin-disqus": "^1.2.2",
