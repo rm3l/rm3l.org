@@ -2713,20 +2713,27 @@
   dependencies:
     axios "0.21.1"
 
-"@tryghost/helpers-gatsby@1.0.48":
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.48.tgz#2f86e1e7b471a110ca31f084d7e80cce8714df5c"
-  integrity sha512-o773TtdTBwXPyYVi7Jumo1CVQiPIMrvQB5g0rgyddCMQ5t3WS3Zoy/iapXC6mgWGS9nv+pH7QgWMfwrHHSmmzg==
+"@tryghost/helpers-gatsby@1.0.50":
+  version "1.0.50"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.50.tgz#610ea81c371d6c36e9aa24d3d91f9107966dcc69"
+  integrity sha512-miG0xGTyiqtMyVvXYruRl9e4IrwN4UHJ1pEjUNnudAhxEQggDH+M/gnHrMHIe2vagqAtGUqhnNaeVghffRwQAA==
   dependencies:
     "@reach/router" "^1.2.1"
-    "@tryghost/helpers" "^1.1.43"
-    gatsby-link "^2.0.7"
+    "@tryghost/helpers" "^1.1.45"
+    gatsby-link "^2.9.0"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.43", "@tryghost/helpers@^1.1.43":
+"@tryghost/helpers@1.1.43":
   version "1.1.43"
   resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.43.tgz#75e7677340e6f956db620cb7d29e8acadab4800d"
   integrity sha512-Hviu65xnMG1w8j/ibTjqxoJyh4ZkCy2y3IURagZ16FfAiORKPYmGXbQb8ueDsazVnATfrhj1fzc18aTqf9w4lg==
+  dependencies:
+    lodash-es "^4.17.11"
+
+"@tryghost/helpers@^1.1.45":
+  version "1.1.45"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.45.tgz#811c1d4c5a8a4f3e513b26dd893fa061d3c9afb1"
+  integrity sha512-AJgCnHXKthN4+u0WJtLyFXFpk2vsp6vv8PIJ7Ve3cT/EtWDKzFjMNRghEnEuMiyrchUZt0M+oRcAxf7VDHIy2Q==
   dependencies:
     lodash-es "^4.17.11"
 
@@ -8358,7 +8365,7 @@ gatsby-legacy-polyfills@^1.5.0:
   dependencies:
     core-js-compat "3.9.0"
 
-gatsby-link@^2.0.7:
+gatsby-link@^2.9.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.11.0.tgz#15e99c89bdde1c99686ce53bda72beb3c9c39455"
   integrity sha512-AYXxndlSx5mnYv+/PBPdPBRvdv1LeSGE3WO8uYj2ReYDSbhiAlF3KKz30D62ErartXP0deySPtRKx4Dd3nCFYw==
@@ -8713,7 +8720,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^1.4.0, gatsby-plugin-utils@^1.5.0:
+gatsby-plugin-utils@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.5.0.tgz#793b0796ea225cf3c75871d06f5e75e3c3fa82c9"
   integrity sha512-IqCXOGTC+WRtzLUhEbJzR9RlumDGtN/xmsl41AOgfeJvfdeXiomm9nrlCs915XDZh/fYa5MbRpf7Xu4S3skhLA==
