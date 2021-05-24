@@ -13,7 +13,7 @@
     "sharp": "0.27.0"
   },
   "engines": {
-    "node": ">= 10.13.0"
+    "node": ">= 14.16.0"
   },
   "bugs": {
     "url": "https://github.com/rm3l/rm3l.org/issues"
