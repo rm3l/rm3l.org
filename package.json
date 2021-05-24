@@ -100,7 +100,7 @@
     "gatsby-plugin-twitter": "^3.5.0",
     "gatsby-remark-images": "^5.2.0",
     "gatsby-source-filesystem": "^3.3.0",
-    "gatsby-source-ghost": "4.2.3",
+    "gatsby-source-ghost": "4.2.4",
     "gatsby-theme-medium": "^0.0.1",
     "gatsby-transformer-sharp": "^3.5.0",
     "lodash": "4.17.21",
