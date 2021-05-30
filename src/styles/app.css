@@ -729,6 +729,11 @@ h6 {
     opacity: 0.7;
 }
 
+.site-banner-gpg-fingerprint {
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
 .site-nav {
     display: flex;
     align-items: center;

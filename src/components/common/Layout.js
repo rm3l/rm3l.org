@@ -84,6 +84,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-banner">
                                     <h1 className="site-banner-title">{site.title}</h1>
                                     <p className="site-banner-desc">{site.description}</p>
+                                    <p className="site-banner-gpg-fingerprint">
+                                        <FontAwesomeIcon
+                                            color="white"
+                                            size="lg"
+                                            icon={[`fas`, `key`]} />
+                                        <span>
+                                            <a aria-label="GPG Key Fingerprint" href="http://keys.gnupg.net/pks/lookup?op=get&search=0xECDF6F94927F2D25" className="site-nav-item" target="_blank" rel="noopener noreferrer">
+                                                <code>A09C 8072 0FF6 2823 466B  DA6E ECDF 6F94 927F 2D25</code>
+                                            </a>
+                                        </span></p>
                                 </div> :
                                 null}
                             <nav className="site-nav" aria-label="Navigation" >
