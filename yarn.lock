@@ -8466,10 +8466,10 @@ gatsby-plugin-force-trailing-slashes@1.0.5:
   dependencies:
     "@babel/runtime" "7.12.5"
 
-gatsby-plugin-google-analytics@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.5.0.tgz#f0cb53730bf65d2e75581896f6811a3c95525370"
-  integrity sha512-HLByaS3U8tZtpoRs3hDx0fYX1jnmkhue4prsR7OKEj2pzAZUGMkbK5sDiugiHdxdx/b4/PKXjP5lQceUr3VAYA==
+gatsby-plugin-google-analytics@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.6.0.tgz#5b4826044cc626eb56783ceec5e7eabe3ff8ee37"
+  integrity sha512-yd7MwPJNuGLFtZk+O1WZiHM8YKsIfAg7CLKW+nd5AikNQFO3aFI4h2irqQ9s3O2M1ZS0gQdB50jqwscpQLv6+g==
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
@@ -8545,10 +8545,10 @@ gatsby-plugin-mdx@^1.0.19:
     unist-util-remove "^1.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-plugin-nprogress@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.5.0.tgz#00461f41d4252f370c6656c89a24bb0543de3234"
-  integrity sha512-BjwF0pXGIkGHsA4i8PTAzVPiGQunQm3Y51fOi4Ps8LOmoAmLh19lQ/OPHWsO1Tj3dv/AB+AFTQv2x1ESyuBxDw==
+gatsby-plugin-nprogress@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.6.0.tgz#07887227a80098f046aa1c4a9f76205e6f7d8b78"
+  integrity sha512-1t1b6A2bOLsOPZZuCMZe6WGBFDwjRpuJRi1kskJys5RAs+FGvmyo3Y9K9yy2C/soOie+zRLz48CCPY5Uyw6EdA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     nprogress "^0.2.0"
