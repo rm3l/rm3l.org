@@ -14,6 +14,10 @@
         <img src="https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
     </a>
     &nbsp;
+    <a href="https://github.com/rm3l/rm3l.org/actions/workflows/codeql-analysis.yml" target="_blank">
+        <img src="https://github.com/rm3l/rm3l.org/actions/workflows/codeql-analysis.yml/badge.svg" alt="Code Analysis" />
+    </a>
+    &nbsp;
     <a href="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml" target="_blank">
         <img src="https://github.com/rm3l/rm3l.org/actions/workflows/security.yml/badge.svg" alt="Security Status" />
     </a>
