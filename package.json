@@ -71,7 +71,7 @@
     "@theme-ui/preset-tosh": "^0.10.0",
     "@theme-ui/presets": "^0.10.0",
     "@tippy.js/react": "^3.1.1",
-    "@tryghost/helpers": "1.1.48",
+    "@tryghost/helpers": "1.1.49",
     "@tryghost/helpers-gatsby": "1.0.53",
     "axios": "^0.21.1",
     "babel-plugin-prismjs": "^2.0.1",
