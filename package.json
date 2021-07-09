@@ -55,7 +55,7 @@
     "eslint-plugin-ghost": "2.3.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "7.24.0",
-    "mocha": "^9.0.1",
+    "mocha": "^9.0.2",
     "mocha-junit-reporter": "^2.0.0",
     "netlify-plugin-cypress": "^2.2.0",
     "start-server-and-test": "^1.12.5"
@@ -74,7 +74,7 @@
     "@tryghost/helpers": "1.1.48",
     "@tryghost/helpers-gatsby": "1.0.53",
     "axios": "^0.21.1",
-    "babel-plugin-prismjs": "^2.0.1",
+    "babel-plugin-prismjs": "^2.1.0",
     "babel-preset-gatsby": "^1.8.0",
     "cheerio": "1.0.0-rc.10",
     "dotenv": "^10.0.0",
