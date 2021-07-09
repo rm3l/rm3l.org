@@ -55,7 +55,7 @@
     "eslint-plugin-ghost": "2.3.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "7.24.0",
-    "mocha": "^9.0.1",
+    "mocha": "^9.0.2",
     "mocha-junit-reporter": "^2.0.0",
     "netlify-plugin-cypress": "^2.2.0",
     "start-server-and-test": "^1.12.5"
@@ -88,7 +88,7 @@
     "gatsby-plugin-feed": "3.8.0",
     "gatsby-plugin-force-trailing-slashes": "1.0.5",
     "gatsby-plugin-google-analytics": "^3.8.0",
-    "gatsby-plugin-image": "^1.8.0",
+    "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-manifest": "3.8.0",
     "gatsby-plugin-nprogress": "^3.7.1",
     "gatsby-plugin-offline": "4.8.0",
