@@ -2753,10 +2753,10 @@
     gatsby-link "^2.9.0"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.48", "@tryghost/helpers@^1.1.48":
-  version "1.1.48"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.48.tgz#58e9443af54d3bd92209c289e3be9c886c1a344f"
-  integrity sha512-6tYaAFdb+UwbPXwwpgLdgJcV+PHXacxigqVIMC8NKn77ABC5zpaUJfcBntjhdBdEDjZf/re2+83/8f5I/R26wg==
+"@tryghost/helpers@1.1.49", "@tryghost/helpers@^1.1.48":
+  version "1.1.49"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.49.tgz#0bbbe60bde134a93fa0726fef1a58c5bc54c8267"
+  integrity sha512-5zi3A55YXjWhgFBZNTNCZYkKHhdUpfWmtyMTErgGHP2x5951xWvPNvtge/9JzD73llGK6X+QN60CO2BjmxVWaw==
   dependencies:
     lodash-es "^4.17.11"
 
@@ -8279,7 +8279,7 @@ gatsby-core-utils@^1.10.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.7.1, gatsby-core-utils@^2.8.0:
+gatsby-core-utils@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.8.0.tgz#e6d2e6e56609c4fcef5ba6fbf29ad863dc7bb8d2"
   integrity sha512-CadvILN4ZyYMYQAp+haxSgE/0k5zIu6y2WcqVSJaQLmmWq0o49Gv4CftVKOEXOtXaN0DEr9e4wWFVBRAYaRHGA==
