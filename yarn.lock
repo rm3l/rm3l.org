@@ -8596,10 +8596,10 @@ gatsby-plugin-advanced-sitemap@^2.0.0:
     moment "2.29.1"
     xml "^1.0.1"
 
-gatsby-plugin-catch-links@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.10.0.tgz#b68fec57299c87381ab208f01529d942ae151a67"
-  integrity sha512-TOrHm86IWLmNQKZvxO+oq0xwfYySZS9Yk0FOtMSAYy92kOHf8CP5Lvdaw4U0M0LfiSePtwwvHPkviYvmqQ0gIw==
+gatsby-plugin-catch-links@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.11.0.tgz#a1275631312352cf9ed8243ee9d089737d8ce7c2"
+  integrity sha512-itGD+m8n11LF7GyBiw/CvR7nhhfATinfo3wN34hEH5asmUamQplrBIiBx7kFeue97mmPOIK2IXcVoho5f4LzGg==
   dependencies:
     "@babel/runtime" "^7.14.6"
     escape-string-regexp "^1.0.5"
