@@ -102,7 +102,7 @@
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-source-ghost": "4.2.4",
     "gatsby-theme-medium": "^0.0.1",
-    "gatsby-transformer-sharp": "^3.8.0",
+    "gatsby-transformer-sharp": "^3.11.0",
     "lodash": "4.17.21",
     "node-sass": "^6.0.1",
     "prismjs": "^1.24.0",
