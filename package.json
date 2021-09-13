@@ -44,7 +44,7 @@
     "snyk-protect": "snyk protect"
   },
   "devDependencies": {
-    "@testing-library/cypress": "^7.0.6",
+    "@testing-library/cypress": "^8.0.1",
     "axe-core": "^4.2.3",
     "babel-eslint": "10.1.0",
     "cypress": "^7.7.0",
@@ -78,7 +78,7 @@
     "babel-preset-gatsby": "^1.8.0",
     "cheerio": "1.0.0-rc.10",
     "dotenv": "^10.0.0",
-    "gatsby": "3.10.0",
+    "gatsby": "3.13.0",
     "gatsby-awesome-pagination": "0.3.8",
     "gatsby-image": "3.8.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
