@@ -44,7 +44,7 @@
     "snyk-protect": "snyk protect"
   },
   "devDependencies": {
-    "@testing-library/cypress": "^7.0.6",
+    "@testing-library/cypress": "^8.0.1",
     "axe-core": "^4.2.3",
     "babel-eslint": "10.1.0",
     "cypress": "^7.7.0",
