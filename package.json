@@ -78,7 +78,7 @@
     "babel-preset-gatsby": "^1.14.0",
     "cheerio": "1.0.0-rc.10",
     "dotenv": "^10.0.0",
-    "gatsby": "3.14.2",
+    "gatsby": "3.14.3",
     "gatsby-awesome-pagination": "0.3.8",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
