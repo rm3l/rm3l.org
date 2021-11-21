@@ -247,5 +247,12 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
+	{
+          resolve: 'gatsby-plugin-theme-ui',
+          options: {
+            prismPreset: 'night-owl',
+            preset: '@theme-ui/preset-funk',
+          },
+        },
     ],
 }
