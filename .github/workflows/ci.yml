@@ -35,7 +35,11 @@ jobs:
 
     steps:
 
+      - run: whoami
+
       - run: mkdir -p "${CYPRESS_CACHE_FOLDER}"
+
+      - run: ls -lhrtd "${CYPRESS_CACHE_FOLDER}"
 
       - name: Checkout
         if: ${{ github.event_name != 'pull_request_target' }}
