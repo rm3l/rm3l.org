@@ -24,6 +24,7 @@ jobs:
       env:
         ## this enables colors in the output
         TERM: xterm
+        CYPRESS_CACHE_FOLDER: /tmp/cypress-cache
 
     runs-on: ubuntu-latest
     # If the PR is coming from a fork (pull_request_target), ensure it's opened by "dependabot[bot]".
@@ -33,6 +34,9 @@ jobs:
         (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]')
 
     steps:
+
+      - run: mkdir -p "${CYPRESS_CACHE_FOLDER}"
+
       - name: Checkout
         if: ${{ github.event_name != 'pull_request_target' }}
         uses: actions/checkout@v2
