@@ -20,7 +20,7 @@ jobs:
   build_and_test:
     container:
       # find Docker image at https://github.com/cypress-io/cypress-docker-images
-      image: cypress/base:14.16.0
+      image: cypress/base:14.17.3
       env:
         ## this enables colors in the output
         TERM: xterm
@@ -33,6 +33,12 @@ jobs:
         (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]')
 
     steps:
+
+      - name: Debug
+        run: |
+          whoami
+          id
+
       - name: Checkout
         if: ${{ github.event_name != 'pull_request_target' }}
         uses: actions/checkout@v2
@@ -57,8 +63,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g gatsby-cli
           yarn install --frozen-lockfile
+      
+      - name: Cypress verify
+        run: npx cypress verify
 
       - name: Prepare test environment
         env:
