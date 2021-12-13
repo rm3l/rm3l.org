@@ -7,8 +7,6 @@ describe(`from root URL`, () => {
 
     it(`Home page works`, () => {
         cy.contains(`Armel Soro's blog`)
-        // https://on.cypress.io/screenshot
-        cy.screenshot(`site`, { capture: `runner` })
     })
 
     it(`Checks publication logo image is resolvable`, () => {
