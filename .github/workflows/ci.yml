@@ -24,7 +24,10 @@ jobs:
       env:
         ## this enables colors in the output
         TERM: xterm
-        CYPRESS_CACHE_FOLDER: /tmp/cypress-cache
+        # Skip installation of Cypress binary when running 'yarn install'
+        # This otherwise causes issues with permissions when writing to the default Cypress cache folder
+        # See https://docs.cypress.io/guides/getting-started/installing-cypress#Install-binary
+        CYPRESS_INSTALL_BINARY: "0"
 
     runs-on: ubuntu-latest
     # If the PR is coming from a fork (pull_request_target), ensure it's opened by "dependabot[bot]".
@@ -34,10 +37,6 @@ jobs:
         (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]')
 
     steps:
-
-      - run: |
-          mkdir -p "${CYPRESS_CACHE_FOLDER}"
-          chmod -R 777 "${CYPRESS_CACHE_FOLDER}"
 
       - name: Checkout
         if: ${{ github.event_name != 'pull_request_target' }}
