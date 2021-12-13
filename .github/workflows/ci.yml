@@ -63,7 +63,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g gatsby-cli
           yarn install --frozen-lockfile
       
       - name: Cypress verify

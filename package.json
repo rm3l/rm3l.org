@@ -26,9 +26,9 @@
   ],
   "main": "n/a",
   "scripts": {
-    "serve": "gatsby build && NODE_ENV=production gatsby serve",
-    "build": "gatsby build",
-    "dev": "gatsby develop",
+    "serve": "npx gatsby build && NODE_ENV=production npx gatsby serve",
+    "build": "npx gatsby build",
+    "dev": "npx gatsby develop",
     "lint": "eslint . --ext .js --cache",
     "test": "start-test dev 8000 cy:run",
     "test:open": "start-test dev 8000 cy:open",
