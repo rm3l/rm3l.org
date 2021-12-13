@@ -88,7 +88,7 @@ jobs:
           CYPRESS_baseUrl: ${{ github.event.inputs.CYPRESS_baseUrl }}
         run: |
           echo "Testing external url $CYPRESS_baseUrl"
-          gatsby build
+          npx gatsby build
           yarn ci:cy:run:no-record
 
       - name: Run server and E2E tests against local server
