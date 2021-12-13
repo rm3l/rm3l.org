@@ -20,7 +20,7 @@ jobs:
   build_and_test:
     container:
       # find Docker image at https://github.com/cypress-io/cypress-docker-images
-      image: cypress/base:16.5.0
+      image: cypress/browsers:node16.5.0-chrome94-ff93
       env:
         ## this enables colors in the output
         TERM: xterm
