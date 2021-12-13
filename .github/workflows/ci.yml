@@ -65,6 +65,9 @@ jobs:
         run: |
           npm install -g gatsby-cli
           yarn install --frozen-lockfile
+      
+      - name: Cypress verify
+        run: npx cypress verify
 
       - name: Prepare test environment
         env:
