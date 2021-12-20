@@ -114,7 +114,7 @@
     "react-recaptcha": "^2.3.10",
     "rebass": "^4.0.7",
     "sharp": "0.29.3",
-    "snyk": "^1.790.0",
+    "snyk": "^1.797.0",
     "theme-ui": "^0.12.1"
   },
   "snyk": true
