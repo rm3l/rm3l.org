@@ -99,7 +99,7 @@
     "gatsby-plugin-theme-ui": "^0.12.1",
     "gatsby-plugin-twitter": "^4.3.0",
     "gatsby-remark-images": "^6.4.0",
-    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-source-filesystem": "^4.4.0",
     "gatsby-source-ghost": "4.2.4",
     "gatsby-theme-medium": "^0.0.1",
     "gatsby-transformer-sharp": "^4.3.0",
