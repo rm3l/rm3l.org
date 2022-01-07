@@ -62,7 +62,7 @@ module.exports = {
         rss: {
             fontAwesomeFamily: `fas`,
             // color: '#f26522',
-            url: `https://feedly.com/i/subscription/feed/https://rm3l.org/rss/`,
+            url: `https://feedly.com/i/subscription/feed/https://rm3l.org/rss`,
             displayName: `RSS Feed`,
         },
     },
