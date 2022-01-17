@@ -7677,10 +7677,10 @@ gatsby-plugin-emotion@^4.1.2:
     "@babel/runtime" "^7.12.5"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
-gatsby-plugin-emotion@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-7.4.0.tgz#f0641f03fb9413f31a724c9d04ea539f7e2eaa4f"
-  integrity sha512-08HGVx8ai1ftlcFWJMhS0JCE33kmXg1O+m0mRjFmA0LfsPpkh9j7x0otJ4s01ctMO0ucAm8ajlqOXw7WW9kkHQ==
+gatsby-plugin-emotion@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-7.5.0.tgz#2f49e295f60cc884660664f45c3a6492ab24221e"
+  integrity sha512-dkV/rdRXph65bZlDHwYROKTCeQ15GYzXO7aPOrJkhGtAj1ouP5+0plLET+bKG3rq7EKlB2ZcbfoijJ8Y3DTbkw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@emotion/babel-preset-css-prop" "^11.2.0"
@@ -7718,10 +7718,10 @@ gatsby-plugin-force-trailing-slashes@1.0.5:
   dependencies:
     "@babel/runtime" "7.12.5"
 
-gatsby-plugin-google-analytics@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.4.0.tgz#a4c700b59f5bdb8c8b2276f5e50440d484b14b58"
-  integrity sha512-Z+CW64zo/d1rtyMz1bJ+Ao9apsWeyak5BXNc7piO+FwE7dFdWrAyHrgGmE3YltqFUY8+PS3vmpBv9qn0ZrOSGg==
+gatsby-plugin-google-analytics@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.5.0.tgz#2478612db0f891a326ca0a8612f0b1cc981628c2"
+  integrity sha512-UWyem88KRjvE4yYcUGNESPuacqprZEtaI2NS+CF+kEes/Taf+nSQF+OVJG3Z0FwKNDxJ/QcFZqowbcXvZJAn+Q==
   dependencies:
     "@babel/runtime" "^7.15.4"
     minimatch "3.0.4"
