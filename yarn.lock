@@ -7685,16 +7685,16 @@ gatsby-plugin-emotion@^7.5.0:
     "@babel/runtime" "^7.15.4"
     "@emotion/babel-preset-css-prop" "^11.2.0"
 
-gatsby-plugin-feed@4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.4.0.tgz#b129d8d4c5cf06213d14e80db20f5498f1ff9bf6"
-  integrity sha512-AUk7/m2jhaGQgnss6TVJvXGBIhBBQf1dnnl7MrHqt+qCZwv9urdwdEn4H1RyhQ4nS2SY5f3SemNmYCWPPhD5aA==
+gatsby-plugin-feed@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.5.0.tgz#4cb3fd9e7cf6b1ce9a66d2df8cdb4213afd08fee"
+  integrity sha512-pjHat1VyKe3oEZp7qfFPz4G8fgM9MxKVI0wN5O3XkrgveQKs6m/kvfsK8S1cKKM7ik6nDv668L+fCsdwpiRiFg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@hapi/joi" "^15.1.1"
     common-tags "^1.8.2"
     fs-extra "^10.0.0"
-    gatsby-plugin-utils "^2.4.0"
+    gatsby-plugin-utils "^2.5.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
