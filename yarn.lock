@@ -7855,13 +7855,13 @@ gatsby-plugin-recaptcha@^1.0.5:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-sass@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.4.0.tgz#fbbcecbd203da4e831585cb3f9994dae0b89484d"
-  integrity sha512-7Vp/SPkd9/j97aDr7qiAf4t7iPduwP86EdSb7ESQNX1lZuPglC0+JjNLshTJiqRfJspbOhcUeWLLg08/1RRFlA==
+gatsby-plugin-sass@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.5.0.tgz#e8fa465385eae25e53f8376b5b2c0fdf6b4ed02b"
+  integrity sha512-9DkbLvyplgigRvY4txFnFPJCekfLNohxuFkBwu5aJyewWYUrkToVbubGafRb1VqwTpI4WWqix6f/gUjUVbXhBw==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    resolve-url-loader "^3.1.2"
+    resolve-url-loader "^3.1.4"
     sass-loader "^10.1.1"
 
 gatsby-plugin-sharp@^2.2.9:
@@ -14334,7 +14334,7 @@ resolve-path@^1.4.0:
     http-errors "~1.6.2"
     path-is-absolute "1.0.1"
 
-resolve-url-loader@^3.1.2:
+resolve-url-loader@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/resolve-url-loader/-/resolve-url-loader-3.1.4.tgz#3c16caebe0b9faea9c7cc252fa49d2353c412320"
   integrity sha512-D3sQ04o0eeQEySLrcz4DsX3saHfsr8/N6tfhblxgZKXxMT2Louargg12oGNfoTRLV09GXhVUe5/qgA5vdgNigg==
