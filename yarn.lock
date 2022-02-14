@@ -7644,10 +7644,10 @@ gatsby-plugin-recaptcha@^1.0.5:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-sass@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.5.0.tgz#e8fa465385eae25e53f8376b5b2c0fdf6b4ed02b"
-  integrity sha512-9DkbLvyplgigRvY4txFnFPJCekfLNohxuFkBwu5aJyewWYUrkToVbubGafRb1VqwTpI4WWqix6f/gUjUVbXhBw==
+gatsby-plugin-sass@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.7.0.tgz#b71f43219a373c4affa486c33e7c7c7730266803"
+  integrity sha512-9G+oGcrCDUmnRuiJFpCVM70DB1LboTF+LmpOmwCgdTCKCdUfE//EB0iyqsq+QABpRfCPYJ03nSgs+RuLPw6DCA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     resolve-url-loader "^3.1.4"
