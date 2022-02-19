@@ -3488,10 +3488,10 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axe-core@^4.3.5:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.3.5.tgz#78d6911ba317a8262bfee292aeafcc1e04b49cc5"
-  integrity sha512-WKTW1+xAzhMS5dJsxWkliixlO/PqC4VhmO9T4juNYcaTg9jzWiJsou6m5pxWYGfigWbwzJWeFY6z47a+4neRXA==
+axe-core@^4.3.5, axe-core@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.4.1.tgz#7dbdc25989298f9ad006645cd396782443757413"
+  integrity sha512-gd1kmb21kwNuWr6BQz8fv6GNECPBnUasepcoLbekws23NVBLODdsClRZ+bQ8+9Uomf3Sm3+Vwn0oYG9NvwnJCw==
 
 axios@^0.21.1:
   version "0.21.4"
@@ -3638,13 +3638,13 @@ babel-plugin-prismjs@^2.1.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-prismjs/-/babel-plugin-prismjs-2.1.0.tgz#ade627896106326ad04d6d77fba92877618de571"
   integrity sha512-ehzSKYfeAz4U78zi/sfwsjDPlq0LvDKxNefcZTJ/iKBu+plsHsLqZhUeGf1+82LAcA35UZGbU6ksEx2Utphc/g==
 
-babel-plugin-remove-graphql-queries@^4.5.2, babel-plugin-remove-graphql-queries@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.6.0.tgz#cdda606988fd1d0e0fc2377ea8e4103d461b45e2"
-  integrity sha512-QMbjJhHOkVHBfFDfAXQp1MFSzLWOJdPMe7Dk3+AF8L+dlLcf2Z7zbIrlRoRPEROyoW4CCPzLDi0Vam5leR/+gw==
+babel-plugin-remove-graphql-queries@^4.6.0, babel-plugin-remove-graphql-queries@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.7.0.tgz#d17ee70a4799ea1d5c633c8189b89fa93ce11629"
+  integrity sha512-UfDiex308kr8vx5YC3w0KyPitgdPlH3btR/DQWBTMhbavU5zJ+N/nsefzamt8fnq/5911j83Kc89jtmdqzxGDg==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^3.6.0"
+    gatsby-core-utils "^3.7.0"
 
 babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
@@ -7340,14 +7340,15 @@ gatsby-core-utils@^1.10.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.6.0.tgz#0e2f951e2c53731bdb459eb118eb3815a90a9393"
-  integrity sha512-xmjtOWQfLinNbgBiDRT1KpEfDZm0Z0u6+hsf8EH8Ps5UCIhKinGrdtK+QH+RzPGCV1PUg/E/pnLVqQLCvD+tmA==
+gatsby-core-utils@^3.6.0, gatsby-core-utils@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.7.0.tgz#edc928d948a3672d3166b914225a70369325818e"
+  integrity sha512-CboIzpEFbaD4+WrozKl3fMpxUetcaDq0aWPfrfzAtc8l0JMlD3GS2Q/uW7HpcvTAlSGv2ZomTzd2ySLV/AgpTQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
     configstore "^5.0.1"
+    fastq "^1.13.0"
     file-type "^16.5.3"
     fs-extra "^10.0.0"
     got "^11.8.3"
@@ -7513,22 +7514,22 @@ gatsby-plugin-google-analytics@^4.6.0:
     minimatch "3.0.4"
     web-vitals "^1.1.2"
 
-gatsby-plugin-image@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.5.2.tgz#bdd5af8a137a1a425a87b17c3dd908cfccea83e7"
-  integrity sha512-cytI8FNjMoTf/MraMZS9TL0mdDsN7Sh3hYL9GZeLIOTC8n8LE6wK49rDHDrQeq5S6ojk3iEPCgcxWrzQvnbxWQ==
+gatsby-plugin-image@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.7.0.tgz#cec35a39e73cee991a1fa3d66e3584d937bd640b"
+  integrity sha512-IVX/c0O/5QL505hla74Pt9i7xtv5zFBeYiYqG9gyejtZ3YuM0Opid3Rs+IIn1LN3fjM/xBrqp8yL7/XN/p24fw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/parser" "^7.15.5"
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^4.5.2"
+    babel-plugin-remove-graphql-queries "^4.7.0"
     camelcase "^5.3.1"
     chokidar "^3.5.2"
     common-tags "^1.8.2"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.5.2"
+    gatsby-core-utils "^3.7.0"
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
