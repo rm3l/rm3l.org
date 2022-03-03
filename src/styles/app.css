@@ -210,6 +210,8 @@ img {
 }
 svg:not(:root) {
     overflow: hidden;
+    display: inline-block;
+    width: 25px
 }
 mark {
     background-color: #fdffb6;
