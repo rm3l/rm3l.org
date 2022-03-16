@@ -46,7 +46,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <a aria-label={profileLinkData.displayName} href={profileLinkData.url} className="site-nav-item" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon
                         color={profileLinkData.color}
-                        size="xs"
+                        size="lg"
                         icon={[
                             profileLinkData.fontAwesomeFamily ? profileLinkData.fontAwesomeFamily : `fas`,
                             network]} />
@@ -95,7 +95,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <p className="site-banner-gpg-fingerprint">
                                         <FontAwesomeIcon
                                             color="white"
-                                            size="xs"
+                                            size="lg"
                                             icon={[`fas`, `key`]} />
                                         <span>
                                             <a aria-label="GPG Key Fingerprint" href="http://keys.gnupg.net/pks/lookup?op=get&search=0xECDF6F94927F2D25" className="site-nav-item" target="_blank" rel="noopener noreferrer">
