@@ -99,18 +99,21 @@ jobs:
 
       - name: Archive Cypress test results
         uses: actions/upload-artifact@v2
+        if: ${{ job.status == 'failure' }}
         with:
           name: cypress_results
           path: cypress/results/*
 
       - name: Archive Cypress screenshots
         uses: actions/upload-artifact@v2
+        if: ${{ job.status == 'failure' }}
         with:
           name: cypress_screenshots
           path: cypress/screenshots/*
 
       - name: Archive Cypress videos
         uses: actions/upload-artifact@v2
+        if: ${{ job.status == 'failure' }}
         with:
           name: cypress_videos
           path: cypress/videos/*
