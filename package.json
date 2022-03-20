@@ -65,7 +65,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
     "@theme-ui/preset-tailwind": "^0.13.1",
