@@ -7750,7 +7750,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^3.0.0, gatsby-plugin-utils@^3.1.0:
+gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
   integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
@@ -7915,7 +7915,7 @@ gatsby-telemetry@^1.10.2:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^3.6.0, gatsby-telemetry@^3.7.0:
+gatsby-telemetry@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.7.0.tgz#898c3f158814ea11f924b85d14b9402baa5703de"
   integrity sha512-jhtUGZynyHM3r9a7po/rKffj5AjacmU0rqqarsee9dxlDqsamqRtyFPTjn7JubRrc958M6qzNW+z/Zi0hoeFHg==
@@ -14478,10 +14478,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-snyk@^1.855.0:
-  version "1.855.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.855.0.tgz#1e4443dc26a06a23a8bd62e14923e4d447891ffb"
-  integrity sha512-LZ8tXVleYHPW2GL3UWfaswKatNY1rTQ7aUNOD1rboD4cWydJsHCnSHzoMQcXq+06XBLw//LxL0G2YhdZhPz2mA==
+snyk@^1.878.0:
+  version "1.878.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.878.0.tgz#02e8d2961e9a068bdbbced750f72e0f546d1a8f2"
+  integrity sha512-5esdH2PRGAc1DQE48GtvsUbAFnebFUXsKpDhR56KWx8G8JdC2lbaTheV0/MUoen5/+xNW6t35xHhUERFAK/MOw==
 
 socket.io-adapter@~2.1.0:
   version "2.1.0"
