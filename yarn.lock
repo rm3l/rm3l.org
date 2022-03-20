@@ -7750,7 +7750,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^3.0.0, gatsby-plugin-utils@^3.1.0:
+gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
   integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
@@ -7915,7 +7915,7 @@ gatsby-telemetry@^1.10.2:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^3.6.0, gatsby-telemetry@^3.7.0:
+gatsby-telemetry@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.7.0.tgz#898c3f158814ea11f924b85d14b9402baa5703de"
   integrity sha512-jhtUGZynyHM3r9a7po/rKffj5AjacmU0rqqarsee9dxlDqsamqRtyFPTjn7JubRrc958M6qzNW+z/Zi0hoeFHg==
@@ -7982,19 +7982,19 @@ gatsby-transformer-sharp@^2.2.5:
     semver "^7.3.4"
     sharp "^0.27.0"
 
-gatsby-transformer-sharp@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.7.0.tgz#544f3fc3d1f4cc68dbb02fad59a81e713b09f677"
-  integrity sha512-5t2MIm7AY0M2hrPHhxolGQZLliasZYiG0i1vke2KcW7vSZAmgmDKZBEbAiApqk8IiKFlTtcq4mv772dBx3YQwQ==
+gatsby-transformer-sharp@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.10.0.tgz#9db793a219d0fa85b7d33cb37b32aba63df4c58a"
+  integrity sha512-Gp9eRkGQOrkoD+yJgK2ZdXuVbet/opxdEnuTZ6BhLEVhfTwOnMEaui6ZqO0cKJ7/NYlptO38p+C5cyizC0FRYA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     bluebird "^3.7.2"
     common-tags "^1.8.2"
     fs-extra "^10.0.0"
     potrace "^2.1.8"
-    probe-image-size "^6.0.0"
+    probe-image-size "^7.0.0"
     semver "^7.3.5"
-    sharp "^0.29.3"
+    sharp "^0.30.1"
 
 gatsby-worker@^1.7.0:
   version "1.7.0"
@@ -12934,6 +12934,15 @@ probe-image-size@^6.0.0:
     needle "^2.5.2"
     stream-parser "~0.3.1"
 
+probe-image-size@^7.0.0:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-7.2.3.tgz#d49c64be540ec8edea538f6f585f65a9b3ab4309"
+  integrity sha512-HubhG4Rb2UH8YtV4ba0Vp5bQ7L78RTONYu/ujmCu5nBI8wGv24s4E9xSKBi0N1MowRpxk76pFCpJtW0KPzOK0w==
+  dependencies:
+    lodash.merge "^4.6.2"
+    needle "^2.5.2"
+    stream-parser "~0.3.1"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -14292,7 +14301,7 @@ shallowequal@^1.0.1:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@0.27.0, sharp@^0.27.0, sharp@^0.29.3:
+sharp@0.27.0, sharp@^0.27.0, sharp@^0.29.3, sharp@^0.30.1:
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.27.0.tgz#523fba913ba674985dcc688a6a5237384079d80f"
   integrity sha512-II+YBCW3JuVWQZdpTEA2IBjJcYXPuoKo3AUqYuW+FK9Um93v2gPE2ihICCsN5nHTUoP8WCjqA83c096e8n//Rw==
