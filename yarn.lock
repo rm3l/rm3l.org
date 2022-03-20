@@ -7506,10 +7506,10 @@ gatsby-plugin-force-trailing-slashes@1.0.5:
   dependencies:
     "@babel/runtime" "7.12.5"
 
-gatsby-plugin-google-analytics@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.6.0.tgz#0899703cbf59141450d39a6e608d8054e4952b86"
-  integrity sha512-HjWfYDwCKHs3k5RMvrlrTzJmEtyEnT573npiEOezBvy4MSHUhWRb7phNeHGFKcE7+lDwDfUXxrZrb8L8T6GvKw==
+gatsby-plugin-google-analytics@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.10.0.tgz#de836e096eecc0cff0d6ac1b95ebdd9410e00f16"
+  integrity sha512-9BaFwkedIv1JMTPPr4YNax80QJH8+6mHHh34SlrJE2YiYtYu/uYaZTc8LEv+bIHEtafkfAZo2kkjqT7h/3MmMg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     minimatch "3.0.4"
@@ -7750,7 +7750,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^3.0.0, gatsby-plugin-utils@^3.1.0:
+gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
   integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
@@ -7915,7 +7915,7 @@ gatsby-telemetry@^1.10.2:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^3.6.0, gatsby-telemetry@^3.7.0:
+gatsby-telemetry@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.7.0.tgz#898c3f158814ea11f924b85d14b9402baa5703de"
   integrity sha512-jhtUGZynyHM3r9a7po/rKffj5AjacmU0rqqarsee9dxlDqsamqRtyFPTjn7JubRrc958M6qzNW+z/Zi0hoeFHg==
