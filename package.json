@@ -98,7 +98,7 @@
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-theme-ui": "^0.13.1",
-    "gatsby-plugin-twitter": "^4.6.0",
+    "gatsby-plugin-twitter": "^4.10.1",
     "gatsby-remark-images": "^6.7.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-source-ghost": "4.2.4",

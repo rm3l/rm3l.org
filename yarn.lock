@@ -7723,10 +7723,10 @@ gatsby-plugin-twitter@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-twitter@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.6.0.tgz#de382ab7ba55d33755d311e40e7a18068f488f4a"
-  integrity sha512-qMC1kjQUbeSG1XoZL/dj6CMZIkYBzTM9j8a651UrKmGAzrV2312yym8oYzQqfAwLnPrUbuRKLO55VDFcp7rJbQ==
+gatsby-plugin-twitter@^4.10.1:
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.10.1.tgz#7330d85184d06bcbafb5b7e3036777864936feeb"
+  integrity sha512-7U4pVfv5HHzw6M9RRCQmZcmo43jWZPjXIUykhMpFpENYDinQDglEX5kZbaxGFTc+gjuB84RUQPPCIrPTPqCiow==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -7750,7 +7750,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^3.0.0, gatsby-plugin-utils@^3.1.0:
+gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
   integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
@@ -7915,7 +7915,7 @@ gatsby-telemetry@^1.10.2:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^3.6.0, gatsby-telemetry@^3.7.0:
+gatsby-telemetry@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.7.0.tgz#898c3f158814ea11f924b85d14b9402baa5703de"
   integrity sha512-jhtUGZynyHM3r9a7po/rKffj5AjacmU0rqqarsee9dxlDqsamqRtyFPTjn7JubRrc958M6qzNW+z/Zi0hoeFHg==
