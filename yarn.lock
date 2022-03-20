@@ -7646,10 +7646,10 @@ gatsby-plugin-recaptcha@^1.0.5:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-sass@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.7.0.tgz#b71f43219a373c4affa486c33e7c7c7730266803"
-  integrity sha512-9G+oGcrCDUmnRuiJFpCVM70DB1LboTF+LmpOmwCgdTCKCdUfE//EB0iyqsq+QABpRfCPYJ03nSgs+RuLPw6DCA==
+gatsby-plugin-sass@^5.10.1:
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.10.1.tgz#1ada3acc1e2c16e51ec1e494ad8d48a581be72f2"
+  integrity sha512-h8HS0BVEa/+GMQukScFyr0cpcdXQqwi4tliUto1EKtGsDO3ps2j89ytS6V9yGwp7KGFtZiI2y10R7gbBuVW1Yw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     resolve-url-loader "^3.1.4"
@@ -7750,7 +7750,7 @@ gatsby-plugin-utils@^0.9.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-utils@^3.0.0, gatsby-plugin-utils@^3.1.0:
+gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
   integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
@@ -7915,7 +7915,7 @@ gatsby-telemetry@^1.10.2:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^3.6.0, gatsby-telemetry@^3.7.0:
+gatsby-telemetry@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.7.0.tgz#898c3f158814ea11f924b85d14b9402baa5703de"
   integrity sha512-jhtUGZynyHM3r9a7po/rKffj5AjacmU0rqqarsee9dxlDqsamqRtyFPTjn7JubRrc958M6qzNW+z/Zi0hoeFHg==
