@@ -2,7 +2,7 @@
 /// <reference types="Cypress" />
 
 describe(`Accessibility checks`, () => {
-    it(`Has no detectable a11y violations on load`, () => {
+    it(`Navigates to Home and checks for accessibility violations`, () => {
         cy.visit(`/`)
         cy.injectAxe()
         cy.wait(500)
