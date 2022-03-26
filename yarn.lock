@@ -2878,10 +2878,15 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-system/-/preset-system-0.13.1.tgz#391b13638596f7eb24814eb9b257489d9c3bcf38"
   integrity sha512-s5D06C+f5qLOjrC+xNOh0BiQ8MtkEqlyu/r7A6gTX9NR5/6CBKSos9ZKvl0tXo932q7hahCAlvPbyueLZnXzvg==
 
-"@theme-ui/preset-tailwind@0.13.1", "@theme-ui/preset-tailwind@^0.13.1":
+"@theme-ui/preset-tailwind@0.13.1":
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.13.1.tgz#601537501efb4c3e3f7ab70c1c1d074021d1243e"
   integrity sha512-sM3iAaFajDSfWSAcmtqMz+smGtBtlk5luXpIQ7cDdxs8LK+DXj9TGRJsVbBf1lkPd78nyhpmRJWSXg4HPsYBag==
+
+"@theme-ui/preset-tailwind@^0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.14.1.tgz#9e312a00186afce1acfed106c66fa0b784dfe4f1"
+  integrity sha512-KI/QzeDishOpsgMJEL/Yc8GEexvK9fxiApR1z2oyaLg4VCyPvO8XswobzuQWoIbroi5TNiEFfqOHGYapOj/1CA==
 
 "@theme-ui/preset-tosh@0.13.1", "@theme-ui/preset-tosh@^0.13.1":
   version "0.13.1"
