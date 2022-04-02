@@ -86,7 +86,7 @@
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-catch-links": "4.10.0",
     "gatsby-plugin-disqus": "^1.2.2",
-    "gatsby-plugin-emotion": "^7.10.0",
+    "gatsby-plugin-emotion": "^7.11.0",
     "gatsby-plugin-feed": "4.10.1",
     "gatsby-plugin-force-trailing-slashes": "1.0.6",
     "gatsby-plugin-google-analytics": "^4.10.0",
