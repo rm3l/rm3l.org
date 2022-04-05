@@ -8414,10 +8414,10 @@ gatsby-plugin-twitter@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-twitter@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.10.1.tgz#7330d85184d06bcbafb5b7e3036777864936feeb"
-  integrity sha512-7U4pVfv5HHzw6M9RRCQmZcmo43jWZPjXIUykhMpFpENYDinQDglEX5kZbaxGFTc+gjuB84RUQPPCIrPTPqCiow==
+gatsby-plugin-twitter@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.11.1.tgz#a25be2bdffdb795c19c0f90be5053d8a59cceec1"
+  integrity sha512-y/bRLXd1ME46ktvpcCo63EgecxPEF0mUu44vHKWEk0mcFXRqBZeiKDLkD6xGLk9mPMkqH3hD7j115oI+Fq1ArQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -15309,10 +15309,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-snyk@^1.878.0:
-  version "1.878.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.878.0.tgz#02e8d2961e9a068bdbbced750f72e0f546d1a8f2"
-  integrity sha512-5esdH2PRGAc1DQE48GtvsUbAFnebFUXsKpDhR56KWx8G8JdC2lbaTheV0/MUoen5/+xNW6t35xHhUERFAK/MOw==
+snyk@^1.895.0:
+  version "1.895.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.895.0.tgz#b2ba335d7ee68bf8b1b320c2ca9bc35b2fb09282"
+  integrity sha512-8/1P6Hx5aiDzTYKCC+yPg5ZhKf4gflodohaQc8/852ftUkCZ58UJopaYkiBTXbN51OTLRIK/TLGfPY0DpVUe+w==
 
 socket.io-adapter@~2.1.0:
   version "2.1.0"

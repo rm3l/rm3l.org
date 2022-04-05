@@ -100,7 +100,7 @@
     "gatsby-plugin-sass": "^5.10.1",
     "gatsby-plugin-sharp": "^4.10.1",
     "gatsby-plugin-theme-ui": "^0.13.1",
-    "gatsby-plugin-twitter": "^4.10.1",
+    "gatsby-plugin-twitter": "^4.11.1",
     "gatsby-remark-images": "^6.10.1",
     "gatsby-source-filesystem": "^4.10.0",
     "gatsby-source-ghost": "4.2.4",
@@ -117,7 +117,7 @@
     "react-recaptcha": "^2.3.10",
     "rebass": "^4.0.7",
     "sharp": "0.30.3",
-    "snyk": "^1.878.0",
+    "snyk": "^1.895.0",
     "theme-ui": "^0.13.1"
   },
   "snyk": true
