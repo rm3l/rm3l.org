@@ -8414,10 +8414,10 @@ gatsby-plugin-twitter@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-twitter@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.10.1.tgz#7330d85184d06bcbafb5b7e3036777864936feeb"
-  integrity sha512-7U4pVfv5HHzw6M9RRCQmZcmo43jWZPjXIUykhMpFpENYDinQDglEX5kZbaxGFTc+gjuB84RUQPPCIrPTPqCiow==
+gatsby-plugin-twitter@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.11.1.tgz#a25be2bdffdb795c19c0f90be5053d8a59cceec1"
+  integrity sha512-y/bRLXd1ME46ktvpcCo63EgecxPEF0mUu44vHKWEk0mcFXRqBZeiKDLkD6xGLk9mPMkqH3hD7j115oI+Fq1ArQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -17722,10 +17722,10 @@ yargs@^17.2.1:
     y18n "^5.0.5"
     yargs-parser "^21.0.0"
 
-yarn-audit-fix@^9.2.1:
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-9.2.1.tgz#7fc77e9163781b7c64825df23a3d22266ae45261"
-  integrity sha512-4biFNP4ZLOHboB2cNVuhYyelTFR/twlfmGMQ2TgJgGRORMDM/rQdQqhJdVLuKvfdMLFEPJ832z6Ws5OoCnFcfA==
+yarn-audit-fix@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-9.2.2.tgz#8ad54fec77cbbfb440352c65a752bdfe95a06896"
+  integrity sha512-IrN3XCiztBdCjt5LPtvCeT/5YgiLQdKj99qSy1vU5JCDPQf3S0WyoDjtqQ3E0JTGzVHHxV0iWajrUDsu3VMAHQ==
   dependencies:
     "@types/find-cache-dir" "^3.2.1"
     "@types/fs-extra" "^9.0.13"

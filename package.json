@@ -59,7 +59,7 @@
     "mocha-junit-reporter": "^2.0.2",
     "netlify-plugin-cypress": "^2.2.0",
     "start-server-and-test": "^1.12.5",
-    "yarn-audit-fix": "^9.2.1"
+    "yarn-audit-fix": "^9.2.2"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -100,7 +100,7 @@
     "gatsby-plugin-sass": "^5.10.1",
     "gatsby-plugin-sharp": "^4.10.1",
     "gatsby-plugin-theme-ui": "^0.13.1",
-    "gatsby-plugin-twitter": "^4.10.1",
+    "gatsby-plugin-twitter": "^4.11.1",
     "gatsby-remark-images": "^6.10.1",
     "gatsby-source-filesystem": "^4.10.0",
     "gatsby-source-ghost": "4.2.4",
