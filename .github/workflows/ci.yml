@@ -98,21 +98,21 @@ jobs:
           yarn ci:test:no-record
 
       - name: Archive Cypress test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cypress_results
           path: cypress/results/*
 
       - name: Archive Cypress screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cypress_screenshots
           path: cypress/screenshots/*
 
       - name: Archive Cypress videos
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cypress_videos
