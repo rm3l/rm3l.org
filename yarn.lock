@@ -8419,10 +8419,10 @@ gatsby-plugin-twitter@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-twitter@^4.11.1:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.11.1.tgz#a25be2bdffdb795c19c0f90be5053d8a59cceec1"
-  integrity sha512-y/bRLXd1ME46ktvpcCo63EgecxPEF0mUu44vHKWEk0mcFXRqBZeiKDLkD6xGLk9mPMkqH3hD7j115oI+Fq1ArQ==
+gatsby-plugin-twitter@^4.15.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-4.15.0.tgz#9cc1f5beb062629f247fe3d1611f43b3bcd672bc"
+  integrity sha512-8O5CeIVG2rmC7h/BhfFe61HamB8+wq6JeRXHdaAS3oihkXo9TG+DmMYhrDdU18kWHcXIJq7dn8yL1x+NrgXQNw==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
