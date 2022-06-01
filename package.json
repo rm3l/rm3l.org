@@ -116,7 +116,7 @@
     "react-masonry-responsive": "^2.1.2",
     "react-recaptcha": "^2.3.10",
     "rebass": "^4.0.7",
-    "sharp": "0.30.3",
+    "sharp": "0.30.5",
     "snyk": "^1.878.0",
     "theme-ui": "^0.13.1"
   },
