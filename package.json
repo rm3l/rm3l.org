@@ -100,7 +100,7 @@
     "gatsby-plugin-sass": "^5.15.1",
     "gatsby-plugin-sharp": "^4.10.1",
     "gatsby-plugin-theme-ui": "^0.13.1",
-    "gatsby-plugin-twitter": "^4.11.1",
+    "gatsby-plugin-twitter": "^4.15.1",
     "gatsby-remark-images": "^6.10.1",
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-source-ghost": "4.2.4",
