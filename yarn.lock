@@ -1401,10 +1401,10 @@
     "@parcel/plugin" "2.3.1"
     gatsby-core-utils "^3.8.2"
 
-"@gatsbyjs/reach-router@^1.3.6":
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/@gatsbyjs/reach-router/-/reach-router-1.3.6.tgz#4e8225836959be247890b66f21a3198a0589e34d"
-  integrity sha512-RW9ZBir9kqtw4IWm+Z+DLWGOeoJxoaTvNVrnR5fV9zD8EmfAhbBN/hS6i6VnTMFZ7rdd6mnpx2/XtnMvYfsaVQ==
+"@gatsbyjs/reach-router@1.3.7", "@gatsbyjs/reach-router@^1.3.6":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@gatsbyjs/reach-router/-/reach-router-1.3.7.tgz#d32029f2b4d91bb6977e7fd605237e3a5db20096"
+  integrity sha512-KQ5FvMb4BZUlSo+yQgd4t4WB8vkVPWfKjTpSl+Bx/FZhU6OL4lpwgfX7fXAY/18DogqyJCFiNAjV5eo3rQ5Alw==
   dependencies:
     invariant "^2.2.3"
     prop-types "^15.6.1"
@@ -2540,16 +2540,6 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@reach/router@^1.2.1":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
-  integrity sha512-+mtn9wjlB9NN2CNnnC/BRYtwdKBfSyyasPYraNAyvaV1occr/5NnB4CVzjEZipNHwYebQwcndGUmpFzxAUoqSA==
-  dependencies:
-    create-react-context "0.3.0"
-    invariant "^2.2.3"
-    prop-types "^15.6.1"
-    react-lifecycles-compat "^3.0.4"
-
 "@rebass/forms@^4.0.6":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@rebass/forms/-/forms-4.0.6.tgz#19a3af64f855baa65dec65aecadda5cd95a09dd7"
@@ -2964,20 +2954,27 @@
   dependencies:
     axios "^0.21.1"
 
-"@tryghost/helpers-gatsby@1.0.68":
-  version "1.0.68"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.68.tgz#a99f065dc09e9e9771141193164fcfa050ae43ba"
-  integrity sha512-P6bcra8NjwGZqBUT0eVUUiOsO/Hki68o51e1HAriCaD4oqR7bLt9wRp8P473TKK3Cs6rFuiN2GDo3iRxd1sAVQ==
+"@tryghost/helpers-gatsby@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-2.0.1.tgz#14e01b80c03c487d9fce326ad8f767d38845ab7f"
+  integrity sha512-OE+iiXQLBjevUwnLglGdqw85Ob5sk3OyBkfK+wCraw340B1l/rohPcvekQ+40c8J6C50erdOluQ11SOhgmebtA==
   dependencies:
-    "@reach/router" "^1.2.1"
-    "@tryghost/helpers" "^1.1.61"
-    gatsby-link "^2.9.0"
+    "@gatsbyjs/reach-router" "1.3.7"
+    "@tryghost/helpers" "^1.1.71"
+    gatsby-link "4.15.0"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.61", "@tryghost/helpers@^1.1.61":
+"@tryghost/helpers@1.1.61":
   version "1.1.61"
   resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.61.tgz#cd932631485e462b5bf4aad66b5e7a6db1a6fa07"
   integrity sha512-TmX/ohb1bZvCVWLAkWnerfPUS1Et3vCXF/jejfKhspk8f9YpDvJDniCyGWscUSDwkLTjkKnnfdUGRg1UswF5RQ==
+  dependencies:
+    lodash-es "^4.17.11"
+
+"@tryghost/helpers@^1.1.71":
+  version "1.1.71"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.71.tgz#0b957ebda1be81cb5f290a2222a855248cc4fde7"
+  integrity sha512-BTaf3DHabg9JNpZNHRH1wxh8vfUIRNs4LWGrXm2l6DfktKPSmOBNxLazuSTrccDzv+7ixwmo2iAyvIlB4+TfKA==
   dependencies:
     lodash-es "^4.17.11"
 
@@ -3235,7 +3232,7 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
-"@types/reach__router@^1.3.10", "@types/reach__router@^1.3.7":
+"@types/reach__router@^1.3.10":
   version "1.3.10"
   resolved "https://registry.yarnpkg.com/@types/reach__router/-/reach__router-1.3.10.tgz#141d500213a452d9d9d71d5ad96c4104094f55a3"
   integrity sha512-iHAFGaVOrWi00/q7oBybggGsz5TOmwOW4M1H9sT7i9lly4qFC8XOgsdf6jUsoaOz2sknFHALEtZqCoDbokdJ2Q==
@@ -4544,7 +4541,7 @@ braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braces@^3.0.1, braces@~3.0.2:
+braces@^3.0.1, braces@^3.0.2, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -5610,14 +5607,6 @@ create-react-class@^15.6.2:
   dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
-
-create-react-context@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
-  integrity sha512-dNldIoSuNSvlTJ7slIKC/ZFGKexBMBrrcc+TTe1NdmROnaASuLPvqpwj9v4XS4uXZ8+YPu0sNmShX2rXI5LNsw==
-  dependencies:
-    gud "^1.0.0"
-    warning "^4.0.3"
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -8066,24 +8055,15 @@ gatsby-legacy-polyfills@^2.10.0, gatsby-legacy-polyfills@^2.11.0:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-link@^2.9.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.11.0.tgz#15e99c89bdde1c99686ce53bda72beb3c9c39455"
-  integrity sha512-AYXxndlSx5mnYv+/PBPdPBRvdv1LeSGE3WO8uYj2ReYDSbhiAlF3KKz30D62ErartXP0deySPtRKx4Dd3nCFYw==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@types/reach__router" "^1.3.7"
-    prop-types "^15.7.2"
-
-gatsby-link@^4.10.0:
-  version "4.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.10.0.tgz#11565eca6df53e7952c44bc290791bb032fa88ce"
-  integrity sha512-icF3i58MWgk4hSLaI6s5xyUp/rPy6MK7F4hsETQgJR32aZzkhj5Ydd1Cqw5P0CYo8EdaYKtljFBVwai8TnY4MQ==
+gatsby-link@4.15.0, gatsby-link@^4.10.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.15.0.tgz#7c237e5ba28f21708516deba30c8863458d9f734"
+  integrity sha512-46kP4he6dRGDL78SKTY3uWH8glPr2QuVY9v/4RreC6I3LZqI5Wr3F1kyR/LvLXMcXhszCuNJ4lPIOOltBTeX4Q==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@types/reach__router" "^1.3.10"
-    gatsby-page-utils "^2.10.0"
-    prop-types "^15.7.2"
+    gatsby-page-utils "^2.15.0"
+    prop-types "^15.8.1"
 
 gatsby-node-helpers@0.3.0:
   version "0.3.0"
@@ -8107,6 +8087,20 @@ gatsby-page-utils@^2.10.0:
     glob "^7.2.0"
     lodash "^4.17.21"
     micromatch "^4.0.4"
+
+gatsby-page-utils@^2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.15.0.tgz#f03b5f283cc70e66ecd48d04bbe6e75b5841bee9"
+  integrity sha512-icy/+uRQH94qLlqO2jlRkYFtttWHpQp+LYrtxuLGyLMOa6hPb6dEoVdKet3vGqq0ahmHPJmU7oQgSLs9w6Flog==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    bluebird "^3.7.2"
+    chokidar "^3.5.2"
+    fs-exists-cached "^1.0.0"
+    gatsby-core-utils "^3.15.0"
+    glob "^7.2.3"
+    lodash "^4.17.21"
+    micromatch "^4.0.5"
 
 gatsby-parcel-config@^0.1.0:
   version "0.1.0"
@@ -9399,11 +9393,6 @@ growl@1.10.5:
   version "1.10.5"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
   integrity sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-
-gud@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
-  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
 
 gzip-size@5.1.1:
   version "5.1.1"
@@ -11938,6 +11927,14 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
+micromatch@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
+  integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
+  dependencies:
+    braces "^3.0.2"
+    picomatch "^2.3.1"
+
 mime-db@1.52.0, "mime-db@>= 1.43.0 < 2", mime-db@^1.28.0:
   version "1.52.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
@@ -13357,7 +13354,7 @@ picocolors@^1.0.0:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
+picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
@@ -17247,13 +17244,6 @@ walk-back@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/walk-back/-/walk-back-4.0.0.tgz#9e4ad2bd72038f3beed2d83180f9fd40b233bfab"
   integrity sha512-kudCA8PXVQfrqv2mFTG72vDBRi8BKWxGgFLwPpzHcpZnSwZk93WMwUDVcLHWNsnm+Y0AC4Vb6MUNRgaHfyV2DQ==
-
-warning@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
-  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
-  dependencies:
-    loose-envify "^1.0.0"
 
 watchpack@^2.3.1:
   version "2.3.1"
