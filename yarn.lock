@@ -8858,10 +8858,10 @@ gatsby-plugin-sharp@^4.15.1:
     sharp "^0.30.3"
     svgo "1.3.2"
 
-gatsby-plugin-theme-ui@^0.14.5:
-  version "0.14.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.14.5.tgz#a402c493690f7e647d4b7a6237fe7abcfe89d7a1"
-  integrity sha512-uEo4e7HdgOK1QgROyZx7Iyf+KuLEjIdCqR+juHF4sJq2MnK82PbZw7ooeNETc/1JFQozqGyetaJhowT076SJhw==
+gatsby-plugin-theme-ui@^0.14.6:
+  version "0.14.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.14.6.tgz#62d8a238c489c70d6bf39af5c48bc433fac3af19"
+  integrity sha512-WqYCkxNdDCS1cAKjJONSmeNJXgTRXUGYmEM5W9VmMppfV3zsKuLaIB8RE33Z+k6XdZ2ZIj7j+MzcgH76aNfCqg==
 
 gatsby-plugin-theme-ui@^0.2.23:
   version "0.2.53"
