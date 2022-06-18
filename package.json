@@ -48,7 +48,7 @@
     "axe-core": "^4.4.2",
     "babel-eslint": "10.1.0",
     "cypress": "^10.0.2",
-    "cypress-axe": "^0.14.0",
+    "cypress-axe": "^1.0.0",
     "cypress-multi-reporters": "^1.6.0",
     "del": "^6.1.1",
     "eslint": "8.17.0",
