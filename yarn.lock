@@ -3262,10 +3262,15 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-system/-/preset-system-0.14.5.tgz#6b03b382fd4bab814271d6d874e6ddfc9b7de489"
   integrity sha512-cJi/k1C7W+2gqqrEyp/undxuiYUudxx04bLW1izWqwa9NpNEsKbhNLX53d2ICVd7saJva+lWV3rYxPBGcZ8H/w==
 
-"@theme-ui/preset-tailwind@0.14.5", "@theme-ui/preset-tailwind@^0.14.5":
+"@theme-ui/preset-tailwind@0.14.5":
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.14.5.tgz#baec9f87e1ac79532d3c8b2722017c6125fe3c5d"
   integrity sha512-kkEcoaJnP+AuI4tZdasQtsJZKXiRn1cmBUglDyBwF5a8FVij5UAc0Nd6bem5Mnfg1Jb7Ku70A/WlZGblKZsZ2g==
+
+"@theme-ui/preset-tailwind@^0.14.6":
+  version "0.14.6"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.14.6.tgz#c792ae26f37fbcbf83291237d0b4e39042d8360b"
+  integrity sha512-U+Prqdq0A/xX7HofjaVyLnibCjxHOrhRV8RfROrLn/HBqxbuSiyo8f/P5KYFw7AjmZikefp2CYtPnZUB+Mnu5w==
 
 "@theme-ui/preset-tosh@0.14.5", "@theme-ui/preset-tosh@^0.14.5":
   version "0.14.5"
