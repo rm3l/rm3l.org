@@ -8589,10 +8589,10 @@ gatsby-plugin-advanced-sitemap@^2.1.0:
     pify "5.0.0"
     xml "^1.0.1"
 
-gatsby-plugin-catch-links@4.15.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.15.0.tgz#b46925e98c9eb5b119ebc756c845df1ccd41bc27"
-  integrity sha512-CoPRa4qoq+sDwD6Q7V41RM6o6g7GgPL4NDaq452p4EuJPukMNTgmhW3z7Ytevl3+dYXnyWOaNZDxMkSv9Jm9TA==
+gatsby-plugin-catch-links@4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.17.0.tgz#eb869504626f7fa6373953d0b4613c7f4bb44a17"
+  integrity sha512-hqrNbrmeJ22nhq2W1u+KBFtrH9zpDrum6DQD+TOTOjlA+MX59Nmc4mewUjuMKa9CEv93/k3Y58NIhFcGk6jHWg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     escape-string-regexp "^1.0.5"
