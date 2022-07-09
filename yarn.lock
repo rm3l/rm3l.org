@@ -15744,10 +15744,10 @@ snake-case@^3.0.3, snake-case@^3.0.4:
     dot-case "^3.0.4"
     tslib "^2.0.3"
 
-snyk@^1.946.0:
-  version "1.946.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.946.0.tgz#d95afad5321f5bb15499c8f3fef5be17e0fd39ef"
-  integrity sha512-3XE1rk5qF1DOb5t5bQlOFDyp4x1V7HjpppH+RDVIqq7is0Hf9NTHeOpeNALplJjVVyEIfAzqiJThKupWDx5ptg==
+snyk@^1.966.0:
+  version "1.966.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.966.0.tgz#ac3dea309defdc262355ab592971da3714b599bd"
+  integrity sha512-XOqFdqG7V9uweENL2u/vpxfGyWKDuCg0eLafUHSwpxb7Yq/v9a7lSJ9sTZYzEqRWvLQC8+/06O/gQfVB+ryOmQ==
 
 socket.io-adapter@~2.1.0:
   version "2.1.0"
