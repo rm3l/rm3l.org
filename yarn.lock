@@ -8651,10 +8651,10 @@ gatsby-plugin-force-trailing-slashes@1.0.6:
   dependencies:
     "@babel/runtime" "7.12.5"
 
-gatsby-plugin-google-analytics@^4.15.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.15.0.tgz#37def2b5bb00f39d4e4fe543c1a9e8c3b2e68b6d"
-  integrity sha512-aR+Jr6Zmco/PQv9iUbHmQc+Ghur4rVT8WBqB6+zcvs5sBtjCGnHTBsDiTg29jhfTPJLJ9xd3pPVG4Q7077kUuA==
+gatsby-plugin-google-analytics@^4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.21.0.tgz#1e5a5cf649cb61e7ae22ee69eba4f6a3f111f43b"
+  integrity sha512-T32lbQ/fKIUo0LzIxxBp4pGQphm6aSycc09X5NOnTARqGw9eOR+H/PeljeTORWbtScvYopQQAa16xHWeTgQaEQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     minimatch "3.0.4"
