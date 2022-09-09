@@ -107,7 +107,7 @@
     "gatsby-theme-medium": "^0.0.1",
     "gatsby-transformer-sharp": "^4.15.1",
     "lodash": "^4.17.21",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.2",
     "prismjs": "^1.28.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
