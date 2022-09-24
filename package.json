@@ -87,7 +87,7 @@
     "gatsby-plugin-catch-links": "4.15.0",
     "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-emotion": "^7.15.0",
-    "gatsby-plugin-feed": "4.15.1",
+    "gatsby-plugin-feed": "4.23.1",
     "gatsby-plugin-force-trailing-slashes": "1.0.6",
     "gatsby-plugin-google-analytics": "^4.15.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
