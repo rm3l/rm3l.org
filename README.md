@@ -8,6 +8,10 @@
   The static website behind <a href="https://rm3l.org" target="_blank">rm3l.org</a>,
   hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, and leveraging a headless <a href="https://ghost.org/" target="_blank">Ghost</a> Content Management System (CMS) running in a <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> cluster
 </p>
+
+<h1></h1>
+<p align="center" style="color:red;"><h1>⚠️ Archived! See <a href="https://github.com/rm3l/rm3l.org-v2">this repo</a> for the latest version of this website.</h1></p>
+
 <p align="center">
   <span>
     <a href="https://github.com/rm3l/rm3l.org/actions/workflows/ci.yml" target="_blank">
